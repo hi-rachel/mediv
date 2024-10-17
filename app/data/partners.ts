@@ -1,0 +1,27 @@
+const partners = [
+  { name: "충북대학교병원", logo: "/충북대학교병원.webp" },
+  { name: "충북대학교 의과대학", logo: "/충북대학교의과대학.webp" },
+  { name: "고려대학교병원", logo: "/고려대학교병원.webp" },
+  { name: "고려대학교", logo: "/고려대학교.webp" },
+  { name: "중앙대학교병원", logo: "/중앙대학교병원.webp" },
+  { name: "서울의과학연구소", logo: "/서울의과학연구소.webp" },
+  { name: "한국생명공학연구원", logo: "/한국생명공학연구원.webp" },
+  { name: "한국화학연구원", logo: "/한국화학연구원.webp" },
+  { name: "베를린공과대학교", logo: "/베를린공과대학교.webp" },
+  { name: "TissUse", logo: "/TissUse.webp" },
+  { name: "암스트르담자유대학교", logo: "/암스테르담자유대학교.webp" },
+  { name: "hDMT", logo: "/hDMT.webp" },
+  { name: "밀라노공과대학교", logo: "/밀라노공과대학교.webp" },
+  { name: "Emulate", logo: "/emulate.webp" },
+  { name: "오송첨단의료산업진흥재단", logo: "/오송첨단의료산업진흥재단.webp" },
+  { name: "바이오스페로", logo: "/바이오스페로.webp" },
+  { name: "멥스젠", logo: "/멥스젠.webp" },
+  { name: "클리셀", logo: "/클리셀.webp" },
+  { name: "코아스템켐온", logo: "/코아스템켐온.webp" },
+  { name: "디벨로", logo: "/디벨로.webp" },
+  { name: "엠아이케이스캔", logo: "/엠아이케이스캔.webp" },
+  { name: "에즈웰플러스", logo: "/에즈웰플러스.webp" },
+  { name: "홈즈에이아이", logo: "/홈즈에이아이.webp" },
+];
+
+export default partners;
