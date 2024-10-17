@@ -18,12 +18,9 @@ const InViewTypingAnimation: React.FC<TypingAnimationProps> = ({
   useEffect(() => {
     if (!isInView) return;
 
-    let timeoutId: NodeJS.Timeout;
-    let intervalId: NodeJS.Timeout;
-
-    const startTyping = () => {
+    const timeoutId = setTimeout(() => {
       let i = 0;
-      intervalId = setInterval(() => {
+      const intervalId = setInterval(() => {
         if (i < text.length) {
           setDisplayedText(text.slice(0, i + 1));
           i++;
@@ -31,13 +28,10 @@ const InViewTypingAnimation: React.FC<TypingAnimationProps> = ({
           clearInterval(intervalId);
         }
       }, speed);
-    };
-
-    timeoutId = setTimeout(startTyping, delay);
+    }, delay);
 
     return () => {
       clearTimeout(timeoutId);
-      clearInterval(intervalId);
     };
   }, [text, delay, speed, isInView]);
 
