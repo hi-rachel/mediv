@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Vision from "../components/about/Vision";
 import History from "../components/about/History";
 import Organization from "../components/about/Organization";
+import CI from "../components/about/ci/CI";
 
 const AboutPage = () => {
   const [activeTab, setActiveTab] = useState<string>("vision");
@@ -26,7 +27,7 @@ const AboutPage = () => {
       <section className="py-10 bg-white">
         <div className="container mx-auto px-6">
           <div className="flex justify-center space-x-4 mb-8">
-            {["vision", "history", "organization"].map((tab) => (
+            {["vision", "history", "organization", "ci"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => handleTabClick(tab)}
@@ -40,7 +41,9 @@ const AboutPage = () => {
                   ? "회사 연혁"
                   : tab === "organization"
                   ? "조직도"
-                  : "비전"}
+                  : tab === "vision"
+                  ? "비전"
+                  : "CI"}
               </button>
             ))}
           </div>
@@ -56,6 +59,7 @@ const AboutPage = () => {
             {activeTab === "vision" && <Vision />}
             {activeTab === "history" && <History />}
             {activeTab === "organization" && <Organization />}
+            {activeTab === "ci" && <CI />}
           </motion.div>
         </div>
       </section>
