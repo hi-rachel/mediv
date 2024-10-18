@@ -1,16 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useRouter, useSearchParams } from "next/navigation";
 import Vision from "../components/about/Vision";
 import History from "../components/about/History";
 import Organization from "../components/about/Organization";
 import CI from "../components/about/ci/CI";
 
 const AboutPage = () => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<string>("vision");
 
-  const handleTabClick = (tab: string) => setActiveTab(tab);
+  useEffect(() => {
+    const tabFromUrl = searchParams.get("tab");
+    if (
+      tabFromUrl &&
+      ["vision", "history", "organization", "ci"].includes(tabFromUrl)
+    ) {
+      setActiveTab(tabFromUrl);
+    }
+  }, [searchParams]);
+
+  const handleTabClick = (tab: string) => {
+    setActiveTab(tab);
+    router.push(`/about?tab=${tab}`, { scroll: false });
+  };
 
   return (
     <div className="min-h-screen">
