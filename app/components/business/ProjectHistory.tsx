@@ -7,10 +7,8 @@ import projects from "@/app/data/projects";
 const ProjectHistory = () => {
   const [selectedTag, setSelectedTag] = useState("ALL");
 
-  // 태그 생성
   const tags = ["ALL", ...new Set(projects.flatMap((project) => project.tag))];
 
-  // 필터링된 프로젝트
   const filteredProjects =
     selectedTag === "ALL"
       ? projects

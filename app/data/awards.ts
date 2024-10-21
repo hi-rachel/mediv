@@ -1,20 +1,17 @@
 interface Award {
   title: string;
   year: number;
-  organization: string;
 }
 
 const awards: Award[] = [
+  { title: "스포츠서울 2024 혁신한국인 & POWER KOREA 대상 수상", year: 2024 },
   {
-    title: "대한민국 AI 대상",
-    year: 2023,
-    organization: "과학기술정보통신부",
+    title: "충북창조경제혁신센터 주관 2024 창업경진대회 혁신상 수상",
+    year: 2024,
   },
-  { title: "혁신 기업 인증", year: 2022, organization: "중소벤처기업부" },
   {
-    title: "Healthcare AI Challenge 우승",
-    year: 2021,
-    organization: "대한의료인공지능학회",
+    title: "머니투데이 제 9회 2023 대한민국 AI부분 우수기업대상 수상",
+    year: 2023,
   },
 ];
 
