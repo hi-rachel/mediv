@@ -71,91 +71,6 @@
 //   plugins: [],
 // };
 
-// export default config;
-
-// import type { Config } from "tailwindcss";
-
-// const config: Config = {
-//   content: [
-//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         primary: {
-//           DEFAULT: "#005f73", // 진한 청록색
-//           light: "#0a9396", // 밝은 청록색
-//           dark: "#003844", // 더 진한 청록색
-//         },
-//         secondary: {
-//           DEFAULT: "#0a9396", // 밝은 청록색
-//           light: "#94d2bd", // 매우 밝은 청록색
-//           dark: "#005f73", // 진한 청록색 (primary와 동일)
-//         },
-//         accent: {
-//           DEFAULT: "#ee6c4d", // 산호색
-//           light: "#f4a261", // 밝은 산호색
-//           dark: "#e76f51", // 진한 산호색
-//         },
-//         neutral: {
-//           DEFAULT: "#e9ecef", // 밝은 회색
-//           dark: "#adb5bd", // 중간 회색
-//         },
-//         text: {
-//           DEFAULT: "#293241", // 진한 회색
-//           light: "#3d5a80", // 밝은 청회색
-//         },
-//         white: "#ffffff",
-//         black: "#000000",
-//       },
-//     },
-//   },
-//   plugins: [],
-// };
-
-// export default config;
-
-// import type { Config } from "tailwindcss";
-
-// const config: Config = {
-//   content: [
-//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         primary: {
-//           DEFAULT: "#3B82F6", // 밝고 세련된 블루
-//           light: "#93C5FD", // 연한 하늘색
-//           dark: "#1E3A8A", // 진한 네이비
-//         },
-//         secondary: {
-//           DEFAULT: "#14B8A6", // 청록색
-//           light: "#5EEAD4", // 연한 민트색
-//           dark: "#0F766E", // 짙은 청록색
-//         },
-//         accent: "#EF4444", // 빨강 (로고의 강조색)
-//         success: "#4CAF50", // 초록색
-//         warning: "#F59E0B", // 주황색 (경고)
-//         error: "#DC2626", // 진한 빨강 (에러)
-//         info: "#2563EB", // 파랑 (정보)
-//         neutral: {
-//           DEFAULT: "#F1FAEE", // 아주 연한 회색
-//           dark: "#1F2937", // 진한 회색
-//         },
-//         white: "#FFFFFF", // 흰색
-//       },
-//     },
-//   },
-//   plugins: [],
-// };
-
-// export default config;
-
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -173,11 +88,11 @@ const config: Config = {
           dark: "#081C30", // 아주 짙은 블루 (고급스러움)
         },
         secondary: {
-          DEFAULT: "#14A38B", // 청록색 (활동적, 현대적)
+          DEFAULT: "#32ACB3", // 청록색 (활동적, 현대적)
           light: "#8AE1C1", // 밝은 민트 (보조용 포인트)
           dark: "#0F5C4E", // 짙은 청록 (강조 색상)
         },
-        accent: "#E63946", // 빨강 (포인트 색상, 콜투액션 버튼)
+        accent: "#D94157", // 빨강 (포인트 색상, 콜투액션 버튼)
         success: "#4CAF50", // 녹색 (성공 메시지)
         warning: "#F4A261", // 주황색 (경고 메시지)
         error: "#D62828", // 진한 빨강 (에러 메시지)
