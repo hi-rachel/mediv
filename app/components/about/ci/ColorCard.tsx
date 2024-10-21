@@ -9,9 +9,9 @@ interface ColorPalette {
 }
 
 export const colorPalette: ColorPalette[] = [
-  { name: "Primary", color: "#0A2540" },
-  { name: "Secondary", color: "#14A38B" },
-  { name: "Accent", color: "#E63946" },
+  { name: "Primary", color: "#262F57" },
+  { name: "Secondary", color: "#32ACB3" },
+  { name: "Accent", color: "#D94157" },
   { name: "Gray", color: "#C6CACE" },
 ];
 
