@@ -9,6 +9,7 @@ import InViewAnimationSection from "./components/home/animation/InViewAnimationS
 import InViewCountUpAnimation from "./components/home/animation/InViewCountUpAnimation";
 import slides from "./data/slides";
 import businessModels from "./data/businessModels";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const HomePage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -16,9 +17,23 @@ const HomePage: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
+
+  const goToPreviousSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+    );
+  };
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -44,7 +59,7 @@ const HomePage: React.FC = () => {
               objectFit="cover"
               priority
             />
-            <div className="absolute inset-0 bg-primary bg-opacity-70" />
+            <div className="absolute inset-0 bg-black bg-opacity-50" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white">
                 <h1 className="text-5xl font-extrabold mb-4 tracking-tight">
@@ -55,14 +70,33 @@ const HomePage: React.FC = () => {
             </div>
           </motion.div>
         ))}
+
+        {/* Arrow Navigation */}
+        <button
+          onClick={goToPreviousSlide}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-2 transition-all duration-200 group"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-200" />
+        </button>
+        <button
+          onClick={goToNextSlide}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full p-2 transition-all duration-200 group"
+          aria-label="Next slide"
+        >
+          <ChevronRight className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-200" />
+        </button>
+
+        {/* Dot Navigation */}
         <div className="absolute bottom-10 left-0 right-0 flex justify-center">
           {slides.map((_, index) => (
             <button
               key={index}
               className={`h-3 w-3 mx-2 rounded-full ${
-                index === currentSlide ? "bg-accent" : "bg-neutral-dark"
+                index === currentSlide ? "bg-info" : "bg-blue-100"
               }`}
-              onClick={() => setCurrentSlide(index)}
+              onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
@@ -103,7 +137,7 @@ const HomePage: React.FC = () => {
                   <h3 className="text-xl font-semibold text-primary mb-2">
                     {model.title}
                   </h3>
-                  <p className="text-neutral-dark">{model.description}</p>
+                  <p className="text-gray-600">{model.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -118,22 +152,21 @@ const HomePage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={10} duration={2} />+
+                  <InViewCountUpAnimation end={2} duration={2} />+
                 </h3>
                 <p className="text-xl">Years of Innovation</p>
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={50} duration={2} />+
+                  <InViewCountUpAnimation end={24} duration={2} />+
                 </h3>
                 <p className="text-xl">Global Partners</p>
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={1} duration={2} />
-                  M+
+                  <InViewCountUpAnimation end={4000} duration={3} />+
                 </h3>
-                <p className="text-xl">Data Points Analyzed</p>
+                <p className="text-xl">Analyzed Medical Data</p>
               </motion.div>
             </div>
           </div>
@@ -164,7 +197,7 @@ const HomePage: React.FC = () => {
                   <h3 className="text-2xl font-semibold text-primary mb-4">
                     {title}
                   </h3>
-                  <p className="text-neutral-dark mb-6">
+                  <p className="text-gray-600 mb-6">
                     Exploring the potential of AI in improving healthcare
                     outcomes.
                   </p>
