@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Trophy } from "lucide-react";
 import awards from "@/app/data/awards";
 import certifications from "@/app/data/certifications";
 
@@ -15,20 +16,20 @@ const AwardsAndCertifications = () => {
             {awards.map((award, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
+                className="bg-white rounded-lg shadow-lg overflow-hidden relative"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="p-6">
+                <div className="p-4 pb-10">
                   <div className="text-2xl font-bold text-blue-500 mb-2">
                     {award.year}
                   </div>
                   <h3 className="text-xl font-semibold mb-4">{award.title}</h3>
                   <div className="w-16 h-1 bg-blue-500 mb-4"></div>
-                  <p className="text-gray-600">
-                    우리의 혁신과 노력을 인정받은 영광스러운 순간입니다.
-                  </p>
+                </div>
+                <div className="absolute bottom-4 right-4 text-blue-400 opacity-80">
+                  <Trophy color="gold" size={45} />
                 </div>
               </motion.div>
             ))}
@@ -52,7 +53,9 @@ const AwardsAndCertifications = () => {
                   alt={cert.alt}
                   className="w-64 h-64 mx-auto mb-4 object-contain"
                 />
-                <p className="font-semibold text-gray-800">{cert.alt}</p>
+                <p className="text-center font-semibold text-gray-800">
+                  {cert.alt}
+                </p>
               </motion.div>
             ))}
           </div>
