@@ -73,7 +73,7 @@ const Header = () => {
             />
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
+          <div className="ml-5 hidden md:flex items-center space-x-6 lg:space-x-12">
             {menuItems.map((item) => (
               <div key={item.id} className="relative group">
                 <button
@@ -116,7 +116,7 @@ const Header = () => {
               </button>
 
               {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg py-1 z-50">
+                <div className="font-semibold absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg py-1 z-50">
                   <button
                     onClick={() => handleLanguageChange("en")}
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
