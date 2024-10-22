@@ -3,15 +3,19 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { Globe } from "lucide-react";
 import menuItems from "../data/menuItems";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [language, setLanguage] = useState("en");
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleLangMenu = () => setIsLangMenuOpen(!isLangMenuOpen);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,14 +24,27 @@ const Header = () => {
       }
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!(event.target as HTMLElement).closest(".lang-selector")) {
+        setIsLangMenuOpen(false);
+      }
+    };
+
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("click", handleClickOutside);
+    };
   }, []);
 
-  const handleNavigation = (
-    href: string,
-    subItems?: { id: string; label: string }[]
-  ) => {
+  const handleLanguageChange = (lang: string) => {
+    setLanguage(lang);
+    setIsLangMenuOpen(false);
+  };
+
+  const handleNavigation = (href: string, subItems: { id: string }[]) => {
     if (subItems && subItems.length > 0) {
       router.push(`${href}?tab=${subItems[0].id}`);
     } else {
@@ -36,9 +53,15 @@ const Header = () => {
     setIsOpen(false);
   };
 
+  const isActive = (href: string) => {
+    return pathname.startsWith(href)
+      ? "border-b-4 border-primary text-primary"
+      : "text-gray-600 hover:text-primary";
+  };
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -50,12 +73,16 @@ const Header = () => {
             />
           </Link>
 
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-4">
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
             {menuItems.map((item) => (
               <div key={item.id} className="relative group">
                 <button
-                  onClick={() => handleNavigation(item.href, item.subItems)}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary hover:bg-gray-100 focus:outline-none focus:text-primary focus:bg-gray-100 transition duration-150 ease-in-out"
+                  onClick={() =>
+                    handleNavigation(item.href, item.subItems || [])
+                  }
+                  className={`px-4 py-2 rounded-none text-sm font-bold focus:outline-none transition duration-150 ease-in-out ${isActive(
+                    item.href
+                  )}`}
                 >
                   {item.label}
                 </button>
@@ -65,7 +92,7 @@ const Header = () => {
                       <Link
                         key={subItem.id}
                         href={`${item.href}?tab=${subItem.id}`}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary transition duration-150 ease-in-out"
+                        className="font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary transition duration-150 ease-in-out"
                       >
                         {subItem.label}
                       </Link>
@@ -76,15 +103,35 @@ const Header = () => {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center">
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="bg-white border border-gray-300 rounded-md text-sm px-2 py-1 focus:outline-none focus:ring-2 focus:ring-primary"
-            >
-              <option value="en">EN</option>
-              <option value="ko">KO</option>
-            </select>
+          <div className="hidden md:flex items-center ml-8">
+            <div className="relative lang-selector">
+              <button
+                onClick={toggleLangMenu}
+                className="flex items-center space-x-2 px-4 py-2 rounded-none text-gray-600 hover:bg-gray-100 focus:outline-none"
+              >
+                <Globe className="w-5 h-5" />
+                <span className="text-sm font-medium">
+                  {language.toUpperCase()}
+                </span>
+              </button>
+
+              {isLangMenuOpen && (
+                <div className="absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg py-1 z-50">
+                  <button
+                    onClick={() => handleLanguageChange("en")}
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => handleLanguageChange("ko")}
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    한국어
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
 
           <button
@@ -129,8 +176,10 @@ const Header = () => {
           {menuItems.map((item) => (
             <div key={item.id} className="py-2">
               <button
-                onClick={() => handleNavigation(item.href, item.subItems)}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:text-primary focus:bg-gray-100 w-full text-left"
+                onClick={() => handleNavigation(item.href, item.subItems || [])}
+                className={`block px-4 py-2 rounded-none text-base font-medium hover:text-primary focus:outline-none w-full text-left ${isActive(
+                  item.href
+                )}`}
               >
                 {item.label}
               </button>
@@ -140,7 +189,7 @@ const Header = () => {
                     <Link
                       key={subItem.id}
                       href={`${item.href}?tab=${subItem.id}`}
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-100 focus:outline-none focus:text-primary focus:bg-gray-100"
+                      className="block px-4 py-2 rounded-none text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-100 focus:outline-none focus:text-primary focus:bg-gray-100"
                       onClick={() => setIsOpen(false)}
                     >
                       {subItem.label}
