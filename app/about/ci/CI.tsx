@@ -69,7 +69,7 @@ const CIShowcase: React.FC = () => {
               src="/mediv-logo-ci.png"
               alt="MEDIV CI"
               layout="fill"
-              objectFit="contain"
+              className="object-contain"
               priority
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

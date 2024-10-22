@@ -60,8 +60,7 @@ const ProjectHistory = () => {
                         src={project.img}
                         alt={project.title}
                         fill
-                        objectFit="contain"
-                        className="rounded-full"
+                        className="object-contain rounded-full"
                       />
                     </div>
                     <span className="text-xs text-gray-600 font-medium text-center w-20 break-words">
@@ -72,7 +71,9 @@ const ProjectHistory = () => {
                 <span className="inline-block bg-green-100 text-green-800 font-semibold text-xs px-2 py-1 rounded-full mb-3">
                   {project.year}
                 </span>
-                <p className="text-neutral-dark mb-4">{project.description}</p>
+                <p className="leading-relaxed text-gray-500 mb-4">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tag.map((tag) => (
                     <span

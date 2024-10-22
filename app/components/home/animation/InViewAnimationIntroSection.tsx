@@ -46,11 +46,11 @@ const InViewAnimationIntroSection: React.FC = () => {
             animate={controls}
             className="space-y-6"
           >
-            <p className="text-xl text-neutral-dark leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               (주)메디브는 의료데이터와 AI 기술을 융합해 의료 소프트웨어를
-              구축하는 전문 기업입니다.
-            </p>
-            <p className="text-xl text-neutral-dark leading-relaxed">
+              구축하는 전문 기업입니다. <br />
+              메디브는 AI와 의료 데이터를 융합하여 혁신적인 솔루션을 제공합니다.
+              <br />
               심전도 분석, 영상 진단, 동물대체시험 검증 플랫폼 등 의료 현장의
               변화를 선도하는 기술을 개발하며,
               <br />

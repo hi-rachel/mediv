@@ -29,12 +29,8 @@ const HistoryTimeline: React.FC = () => {
   });
 
   return (
-    <div className="bg-gray-50 min-h-screen py-16" ref={containerRef}>
+    <div className="bg-gray-50 min-h-screen py-8 pt-6" ref={containerRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 text-center mb-16">
-          회사 연혁
-        </h2>
-
         {history.map((yearData: HistoryYear, yearIndex: number) => (
           <motion.div
             key={yearData.year}
