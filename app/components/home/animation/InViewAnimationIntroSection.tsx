@@ -24,37 +24,33 @@ const InViewAnimationIntroSection: React.FC = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center" ref={ref}>
-          <h2
-            className="leading-snug text-5xl font-semibold text-primary mb-6"
-            style={{ minHeight: "120px" }}
-          >
+          <div className="md:text-5xl text-4xl font-semibold text-primary mb-8">
             <InViewTypingAnimation
               text="AI가 만들어낼 세상,"
               speed={70}
               isInView={isInView}
             />
             <br />
-            <InViewTypingAnimation
-              text="의료에서 미래를 보다"
-              delay={800}
-              speed={70}
-              isInView={isInView}
-            />
-          </h2>
+            <p className="md:mt-4 mt-2">
+              <InViewTypingAnimation
+                text="의료에서 미래를 보다"
+                delay={800}
+                speed={70}
+                isInView={isInView}
+              />
+            </p>
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={controls}
-            className="space-y-6"
+            className="flex-col space-y-6 flex justify-center items-center"
           >
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="min-w-80 sm:px-6 break text-center w-full text-xl text-gray-700 leading-relaxed">
               (주)메디브는 의료데이터와 AI 기술을 융합해 의료 소프트웨어를
-              구축하는 전문 기업입니다. <br />
-              메디브는 AI와 의료 데이터를 융합하여 혁신적인 솔루션을 제공합니다.
-              <br />
-              심전도 분석, 영상 진단, 동물대체시험 검증 플랫폼 등 의료 현장의
-              변화를 선도하는 기술을 개발하며,
-              <br />
-              의료 서비스의 미래를 만들어갑니다.
+              구축하는 전문 기업입니다. 메디브는 AI와 의료 데이터를 융합하여
+              혁신적인 솔루션을 제공합니다. 심전도 분석, 영상 진단, 동물대체시험
+              검증 플랫폼 등 의료 현장의 변화를 선도하는 기술을 개발하며, 의료
+              서비스의 미래를 만들어갑니다.
             </p>
             <div className="mt-10">
               <a
