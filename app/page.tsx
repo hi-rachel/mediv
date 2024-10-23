@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import PartnersSection from "./components/home/partners/PartnersSection";
-import InViewAnimationIntroSection from "./components/home/animation/InViewAnimationIntroSection";
-import InViewAnimationSection from "./components/home/animation/InViewAnimationSection";
-import InViewCountUpAnimation from "./components/home/animation/InViewCountUpAnimation";
+import PartnersSection from "./common/home/partners/PartnersSection";
+import InViewAnimationIntroSection from "./common/home/animation/InViewAnimationIntroSection";
+import InViewAnimationSection from "./common/home/animation/InViewAnimationSection";
+import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimation";
 import slides from "./data/slides";
 import businessModels from "./data/businessModels";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -158,7 +158,7 @@ const HomePage: React.FC = () => {
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={24} duration={2} />+
+                  <InViewCountUpAnimation end={23} duration={2} />+
                 </h3>
                 <p className="text-xl">Global Partners</p>
               </motion.div>
