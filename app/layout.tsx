@@ -2,11 +2,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Mediv - AI-Powered Medical Software Solutions",
+  title: "메디브 - AI 혁신 의료 소프트웨어",
   description:
     "Empowering healthcare professionals with cutting-edge AI technology",
 };
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         <main className="overflow-hidden">{children}</main>
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
