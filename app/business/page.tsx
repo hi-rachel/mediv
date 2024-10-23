@@ -1,9 +1,10 @@
 import { Suspense } from "react";
-import TabSection from "../components/TabSection";
+import TabSection from "../common/TabSection";
+import TabCardSkeleton from "../common/loading/TabCardSkeleton";
 
 const BusinessPage = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<TabCardSkeleton />}>
       <TabSection menuId="business" />
     </Suspense>
   );
