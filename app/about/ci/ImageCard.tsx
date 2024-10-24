@@ -1,4 +1,5 @@
 import { fadeInUp } from "@/app/utils/animations";
+import { downloadImage } from "@/app/utils/helpers";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import Image from "next/image";
@@ -9,21 +10,6 @@ interface ImageCardProps {
   title: string;
   darkMode?: boolean;
 }
-
-const downloadImage = (imageSrc: string, fileName: string): void => {
-  fetch(imageSrc)
-    .then((response) => response.blob())
-    .then((blob) => {
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      window.URL.revokeObjectURL(url);
-      link.remove();
-    });
-};
 
 const ImageCard: React.FC<ImageCardProps> = ({
   src,

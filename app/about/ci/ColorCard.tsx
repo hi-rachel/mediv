@@ -1,19 +1,8 @@
+import { ColorPalette } from "@/app/data/ci";
 import { fadeInUp } from "@/app/utils/animations";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useState } from "react";
-
-interface ColorPalette {
-  name: string;
-  color: string;
-}
-
-export const colorPalette: ColorPalette[] = [
-  { name: "Primary", color: "#262F57" },
-  { name: "Secondary", color: "#32ACB3" },
-  { name: "Accent", color: "#D94157" },
-  { name: "Gray", color: "#C6CACE" },
-];
 
 const ColorCard: React.FC<ColorPalette> = ({ name, color }) => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);

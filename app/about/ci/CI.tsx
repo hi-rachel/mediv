@@ -2,51 +2,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import ImageCard from "./ImageCard";
-import ColorCard, { colorPalette } from "./ColorCard";
+import ColorCard from "./ColorCard";
 import { fadeInUp, staggerContainer } from "@/app/utils/animations";
-
-interface LogoVariation {
-  src: string;
-  alt: string;
-  title: string;
-}
-
-const logoVariations: LogoVariation[] = [
-  { src: "/mediv-logo.png", alt: "MEDIV logo", title: "Standard" },
-  {
-    src: "/mediv-logo-co.png",
-    alt: "MEDIV logo vertical",
-    title: "Vertical Korean",
-  },
-  {
-    src: "/mediv-logo-co2.png",
-    alt: "MEDIV logo horizontal",
-    title: "Horizontal Korean",
-  },
-];
-
-const grayVersion: LogoVariation = {
-  src: "/mediv-logo-gray.png",
-  alt: "MEDIV logo gray",
-  title: "Gray Version",
-};
+import { downloadImage } from "@/app/utils/helpers";
+import { colorPalette, grayVersion, logoVariations } from "@/app/data/ci";
 
 const CIShowcase: React.FC = () => {
-  const downloadImage = (imageSrc: string, fileName: string): void => {
-    fetch(imageSrc)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        window.URL.revokeObjectURL(url);
-        link.remove();
-      });
-  };
-
   return (
     <motion.div
       className="w-full max-w-6xl mx-auto px-4 py-12"
