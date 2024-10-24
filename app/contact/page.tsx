@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { Building2, Mail, Phone, Clock } from "lucide-react";
+import Link from "next/link";
 
 const NaverMap = dynamic(() => import("./NaverMap"), {
   ssr: false,
@@ -19,12 +20,26 @@ const ContactPage = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "전화번호",
-      content: "043-272-2398",
+      content: (
+        <Link
+          href="tel:043-272-2398"
+          className="text-gray-600 hover:text-info transition-colors"
+        >
+          043-272-2398
+        </Link>
+      ),
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "이메일",
-      content: "mediv_admin@mediv.kr",
+      content: (
+        <Link
+          href="mailto:mediv_admin@mediv.kr"
+          className="text-gray-600 hover:text-info transition-colors"
+        >
+          mediv_admin@mediv.kr
+        </Link>
+      ),
     },
     {
       icon: <Clock className="w-6 h-6" />,
