@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import InViewTypingAnimation from "./InViewTypingAnimation";
+import Link from "next/link";
 
 const InViewAnimationIntroSection: React.FC = () => {
   const controls = useAnimation();
@@ -53,12 +54,12 @@ const InViewAnimationIntroSection: React.FC = () => {
               서비스의 미래를 만들어갑니다.
             </p>
             <div className="mt-10">
-              <a
+              <Link
                 href="/about"
                 className="bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition duration-300 text-lg inline-block"
               >
                 회사 소개 보기
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

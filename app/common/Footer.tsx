@@ -42,21 +42,21 @@ const Footer = () => {
             <div className="space-y-2.5">
               <p className="text-sm">
                 <span className="text-gray-400 inline-block w-16">Tel</span>
-                <a
+                <Link
                   href="tel:043-715-2498"
                   className="hover:text-white transition-colors"
                 >
                   043-715-2498
-                </a>
+                </Link>
               </p>
               <p className="text-sm">
                 <span className="text-gray-400 inline-block w-16">Email</span>
-                <a
+                <Link
                   href="mailto:mediv_admin@mediv.kr"
                   className="hover:text-white transition-colors"
                 >
                   mediv_admin@mediv.kr
-                </a>
+                </Link>
               </p>
             </div>
           </div>

@@ -10,6 +10,7 @@ import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimati
 import slides from "./data/slides";
 import businessModels from "./data/businessModels";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const HomePage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -201,9 +202,9 @@ const HomePage: React.FC = () => {
                     Exploring the potential of AI in improving healthcare
                     outcomes.
                   </p>
-                  <a href="/research" className="text-info hover:underline">
+                  <Link href="/research" className="text-info hover:underline">
                     Read More →
-                  </a>
+                  </Link>
                 </motion.div>
               ))}
             </div>
