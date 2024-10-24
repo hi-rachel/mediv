@@ -11,7 +11,7 @@ const Publications: React.FC = () => {
           className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
         >
           <div className="p-6">
-            <div className="text-sm rounded-sm bg-gray-50 p-1 w-fit text-gray-500 mb-4 font-light">
+            <div className="text-sm rounded-sm bg-slate-50 p-1 w-fit text-gray-500 mb-4 font-light">
               {getMonthName(publication.month)}. {publication.year}
             </div>
 

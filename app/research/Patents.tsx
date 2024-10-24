@@ -9,7 +9,7 @@ const Patents: React.FC = () => {
           key={index}
           className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
         >
-          <div className="text-sm text-gray-500 rounded-sm bg-gray-50 p-1 mb-4 w-fit">
+          <div className="text-sm text-gray-500 rounded-sm bg-slate-50 p-1 mb-4 w-fit">
             {getMonthName(patent.month)}. {patent.year}
           </div>
 
