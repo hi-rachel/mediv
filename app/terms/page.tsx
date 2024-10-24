@@ -15,10 +15,10 @@ const PrivacyPolicyPage = () => {
         content: (
           <div className="prose prose-lg text-gray-600">
             <p className="leading-relaxed">
-              <strong>주식회사 메디브(이하 "메디브")</strong>는 이용자의
-              개인정보 보호를 매우 중요시하며, 개인정보처리자가 준수해야 하는
-              개인정보 보호법 등 대한민국의 개인정보 관련 법령 및 개인정보
-              보호지침 등을 준수합니다.
+              <strong>주식회사 메디브(이하 &quot;메디브&quot;)</strong>는
+              이용자의 개인정보 보호를 매우 중요시하며, 개인정보처리자가
+              준수해야 하는 개인정보 보호법 등 대한민국의 개인정보 관련 법령 및
+              개인정보 보호지침 등을 준수합니다.
             </p>
             <p className="mt-4">
               이에 메디브는 개인정보 보호법 제30조에 따라 이용자의 개인정보를
