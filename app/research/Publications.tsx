@@ -1,5 +1,6 @@
 import publications from "@/app/data/publications";
 import Link from "next/link";
+import { getMonthName } from "../utils/helpers";
 
 const Publications: React.FC = () => {
   return (
@@ -10,12 +11,18 @@ const Publications: React.FC = () => {
           className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
         >
           <div className="p-6">
-            <span className="inline-block px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-2">
+            <div className="text-sm rounded-sm bg-gray-50 p-1 w-fit text-gray-500 mb-4 font-light">
+              {getMonthName(publication.month)}. {publication.year}
+            </div>
+
+            <span className="inline-block px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
               {publication.category}
             </span>
-            <h3 className="text-xl font-semibold mb-2">{publication.title}</h3>
+            <h3 className="text-xl font-semibold mb-4">{publication.title}</h3>
             <p className="text-gray-600 mb-2">{publication.author}</p>
-            <p className="text-gray-500 text-sm">{publication.publication}</p>
+            {publication.publication && (
+              <p className="text-gray-500 text-sm">{publication.publication}</p>
+            )}
           </div>
           <div className="px-6 py-4 bg-gray-50">
             <Link
