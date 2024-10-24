@@ -6,8 +6,9 @@ const slides = [
   },
   {
     image: "/main2.webp",
-    title: "Personalized Treatment",
-    description: "Tailoring treatments to individual patient needs.",
+    title: "Custom Software Development",
+    description:
+      "Delivering custom software for superior performance and user experience.",
   },
   {
     image: "/main3.webp",
