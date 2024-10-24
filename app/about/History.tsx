@@ -52,20 +52,22 @@ const HistoryTimeline: React.FC = () => {
                 (event: HistoryEvent, eventIndex: number) => (
                   <motion.div
                     key={eventIndex}
-                    className="flex items-start gap-8 relative"
+                    className="flex items-start md:gap-8 relative gap-0"
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.5, delay: eventIndex * 0.1 }}
                   >
-                    <div className="w-32 flex-shrink-0 text-right">
+                    <div className="md:w-28 w-24 flex-shrink-0 md:text-right text-center">
                       <span className="text-lg font-semibold text-secondary">
                         {event.month}
                       </span>
                     </div>
                     <div className="flex-grow">
                       <div className="w-3 h-3 bg-primary rounded-full absolute -left-[5px] top-2"></div>
-                      <p className="text-xl text-gray-800">{event.title}</p>
+                      <p className="md:text-xl text-lg text-gray-800">
+                        {event.title}
+                      </p>
                     </div>
                   </motion.div>
                 )
