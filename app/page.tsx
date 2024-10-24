@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import PartnersSection from "./common/home/partners/PartnersSection";
 import InViewAnimationIntroSection from "./common/home/animation/InViewAnimationIntroSection";
 import InViewAnimationSection from "./common/home/animation/InViewAnimationSection";
@@ -14,26 +14,43 @@ import Link from "next/link";
 
 const HomePage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // 슬라이드 자동 변경 타이머 설정
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+    startTimer(); // 컴포넌트 마운트 시 타이머 시작
 
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current); // 컴포넌트 언마운트 시 타이머 제거
+    };
+  }, [currentSlide]);
+
+  // 타이머 시작
+  const startTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current); // 기존 타이머 제거
+    timerRef.current = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 10000);
+  };
+
+  // 이전 슬라이드로 이동
   const goToPreviousSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? slides.length - 1 : prevSlide - 1
     );
+    startTimer(); // 타이머 리셋
   };
 
+  // 다음 슬라이드로 이동
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    startTimer(); // 타이머 리셋
   };
 
+  // 특정 슬라이드로 이동
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
+    startTimer(); // 타이머 리셋
   };
 
   const fadeInUp = {
@@ -44,7 +61,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-neutral">
       {/* Hero Section */}
-      <section className="relative" style={{ height: "calc(100vh - 4rem)" }}>
+      <section className="relative h-[calc(100vh-4rem)]">
         {slides.map((slide, index) => (
           <motion.div
             key={index}
@@ -60,13 +77,15 @@ const HomePage: React.FC = () => {
               objectFit="cover"
               priority
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50" />
+            <div className="absolute inset-0 bg-primary bg-opacity-60" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white">
-                <h1 className="text-5xl font-extrabold mb-4 tracking-tight">
+                <h1 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight">
                   {slide.title}
                 </h1>
-                <p className="text-lg mb-8 font-light">{slide.description}</p>
+                <p className="px-16 text-md md:text-xl mb-8 font-light">
+                  {slide.description}
+                </p>
               </div>
             </div>
           </motion.div>
