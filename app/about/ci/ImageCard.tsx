@@ -24,7 +24,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
     variants={fadeInUp}
   >
     <h3
-      className={`text-xl font-medium mb-4 ${
+      className={`text-lg sm:text-xl font-medium mb-4 ${
         darkMode ? "text-white" : "text-primary"
       }`}
     >

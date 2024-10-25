@@ -62,7 +62,9 @@ const Vision = () => {
           transition={{ duration: 0.6 }}
           className="text-center relative py-12"
         >
-          <h2 className="text-5xl font-extrabold text-primary">VISION</h2>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-primary">
+            VISION
+          </h2>
         </motion.div>
 
         {/* Vision Content */}
@@ -82,7 +84,7 @@ const Vision = () => {
               className="drop-shadow-2xl"
             />
           </div>
-          <div className="md:text-3xl text-center z-10 mb-16">
+          <div className="text-center z-10 mb-16">
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

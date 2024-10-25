@@ -41,7 +41,7 @@ const HistoryTimeline: React.FC = () => {
             transition={{ duration: 0.5, delay: yearIndex * 0.1 }}
           >
             <div className="sticky top-8 mb-8 bg-gray-50 pt-8 pb-4 z-10">
-              <h3 className="text-6xl sm:text-7xl md:text-8xl font-bold text-primary">
+              <h3 className="text-5xl md:text-8xl font-bold text-primary">
                 {yearData.year}
               </h3>
             </div>

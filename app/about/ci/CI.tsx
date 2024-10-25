@@ -16,14 +16,14 @@ const CIShowcase: React.FC = () => {
       variants={staggerContainer}
     >
       <motion.h1
-        className="text-5xl font-bold text-primary mb-12 text-center"
+        className="text-4xl md:text-5xl font-bold text-primary mb-12 text-center"
         variants={fadeInUp}
       >
         MEDIV Corporate Identity
       </motion.h1>
 
       <motion.section className="mb-20" variants={fadeInUp}>
-        <h2 className="text-3xl font-medium text-primary mb-6">Logo</h2>
+        <h2 className="text-3xl font-semibold text-primary mb-6">Logo</h2>
         <div className="flex justify-center items-center">
           <div className="relative w-full h-80 group">
             <Image
@@ -49,7 +49,7 @@ const CIShowcase: React.FC = () => {
       </motion.section>
 
       <motion.section className="mb-20" variants={fadeInUp}>
-        <h2 className="text-3xl font-medium text-primary mb-6">
+        <h2 className="font-semibold text-3xl text-primary mb-6">
           Logo Variations
         </h2>
         <motion.div
@@ -71,7 +71,7 @@ const CIShowcase: React.FC = () => {
       </motion.section>
 
       <motion.section className="mb-20" variants={fadeInUp}>
-        <h2 className="text-3xl font-medium text-primary mb-6">Logo Usage</h2>
+        <h2 className="text-3xl font-semibold text-primary mb-6">Logo Usage</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ImageCard
             src="/mediv-logo.png"
@@ -88,7 +88,7 @@ const CIShowcase: React.FC = () => {
       </motion.section>
 
       <motion.section variants={fadeInUp}>
-        <h2 className="text-3xl font-medium text-primary mb-6">
+        <h2 className="text-3xl font-semibold text-primary mb-6">
           Color Palette
         </h2>
         <motion.div
