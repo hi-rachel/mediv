@@ -89,7 +89,7 @@ const Vision = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="w-fit text-3xl mb-6 font-extrabold bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"
+              className="text-3xl mb-6 font-extrabold bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"
             >
               Medical + Innovative Vision
             </motion.p>
@@ -124,7 +124,6 @@ const Vision = () => {
                 variants={itemVariants}
                 whileHover={{
                   scale: 1.05,
-                  rotate: [0, 1, -1, 0],
                   transition: {
                     duration: 0.3,
                     ease: "easeInOut",
@@ -137,7 +136,7 @@ const Vision = () => {
                     {value.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-4 group-hover:text-info transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors duration-300">
                       {value.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
