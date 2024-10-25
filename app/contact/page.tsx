@@ -22,10 +22,10 @@ const ContactPage = () => {
       title: "전화번호",
       content: (
         <Link
-          href="tel:043-272-2398"
+          href="tel:043-715-2498"
           className="text-gray-600 hover:text-info transition-colors"
         >
-          043-272-2398
+          043-715-2498
         </Link>
       ),
     },
