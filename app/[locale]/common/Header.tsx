@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
@@ -8,11 +8,13 @@ import { Globe } from "lucide-react";
 import menuItems from "../data/menuItems";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
-  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [language, setLanguage] = useState(
+    pathname.startsWith("/ko") ? "ko" : "en"
+  );
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleLangMenu = () => setIsLangMenuOpen(!isLangMenuOpen);
@@ -39,11 +41,6 @@ const Header = () => {
     };
   }, []);
 
-  const handleLanguageChange = (lang: string) => {
-    setLanguage(lang);
-    setIsLangMenuOpen(false);
-  };
-
   const handleNavigation = (href: string, subItems: { id: string }[]) => {
     if (subItems && subItems.length > 0) {
       router.push(`${href}?tab=${subItems[0].id}`);
@@ -51,6 +48,18 @@ const Header = () => {
       router.push(href);
     }
     setIsOpen(false);
+  };
+
+  const switchLanguage = (lang: string) => {
+    // Remove the existing language prefix from the pathname, if any
+    const newPathname = pathname.replace(/^\/(en|ko)/, "");
+
+    // Set the new language and close the menu
+    setLanguage(lang);
+    setIsLangMenuOpen(false);
+
+    // Navigate to the new language path
+    router.push(`/${lang}${newPathname}`);
   };
 
   const isActive = (href: string) => {
@@ -76,16 +85,19 @@ const Header = () => {
           <div className="ml-5 hidden md:flex items-center space-x-6 lg:space-x-12">
             {menuItems.map((item) => (
               <div key={item.id} className="relative group">
-                <button
-                  onClick={() =>
-                    handleNavigation(item.href, item.subItems || [])
+                <Link
+                  href={
+                    item.subItems && item.subItems.length > 0
+                      ? `${item.href}?tab=${item.subItems[0].id}`
+                      : item.href
                   }
                   className={`px-4 py-2 rounded-none text-sm font-bold focus:outline-none transition duration-150 ease-in-out ${isActive(
                     item.href
                   )}`}
+                  onClick={() => setIsOpen(false)} // Close the menu on navigation
                 >
                   {item.label}
-                </button>
+                </Link>
                 {item.subItems && item.subItems.length > 0 && (
                   <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                     {item.subItems.map((subItem) => (
@@ -118,13 +130,13 @@ const Header = () => {
               {isLangMenuOpen && (
                 <div className="font-semibold absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg py-1 z-50">
                   <button
-                    onClick={() => handleLanguageChange("en")}
+                    onClick={() => switchLanguage("en")}
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     English
                   </button>
                   <button
-                    onClick={() => handleLanguageChange("ko")}
+                    onClick={() => switchLanguage("ko")}
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     한국어

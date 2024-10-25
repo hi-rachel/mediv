@@ -2,7 +2,7 @@
 // [x] 왼쪽, 오른쪽 애니메이션 마우스 호버시 멈추기
 // [] 모바일 환경에서 최소 3개 정도는 보이게 (작게) 설정
 
-import partners from "@/app/data/partners";
+import partners from "@/app/[locale]/data/partners";
 import PartnersRowAnimation from "./PartnersRowAnimation";
 
 const PartnersSection = () => {

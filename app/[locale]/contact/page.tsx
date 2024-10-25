@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { Building2, Mail, Phone, Clock } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const NaverMap = dynamic(() => import("./NaverMap"), {
   ssr: false,

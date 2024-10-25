@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import history from "@/app/data/history";
+import history from "../data/history";
 
 interface HistoryEvent {
   month: string;

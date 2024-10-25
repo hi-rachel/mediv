@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import InViewTypingAnimation from "./InViewTypingAnimation";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const InViewAnimationIntroSection: React.FC = () => {
+  const t = useTranslations("Home");
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.3, once: true });
@@ -27,14 +29,14 @@ const InViewAnimationIntroSection: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center" ref={ref}>
           <div className="md:text-5xl text-4xl font-semibold text-primary mb-8">
             <InViewTypingAnimation
-              text="AI가 만들어낼 세상,"
+              text={t("title1")}
               speed={70}
               isInView={isInView}
             />
             <br />
             <p className="md:mt-4 mt-2">
               <InViewTypingAnimation
-                text="의료에서 미래를 보다"
+                text={t("title2")}
                 delay={800}
                 speed={70}
                 isInView={isInView}
@@ -47,11 +49,7 @@ const InViewAnimationIntroSection: React.FC = () => {
             className="flex-col space-y-6 flex justify-center items-center"
           >
             <p className="min-w-80 sm:px-6 break text-center w-full text-xl text-gray-700 leading-relaxed">
-              (주)메디브는 의료데이터와 AI 기술을 융합해 의료 소프트웨어를
-              구축하는 전문 기업입니다. 메디브는 AI와 의료 데이터를 융합하여
-              혁신적인 솔루션을 제공합니다. 심전도 분석, 영상 진단, 동물대체시험
-              검증 플랫폼 등 의료 현장의 변화를 선도하는 기술을 개발하며, 의료
-              서비스의 미래를 만들어갑니다.
+              {t("description")}
             </p>
             <div className="mt-10">
               <Link

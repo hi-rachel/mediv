@@ -10,9 +10,11 @@ import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimati
 import slides from "./data/slides";
 import businessModels from "./data/businessModels";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const HomePage: React.FC = () => {
+  const t = useTranslations("Home");
   const [currentSlide, setCurrentSlide] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -180,7 +182,7 @@ const HomePage: React.FC = () => {
                 <h3 className="text-6xl font-bold mb-4">
                   <InViewCountUpAnimation end={23} duration={2} />+
                 </h3>
-                <p className="text-xl">Global Partners</p>
+                <p className="text-xl">Our Partners</p>
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">

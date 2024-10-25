@@ -1,6 +1,5 @@
-import patents from "@/app/data/patents";
-import { getMonthName } from "../utils/helpers";
-
+import patents from "../data/patents";
+import { getMonthName } from "@/app/utils/helpers";
 const Patents: React.FC = () => {
   return (
     <div className="space-y-4">

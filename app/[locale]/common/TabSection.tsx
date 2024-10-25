@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import menuItems from "../data/menuItems";
-import useTabState from "../hooks/useTabState";
+import useTabState from "@/app/hooks/useTabState";
 import ProjectHistory from "../business/ProjectHistory";
 import AwardsAndCertifications from "../business/AwardsAndCertifications";
 import Vision from "../about/Vision";

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import projects from "@/app/data/projects";
+import projects from "../data/projects";
 
 const ProjectHistory = () => {
   const [selectedTag, setSelectedTag] = useState("ALL");

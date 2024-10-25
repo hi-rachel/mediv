@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Trophy } from "lucide-react";
-import awards from "@/app/data/awards";
-import certifications from "@/app/data/certifications";
+import awards from "@/app/[locale]/data/awards";
+import certifications from "@/app/[locale]/data/certifications";
 
 const AwardsAndCertifications = () => {
   return (
