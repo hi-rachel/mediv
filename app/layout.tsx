@@ -7,7 +7,7 @@ import ScrollToTopButton from "./common/ScrollToButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "메디브 - AI 혁신 의료 소프트웨어",
+  title: "Mediv",
   description:
     "Empowering healthcare professionals with cutting-edge AI technology",
 };
