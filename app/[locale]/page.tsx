@@ -10,11 +10,11 @@ import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimati
 import slides from "./data/slides";
 import businessModels from "./data/businessModels";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
 const HomePage: React.FC = () => {
-  const t = useTranslations("Home");
+  // const t = useTranslations("Home");
   const [currentSlide, setCurrentSlide] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
