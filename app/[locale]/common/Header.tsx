@@ -51,15 +51,16 @@ const Header = () => {
   };
 
   const switchLanguage = (lang: string) => {
-    // Remove the existing language prefix from the pathname, if any
+    const params = new URLSearchParams(window.location.search);
+
     const newPathname = pathname.replace(/^\/(en|ko)/, "");
 
-    // Set the new language and close the menu
+    const queryParams = params.toString() ? `?${params.toString()}` : "";
+
+    // 언어 경로 변경 및 상태 유지를 위한 URL 업데이트
+    router.push(`/${lang}${newPathname}${queryParams}`);
     setLanguage(lang);
     setIsLangMenuOpen(false);
-
-    // Navigate to the new language path
-    router.push(`/${lang}${newPathname}`);
   };
 
   const isActive = (href: string) => {
