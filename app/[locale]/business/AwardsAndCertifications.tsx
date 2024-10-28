@@ -1,16 +1,29 @@
 import { motion } from "framer-motion";
 import { Trophy } from "lucide-react";
-import awards from "@/app/[locale]/data/awards";
-import certifications from "@/app/[locale]/data/certifications";
+import { useTranslations } from "next-intl";
 
-const AwardsAndCertifications = () => {
+interface Award {
+  title: string;
+  year: number;
+}
+
+interface Certification {
+  src: string;
+  alt: string;
+}
+
+const AwardsAndCertifications: React.FC = () => {
+  const t = useTranslations("AwardsAndCertifications");
+  const awards = t.raw("awards") as Award[];
+  const certifications = t.raw("certifications") as Certification[];
+
   return (
     <div className="bg-gray-100 min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* 수상 섹션 */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-8 text-primary">
-            수상 내역
+            {t("awardsSectionTitle")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {awards.map((award, index) => (
@@ -38,7 +51,9 @@ const AwardsAndCertifications = () => {
 
         {/* 인증 섹션 */}
         <section>
-          <h2 className="text-3xl font-semibold mb-8 text-primary">인증</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-primary">
+            {t("certificationsSectionTitle")}
+          </h2>
           <div className="flex flex-wrap gap-8">
             {certifications.map((cert, index) => (
               <motion.div

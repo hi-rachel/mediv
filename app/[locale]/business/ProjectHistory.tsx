@@ -2,11 +2,23 @@ import { useState } from "react";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import projects from "../data/projects";
+import { useTranslations } from "next-intl";
+
+interface Project {
+  title: string;
+  year: string;
+  tag: string[];
+  description: string;
+  department: string;
+  img: string;
+}
 
 const ProjectHistory = () => {
-  const [selectedTag, setSelectedTag] = useState("ALL");
+  const t = useTranslations("Projects");
 
+  const projects = t.raw("list") as Project[];
+
+  const [selectedTag, setSelectedTag] = useState("ALL");
   const tags = ["ALL", ...new Set(projects.flatMap((project) => project.tag))];
 
   const filteredProjects =

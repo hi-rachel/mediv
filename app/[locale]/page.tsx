@@ -7,16 +7,33 @@ import PartnersSection from "./common/home/partners/PartnersSection";
 import InViewAnimationIntroSection from "./common/home/animation/InViewAnimationIntroSection";
 import InViewAnimationSection from "./common/home/animation/InViewAnimationSection";
 import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimation";
-import slides from "./data/slides";
 import businessModels from "./data/businessModels";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-// import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const HomePage: React.FC = () => {
-  // const t = useTranslations("Home");
+  const t = useTranslations("Home");
   const [currentSlide, setCurrentSlide] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const slides = [
+    {
+      image: "/main.webp",
+      title: "AI-Powered Diagnostics",
+      description: t("slides.0.description"),
+    },
+    {
+      image: "/main2.webp",
+      title: "Custom Software Development",
+      description: t("slides.1.description"),
+    },
+    {
+      image: "/main3.webp",
+      title: "Data-Driven Healthcare",
+      description: t("slides.2.description"),
+    },
+  ];
 
   // 슬라이드 자동 변경 타이머 설정
   useEffect(() => {
@@ -180,13 +197,13 @@ const HomePage: React.FC = () => {
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={23} duration={2} />+
+                  <InViewCountUpAnimation end={7} duration={2} />+
                 </h3>
                 <p className="text-xl">Our Partners</p>
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={4000} duration={3} />+
+                  <InViewCountUpAnimation end={100000} duration={3} />+
                 </h3>
                 <p className="text-xl">Analyzed Medical Data</p>
               </motion.div>

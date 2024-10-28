@@ -5,9 +5,54 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
-import menuItems from "../data/menuItems";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+  const t = useTranslations("Menu");
+  const menuItems = [
+    {
+      id: "about",
+      label: t("about"),
+      href: "/about",
+      subItems: [
+        { id: "vision", label: t("vision"), href: "/about/?tab=vision" },
+        { id: "history", label: t("history"), href: "/about/?tab=history" },
+        {
+          id: "organization",
+          label: t("organization"),
+          href: "/about/?tab=organization",
+        },
+        { id: "ci", label: t("ci"), href: "/about/?tab=ci" },
+      ],
+    },
+    {
+      id: "business",
+      label: t("business"),
+      href: "/business",
+      subItems: [
+        {
+          id: "projects",
+          label: t("projects"),
+          href: "/business/?tab=projects",
+        },
+        { id: "awards", label: t("awards"), href: "/business/?tab=awards" },
+      ],
+    },
+    {
+      id: "research",
+      label: t("research"),
+      href: "/research",
+      subItems: [
+        {
+          id: "publications",
+          label: t("publications"),
+          href: "/research/?tab=publications",
+        },
+        { id: "patents", label: t("patents"), href: "/research/?tab=patents" },
+      ],
+    },
+    { id: "contact", label: t("contact"), href: "/contact" },
+  ];
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +60,15 @@ const Header = () => {
   const [language, setLanguage] = useState(
     pathname.startsWith("/ko") ? "ko" : "en"
   );
+
+  const localizedMenuItems = menuItems.map((item) => ({
+    ...item,
+    label: t(item.id),
+    subItems: item.subItems?.map((subItem) => ({
+      ...subItem,
+      label: t(subItem.id),
+    })),
+  }));
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleLangMenu = () => setIsLangMenuOpen(!isLangMenuOpen);
@@ -52,12 +106,8 @@ const Header = () => {
 
   const switchLanguage = (lang: string) => {
     const params = new URLSearchParams(window.location.search);
-
     const newPathname = pathname.replace(/^\/(en|ko)/, "");
-
     const queryParams = params.toString() ? `?${params.toString()}` : "";
-
-    // 언어 경로 변경 및 상태 유지를 위한 URL 업데이트
     router.push(`/${lang}${newPathname}${queryParams}`);
     setLanguage(lang);
     setIsLangMenuOpen(false);
@@ -84,7 +134,7 @@ const Header = () => {
           </Link>
 
           <div className="ml-5 hidden md:flex items-center space-x-6 lg:space-x-12">
-            {menuItems.map((item) => (
+            {localizedMenuItems.map((item) => (
               <div key={item.id} className="relative group">
                 <Link
                   href={
@@ -95,7 +145,7 @@ const Header = () => {
                   className={`px-4 py-2 rounded-none text-sm font-bold focus:outline-none transition duration-150 ease-in-out ${isActive(
                     item.href
                   )}`}
-                  onClick={() => setIsOpen(false)} // Close the menu on navigation
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
@@ -186,7 +236,7 @@ const Header = () => {
         </div>
 
         <div className={`${isOpen ? "block" : "hidden"} md:hidden mt-4`}>
-          {menuItems.map((item) => (
+          {localizedMenuItems.map((item) => (
             <div key={item.id} className="py-2">
               <button
                 onClick={() => handleNavigation(item.href, item.subItems || [])}

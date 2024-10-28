@@ -1,14 +1,37 @@
 {
   "Home": {
+    "slides": [
+      { "description": "첨단 AI를 통해 의료 기술 혁신을 이룹니다." },
+      {
+        "description": "뛰어난 성능과 사용자 경험을 위한 맞춤형 소프트웨어를 제공합니다."
+      },
+      {
+        "description": "빅데이터를 활용하여 더 나은 건강 결과를 만들어냅니다."
+      }
+    ],
     "title1": "AI가 만들어낼 세상,",
     "title2": "의료에서 미래를 보다",
     "description": "(주)메디브는 의료데이터와 AI 기술을 융합해 의료 소프트웨어를 구축하는 전문 기업입니다. 메디브는 AI와 의료 데이터를 융합하여 혁신적인 솔루션을 제공합니다. 심전도 분석, 영상 진단, 동물대체시험 검증 플랫폼 등 의료 현장의 변화를 선도하는 기술을 개발하며, 의료 서비스의 미래를 만들어갑니다.",
+    "aboutCTA": "회사 소개 보기",
     "businessModel": {},
     "numData": {},
     "latestResearch": {},
     "ourPartners": {}
   },
-  "Header": {},
+  "Menu": {
+    "about": "ABOUT",
+    "business": "BUSINESS",
+    "research": "RESEARCH",
+    "contact": "CONTACT",
+    "vision": "비전",
+    "history": "연혁",
+    "organization": "조직도",
+    "ci": "CI",
+    "projects": "수행 사업",
+    "awards": "수상/인증",
+    "publications": "논문",
+    "patents": "특허"
+  },
   "Vision": {
     "title": "Medical + Innovative Vision",
     "subTitle1": "글로벌 의료 SW 기업을 향해 도약하는 메디브입니다.",
@@ -80,9 +103,358 @@
       }
     ]
   },
-  "Business": {},
-  "Research": {},
-  "Contact": {},
-  "Footer": {},
+  "AwardsAndCertifications": {
+    "awardsSectionTitle": "수상 내역",
+    "certificationsSectionTitle": "인증",
+    "awards": [
+      {
+        "title": "스포츠서울 2024 혁신한국인 & POWER KOREA 대상 수상",
+        "year": 2024
+      },
+      {
+        "title": "충북창조경제혁신센터 주관 2024 창업경진대회 혁신상 수상",
+        "year": 2024
+      },
+      {
+        "title": "머니투데이 제 9회 2023 대한민국 AI부분 우수기업대상 수상",
+        "year": 2023
+      }
+    ],
+    "certifications": [
+      { "src": "/벤처기업.webp", "alt": "혁신성장유형 벤처기업 인증" },
+      { "src": "/기업부설연구소.webp", "alt": "기업부설연구소 인증" }
+    ]
+  },
+  "Projects": {
+    "list": [
+      {
+        "title": "충북 청주 강소특구 지역 특화기업 성장지원 사업",
+        "year": "2024",
+        "tag": ["AI"],
+        "description": "부정맥 진단 AI 시스템(부정맥 진단 및 Report 출력 플랫폼) 개발",
+        "department": "연구개발특구진흥재단",
+        "img": "/연구개발특구진흥재단.webp"
+      },
+      {
+        "title": "국가기술거래플랫폼 서비스 사업 기술사업화 프로그램",
+        "year": "2024",
+        "tag": ["SW", "AI"],
+        "description": "심전도 신호를 이용한 인공지능 기반의 심근경색 진단 시스템 기술사업화",
+        "department": "산업통산자원부",
+        "img": "/national-logo.webp"
+      },
+      {
+        "title": "2024년도 소재부품산업기술개발기반구축사업",
+        "year": "2024",
+        "tag": ["SW", "AI"],
+        "description": "미세생리시스템 기반 의약품 독성평가를 위한 AI 기반 소프트웨어 및 검증 플랫폼 개발을 목표로 진행중인 사업",
+        "department": "산업통상자원부",
+        "img": "/national-logo.webp"
+      },
+      {
+        "title": "심전도 신호를 이용한 인공지능 기반의 심근경색 진단 시스템의 고도화를 위한 기술사업화 프로젝트",
+        "year": "2024",
+        "tag": ["SW", "AI"],
+        "description": "주요 대학병원과 협력하여 AI 기반 진단 시스템 개발 및 구축",
+        "department": "충북대학교 산학협력단",
+        "img": "/충북대학교의과대학.webp"
+      },
+      {
+        "title": "검색 증강 생성 기술을 활용한 의과대학 CPX 학습 플랫폼 개발",
+        "year": "2024",
+        "tag": ["AI"],
+        "description": "검색 증상 생성 기술을 활용한 언어모델 기반의 의대생 CPX 학습 플랫폼에 대한 기술 특허를 획득",
+        "department": "청주상공회의소",
+        "img": "/청주상공회의소.webp"
+      },
+      {
+        "title": "원격환자감시 헬스케어 인공지능 서비스를 위한 블록체인 기반 의료분석정보 감사추적 관리 솔루션",
+        "year": "2023",
+        "tag": ["SW"],
+        "description": "의료분야에서 활용되고 있는 EMR, 분석SW 등의 사용자 로그를 추적하고, 이를 안전하게 추출할 수 있는 감사추적관리 솔루션을 제공",
+        "department": "과학기술정보통신부",
+        "img": "/national-logo.webp"
+      },
+      {
+        "title": "AI 기반 심전도 분석기술 및 분석 플랫폼 개발",
+        "year": "2023",
+        "tag": ["SW", "AI"],
+        "description": "패치형 심전도에서 수집된 데이터를 분석하는 AI모델을 개발하고, 이를 전문가가 분석할 수 있는 전용 플랫폼을 제공",
+        "department": "(재)SCL",
+        "img": "/서울의과학연구소.webp"
+      },
+      {
+        "title": "의료AI 개발용 의료데이터베이스 구축 솔루션",
+        "year": "2023",
+        "tag": ["SW"],
+        "description": "메디브가 가지고 있는 의료데이터 자원을 의료AI 개발에 관심있는 연구자에 제공할 수 있는 플랫폼을 제공",
+        "department": "중소벤처기업부",
+        "img": "/national-logo.webp"
+      },
+      {
+        "title": "스마트시티챌린지 - 충북 스마트 응급의료 빅데이터 플랫폼 구축 사업",
+        "year": "2023",
+        "tag": ["SW"],
+        "description": "스마트 응급의료 서비스 3세부에서 개발하는 충북 스마트 응급의료 빅데이터 플랫폼의 구축에 대한 컨설팅을 제공",
+        "department": "국토교통부",
+        "img": "/national-logo.webp"
+      },
+      {
+        "title": "인공지능 광학문자인식 기술 기반 심전도 스캔 영상의 텍스트 변환 기술 개발 연구",
+        "year": "2022",
+        "tag": ["AI"],
+        "description": "심전도 이미지를 디지털신호화하여 AI, 빅데이터 등의 개발에 활용할 수 있는 심전도 데이터베이스 생성 기술을 제공",
+        "department": "충남대학교병원",
+        "img": "/충남대학교병원.webp"
+      },
+      {
+        "title": "AI 개발용 의료데이터 구축 솔루션",
+        "year": "2022",
+        "tag": ["AI"],
+        "description": "의료분야에서 인공지능 개발에 필요한 의료데이터의 수집 및 전처리를 제공하는 솔루션을 개발",
+        "department": "과학기술정보통신부",
+        "img": "/national-logo.webp"
+      }
+    ]
+  },
+  "Publications": {
+    "list": [
+      {
+        "tag": ["Biosignal"],
+        "title": "Prognostic prediction of sepsis patient using transformer with skip connected token for tabular data",
+        "author": [
+          "Jee-Woo Choi",
+          "Minuk Yang",
+          "Jae-Woo Kim",
+          "Yoon Mi Shin",
+          "Yong-Goo Shin",
+          "Seung Park"
+        ],
+        "publication": "Artificial Intelligence in Medicine (IF 7.5)",
+        "href": "https://www.sciencedirect.com/science/article/abs/pii/S0933365724000460",
+        "year": 2024,
+        "month": 1
+      },
+      {
+        "tag": ["GAN"],
+        "title": "A Novel Generator with Auxiliary Branch for Improving GAN performance",
+        "author": ["Seung Park", "Yong-Goo Shin"],
+        "publication": "IEEE Transactions on Neural Networks and Learning Systems (IF 14.26)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/38347691/#",
+        "year": 2024,
+        "month": 1
+      },
+      {
+        "tag": ["Biosignal"],
+        "title": "FT-GAT: Graph neural network for predicting spontaneous breathing trial success in patients with mechanical ventilation",
+        "author": [
+          "Geun-Hyeong Kim",
+          "Jae-Woo Kim",
+          "Ka Hyun Kim",
+          "Hyeran Kang",
+          "Jae Young Moon",
+          "Yoon Mi Shin",
+          "Seung Park"
+        ],
+        "publication": "Computer methods and programs in biomedicine (IF 7.03)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/37336152/",
+        "year": 2023,
+        "month": 6
+      },
+      {
+        "tag": ["Biosignal"],
+        "title": "Real-Time Prediction for Neonatal Endotracheal Intubation Using Multimodal Transformer Network",
+        "author": [
+          "Jueng-Eun Im",
+          "Shin-Ae Yoon",
+          "Yoon Mi Shin",
+          "Seung Park"
+        ],
+        "publication": "IEEE Journal of Biomedical and Health Informatics (IF 7.02)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/37067962/",
+        "year": 2023,
+        "month": 4
+      },
+      {
+        "tag": ["Biosignal"],
+        "title": "Predicting the Need for Intubation Within 3 Hours in the Neonatal Intensive Care Unit Using a Multimodal Deep Neural Network",
+        "author": [
+          "Jueng-Eun Im",
+          "Seung Park",
+          "Yoo-Jin Kim",
+          "Shin Ae Yoon",
+          "Ji Hyuk Lee"
+        ],
+        "publication": "Scientific Reports (IF 5)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/37069174/",
+        "year": 2023,
+        "month": 4
+      },
+      {
+        "tag": ["Biosignal"],
+        "title": "Multimodal Neural Network for Recurrence Prediction of Papillary Thyroid Carcinoma",
+        "author": [
+          "Geun-Hyeong Kim",
+          "Dong-Hwa Lee",
+          "Jee-Woo Choi",
+          "Hyun-Jeong Jeon",
+          "Seung Park"
+        ],
+        "publication": "Advanced Intelligent System (IF 7.29)",
+        "href": "https://onlinelibrary.wiley.com/doi/10.1002/aisy.202200365",
+        "year": 2023,
+        "month": 1
+      },
+      {
+        "tag": ["Biosignal"],
+        "title": "Deep Learning Model for Predicting Rhythm Outcomes after Radiofrequency Catheter Ablation In Patients with Atrial fibrillation",
+        "author": ["Dae-In Lee", "Mi-Jung Park", "Jee-Woo Choi", "Seung Park"],
+        "publication": "Journal of Healthcare Engineering (IF 4.22)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/36124238/",
+        "year": 2022,
+        "month": 9
+      },
+      {
+        "tag": ["Biosignal"],
+        "title": "Automated Diagnosis of Atrial Fibrillation Using ECG Component-Aware Transformer",
+        "author": ["Min-Uk Yang", "Dae-In Lee", "Seung Park"],
+        "publication": "Computers in Biology and Medicine (IF 6.69)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/36179512/",
+        "year": 2022,
+        "month": 9
+      },
+      {
+        "tag": ["GAN"],
+        "title": "Image generation with self pixel-wise normalization",
+        "author": [
+          "Yoon-Jae Yeo",
+          "Min-Cheol Sagong",
+          "Seung Park",
+          "Sung-Jea Ko",
+          "Yong-Goo Shin"
+        ],
+        "publication": "Applied Intelligence (IF 5.02)",
+        "href": "https://link.springer.com/article/10.1007/s10489-022-04007-z",
+        "year": 2022,
+        "month": 9
+      },
+      {
+        "tag": ["GAN"],
+        "title": "Generative Convolution Layer for Image Generation",
+        "author": ["Seung Park", "Yong-Goo Shin"],
+        "publication": "Neural Networks (IF 9.66)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/35605302/",
+        "year": 2022,
+        "month": 8
+      },
+      {
+        "tag": ["GAN"],
+        "title": "Effective Shortcut Technique for Generative Adversarial Networks",
+        "author": ["Seung Park", "Cheol-Hwan Yoo", "Yong-Goo Shin"],
+        "publication": "Applied Intelligence (IF 5.09)",
+        "href": "https://link.springer.com/article/10.1007/s10489-022-03666-2",
+        "year": 2022,
+        "month": 5
+      },
+      {
+        "tag": ["GAN"],
+        "title": "PConv: Simple yet Effective Convolutional Layer for Generative Adversarial Network",
+        "author": ["Seung Park", "Yoon-Jae Yeo", "Yong-Goo Shin"],
+        "publication": "Neural Computing and Applications (IF 5.61)",
+        "href": "https://link.springer.com/article/10.1007/s00521-021-06846-2",
+        "year": 2022,
+        "month": 1
+      },
+      {
+        "tag": ["GAN"],
+        "title": "Generative Residual Block for Image Generation",
+        "author": ["Seung Park", "Yong-Goo Shin"],
+        "publication": "Applied Intelligence (IF 5.09)",
+        "href": "https://link.springer.com/article/10.1007/s10489-021-02858-6",
+        "year": 2021,
+        "month": 1
+      },
+      {
+        "tag": ["GAN"],
+        "title": "Simple yet Effective Way for Improving the Performance of GAN",
+        "author": [
+          "Yoon-Jae Yeo",
+          "Yong-Goo Shin",
+          "Seung Park",
+          "Sung-Jea Ko"
+        ],
+        "publication": "IEEE Transactions on Neural Networks and Learning Systems (IF 14.26)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/33385312/",
+        "year": 2021,
+        "month": 1
+      },
+      {
+        "tag": ["AI"],
+        "title": "Detail Restoration and Tone Mapping Networks for X-ray Security Inspection",
+        "author": [
+          "Hyo-Young Kim",
+          "Seung Park",
+          "Y. Shin",
+          "Seung‐Won Jung",
+          "Sung-Jea Ko"
+        ],
+        "publication": "IEEE Access (IF 3.37)",
+        "href": "https://www.semanticscholar.org/paper/Detail-Restoration-and-Tone-Mapping-Networks-for-Kim-Park/1fc6c8feb1687da12029883d47e595cf461e3a3c",
+        "year": 2020,
+        "month": 11
+      }
+    ]
+  },
+  "Patents": {
+    "category": "특허",
+    "applicationNumber": "출원번호: ",
+    "list": [
+      {
+        "title": "심전도 신호를 이용한 신경망 기반의 심근경색 진단 시스템",
+        "patentNumber": "10-2024-0056511",
+        "year": 2024,
+        "month": 4
+      },
+      {
+        "title": "블록체인 네트워크 기반의 의료정보 추적 시스템의 동작 방법",
+        "patentNumber": "10-2023-0171590",
+        "year": 2023,
+        "month": 11
+      },
+      {
+        "title": "심전도 기록지의 각 구역을 분할하여 저장하는 전자 장치의 제어 방법",
+        "patentNumber": "10-2022-0191118",
+        "year": 2022,
+        "month": 12
+      }
+    ]
+  },
+  "Contact": {
+    "title": "메디브는 문의해 주신 내용에 대해 성심껏 답변해 드리겠습니다.",
+    "addressTitle": "주소",
+    "address": "충북 청주시 서원구 두꺼비로 27번길 58",
+    "subAddress": "202호(산남동, 대우빌딩)",
+    "telephoneNumber": "전화번호",
+    "emailTitle": "이메일",
+    "operatingHoursTitle": "운영시간",
+    "operatingHours": "평일 09:00 - 18:00",
+    "holidays": "주말 및 공휴일 휴무"
+  },
+  "Footer": {
+    "companyName": "주식회사 메디브",
+    "ceo": "대표이사",
+    "ceoName": "박승",
+    "businessRegistrationNumber": "사업자등록번호",
+    "registrationNumber": "281-81-02722",
+    "addressTitle": "주소",
+    "address": "충북 청주시 서원구 두꺼비로 27번길 58 202호 (산남동, 대우빌딩)",
+    "contactTitle": "연락처",
+    "tel": "Tel",
+    "email": "Email",
+    "emailAddress": "mediv_admin@mediv.kr",
+    "phoneNumber": "043-715-2498",
+    "policy": "정책",
+    "privacyPolicy": "개인정보처리방침"
+  },
   "privacyPolicy": {}
 }

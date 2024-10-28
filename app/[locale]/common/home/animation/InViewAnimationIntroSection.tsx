@@ -56,7 +56,7 @@ const InViewAnimationIntroSection: React.FC = () => {
                 href="/about"
                 className="bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition duration-300 text-lg inline-block"
               >
-                회사 소개 보기
+                {t("aboutCTA")}
               </Link>
             </div>
           </motion.div>

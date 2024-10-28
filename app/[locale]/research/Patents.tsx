@@ -1,6 +1,18 @@
-import patents from "../data/patents";
+import { useTranslations } from "next-intl";
 import { getMonthName } from "@/app/utils/helpers";
-const Patents: React.FC = () => {
+
+interface Patent {
+  category: string;
+  title: string;
+  patentNumber: string;
+  year: number;
+  month: number;
+}
+
+const PatentsHistory: React.FC = () => {
+  const t = useTranslations("Patents");
+  const patents = t.raw("list") as Patent[];
+
   return (
     <div className="space-y-4">
       {patents.map((patent, index) => (
@@ -13,14 +25,16 @@ const Patents: React.FC = () => {
           </div>
 
           <span className="inline-block px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
-            {patent.category}
+            {t("category")}
           </span>
           <h3 className="text-xl font-semibold mb-8">{patent.title}</h3>
-          <p className="text-gray-600">출원번호: {patent.patentNumber}</p>
+          <p className="text-gray-600">
+            {t("applicationNumber")} {patent.patentNumber}
+          </p>
         </div>
       ))}
     </div>
   );
 };
 
-export default Patents;
+export default PatentsHistory;

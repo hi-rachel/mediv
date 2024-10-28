@@ -1,8 +1,11 @@
 "use client";
 
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container mx-auto px-4 max-w-5xl">
@@ -10,27 +13,27 @@ const Footer = () => {
           {/* Company Information */}
           <div>
             <h3 className="text-white font-bold mb-4 text-lg">
-              주식회사 메디브
+              {t("companyName")}
             </h3>
             <div className="space-y-2.5">
               <p className="text-sm">
                 <span className="text-gray-400 inline-block w-24">
-                  대표이사
+                  {t("ceo")}
                 </span>
-                박승
+                {t("ceoName")}
               </p>
               <p className="text-sm">
                 <span className="text-gray-400 inline-block w-24">
-                  사업자등록번호
+                  {t("businessRegistrationNumber")}
                 </span>
-                281-81-02722
+                {t("registrationNumber")}
               </p>
               <div className="text-sm">
-                <span className="text-gray-400 block mb-1">주소</span>
+                <span className="text-gray-400 block mb-1">
+                  {t("addressTitle")}
+                </span>
                 <address className="not-italic leading-relaxed">
-                  충북 청주시 서원구 두꺼비로 27번길 58 202호
-                  <br />
-                  (산남동, 대우빌딩)
+                  {t("address")}
                 </address>
               </div>
             </div>
@@ -38,24 +41,30 @@ const Footer = () => {
 
           {/* Contact Information */}
           <div>
-            <h3 className="text-white font-bold mb-4 text-lg">연락처</h3>
+            <h3 className="text-white font-bold mb-4 text-lg">
+              {t("contactTitle")}
+            </h3>
             <div className="space-y-2.5">
               <p className="text-sm">
-                <span className="text-gray-400 inline-block w-16">Tel</span>
+                <span className="text-gray-400 inline-block w-16">
+                  {t("tel")}
+                </span>
                 <Link
-                  href="tel:043-715-2498"
+                  href={`tel:${t("phoneNumber")}`}
                   className="hover:text-white transition-colors"
                 >
-                  043-715-2498
+                  {t("phoneNumber")}
                 </Link>
               </p>
               <p className="text-sm">
-                <span className="text-gray-400 inline-block w-16">Email</span>
+                <span className="text-gray-400 inline-block w-16">
+                  {t("email")}
+                </span>
                 <Link
-                  href="mailto:mediv_admin@mediv.kr"
+                  href={`mailto:${t("emailAddress")}`}
                   className="hover:text-white transition-colors"
                 >
-                  mediv_admin@mediv.kr
+                  {t("emailAddress")}
                 </Link>
               </p>
             </div>
@@ -63,12 +72,12 @@ const Footer = () => {
 
           {/* Policies */}
           <div>
-            <h3 className="text-white font-bold mb-4 text-lg">정책</h3>
+            <h3 className="text-white font-bold mb-4 text-lg">{t("policy")}</h3>
             <Link
               href="/terms"
               className="text-sm hover:text-white transition-colors"
             >
-              개인정보처리방침
+              {t("privacyPolicy")}
             </Link>
           </div>
         </div>

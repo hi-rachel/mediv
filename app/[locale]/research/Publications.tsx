@@ -1,8 +1,23 @@
-import publications from "../data/publications";
+// import publications from "../data/publications";
 import { Link } from "@/i18n/routing";
 import { getMonthName } from "@/app/utils/helpers";
+import { useTranslations } from "next-intl";
 
-const Publications: React.FC = () => {
+interface Publication {
+  tag: string[];
+  title: string;
+  author: string[];
+  publication?: string;
+  patentNumber?: string;
+  href: string;
+  year: number;
+  month: number;
+}
+
+const PublicationsHistory: React.FC = () => {
+  const t = useTranslations("Publications");
+  const publications = t.raw("list") as Publication[];
+
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {publications.map((publication, index) => (
@@ -37,4 +52,4 @@ const Publications: React.FC = () => {
   );
 };
 
-export default Publications;
+export default PublicationsHistory;
