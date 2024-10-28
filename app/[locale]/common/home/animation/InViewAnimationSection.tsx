@@ -23,6 +23,7 @@ const InViewAnimationSection: React.FC<{ children: React.ReactNode }> = ({
           },
         },
       }}
+      className="w-full"
     >
       {children}
     </motion.section>
