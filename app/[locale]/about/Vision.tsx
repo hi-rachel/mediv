@@ -2,32 +2,31 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Lightbulb, Ear, Brain, HandHeart } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Vision = () => {
+  const t = useTranslations("Vision");
+
   const coreValues = [
     {
       icon: <Lightbulb color="#32ACB3" className="w-10 h-10" />,
-      title: "혁신 (Innovation)",
-      description:
-        "우리는 기존의 의료 지식과 기술의 한계를 넘어서, AI와 데이터로 새로운 가치를 창출합니다.",
+      title: t("coreValues.coreValue1.title"),
+      description: t("coreValues.coreValue1.content"),
     },
     {
       icon: <Ear color="#32ACB3" className="w-10 h-10" />,
-      title: "소통 (Communication)",
-      description:
-        "우리는 고객과 의료 현장의 목소리에 귀 기울이며, 함께 성장하는 솔루션을 만듭니다.",
+      title: t("coreValues.coreValue2.title"),
+      description: t("coreValues.coreValue2.content"),
     },
     {
       icon: <Brain color="#32ACB3" className="w-10 h-10" />,
-      title: "전문성 (Expertise)",
-      description:
-        "의료와 IT 전문성을 융합해, 가장 신뢰할 수 있는 소프트웨어를 제공합니다.",
+      title: t("coreValues.coreValue3.title"),
+      description: t("coreValues.coreValue3.content"),
     },
     {
       icon: <HandHeart color="#32ACB3" className="w-10 h-10" />,
-      title: "책임감 (Responsibility)",
-      description:
-        "우리는 사람의 건강과 안전을 최우선으로 생각하며, 책임 있는 기술을 실현합니다.",
+      title: t("coreValues.coreValue4.title"),
+      description: t("coreValues.coreValue4.content"),
     },
   ];
 
@@ -91,7 +90,7 @@ const Vision = () => {
               transition={{ delay: 0.4 }}
               className="text-3xl mb-6 font-extrabold bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"
             >
-              Medical + Innovative Vision
+              {t("title")}
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}
@@ -99,7 +98,8 @@ const Vision = () => {
               transition={{ delay: 0.6 }}
               className="text-gray-700 text-2xl"
             >
-              AI·빅데이터로 혁신의료기술 실현을 지향합니다.
+              <p>{t("subTitle1")}</p>
+              {t("subTitle2")}
             </motion.p>
           </div>
         </motion.div>
@@ -114,7 +114,9 @@ const Vision = () => {
           className="py-20"
         >
           <div className="text-center relative mb-16">
-            <h2 className="text-4xl font-extrabold text-primary">핵심 가치</h2>
+            <h2 className="text-4xl font-extrabold text-primary">
+              {t("coreValues.title")}
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

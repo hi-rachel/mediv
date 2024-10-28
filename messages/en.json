@@ -9,6 +9,95 @@
     "ourPartners": {}
   },
   "Header": {},
+  "Vision": {
+    "title": "Medical + Innovative Vision",
+    "subTitle1": "Mediv is advancing towards becoming a global medical software company.",
+    "subTitle2": "We aim to achieve innovative medical technology through AI and big data.",
+    "coreValues": {
+      "title": "Core Values",
+      "coreValue1": {
+        "title": "Innovation",
+        "content": "We go beyond the limits of existing medical knowledge and technology to create new value through AI and data."
+      },
+      "coreValue2": {
+        "title": "Communication",
+        "content": "We listen to the voices of our clients and the medical field, creating solutions that grow together."
+      },
+      "coreValue3": {
+        "title": "Expertise",
+        "content": "By combining medical and IT expertise, we deliver the most trusted software solutions."
+      },
+      "coreValue4": {
+        "title": "Responsibility",
+        "content": "We prioritize health and safety, realizing technology that takes responsibility for people’s well-being."
+      }
+    }
+  },
+  "History": {
+    "history": [
+      {
+        "year": 2024,
+        "events": [
+          { "month": "Sep", "title": "Arrhythmia Diagnosis AI System" },
+          {
+            "month": "Jul",
+            "title": "Development of Medical School CPX Learning Platform Using Search-Enhanced Generation Technology"
+          },
+          {
+            "month": "Jul",
+            "title": "Technology Commercialization Project for Advanced AI-based Myocardial Infarction Diagnosis System Using ECG Signals"
+          },
+          {
+            "month": "Jul",
+            "title": "Development of AI Software and Validation Platform for Drug Toxicity Assessment Based on Microphysiological Systems"
+          },
+          {
+            "month": "Jan",
+            "title": "Mediv Co., Ltd. Innovative Growth Type Venture Company Certification"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "events": [
+          {
+            "month": "Oct",
+            "title": "Establishment of Mediv Co., Ltd. Research Institute (Cheongju)"
+          },
+          {
+            "month": "Jul",
+            "title": "Development of AI-based ECG Analysis Technology and Analysis Platform"
+          },
+          {
+            "month": "May",
+            "title": "AI Development Medical Database Construction Solution"
+          },
+          { "month": "Apr", "title": "Money Today AI Sector Excellence Award" },
+          {
+            "month": "Feb",
+            "title": "Selected as a Partner Company for Gachon University's Early Employment Contract Department Leading University Development Project"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "events": [
+          {
+            "month": "Dec",
+            "title": "Medical Data Construction Solution for AI Development"
+          },
+          {
+            "month": "Sep",
+            "title": "Establishment of Mediv Co., Ltd. R&D Department (Cheongju)"
+          },
+          {
+            "month": "Jul",
+            "title": "Establishment of Mediv Co., Ltd. (Headquarters: Cheongju)"
+          }
+        ]
+      }
+    ]
+  },
   "About": {},
   "Business": {},
   "Research": {},

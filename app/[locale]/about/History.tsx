@@ -2,7 +2,8 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import history from "../data/history";
+// import history from "../data/history";
+import { useTranslations } from "next-intl";
 
 interface HistoryEvent {
   month: string;
@@ -15,6 +16,9 @@ interface HistoryYear {
 }
 
 const HistoryTimeline: React.FC = () => {
+  const t = useTranslations("History");
+  const history: HistoryYear[] = t.raw("history");
+
   const containerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
