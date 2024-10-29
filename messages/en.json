@@ -481,6 +481,7 @@
     "privacyPolicy": "Privacy Policy"
   },
   "PrivacyPolicy": {
+    "metaDescription": "This is Mediv’s privacy policy.",
     "title": "Privacy Policy",
     "subTitle": "Mediv considers privacy protection as our top priority",
     "companyName": "Mediv Co., Ltd. (hereinafter \"Mediv\") ",

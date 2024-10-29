@@ -457,6 +457,7 @@
     "privacyPolicy": "개인정보처리방침"
   },
   "PrivacyPolicy": {
+    "metaDescription": "메디브의 개인정보처리방침입니다.",
     "title": "개인정보처리방침",
     "subTitle": "메디브는 개인정보 보호를 최우선으로 생각합니다",
     "companyName": "주식회사 메디브(이하 \"메디브\")",
