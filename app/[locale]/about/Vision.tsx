@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -88,7 +90,7 @@ const Vision = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-3xl mb-6 font-extrabold bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"
+              className="md:text-3xl text-xl mb-6 font-extrabold bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text"
             >
               {t("title")}
             </motion.p>
@@ -96,9 +98,9 @@ const Vision = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-gray-700 text-2xl"
+              className="text-gray-700 md:text-xl text-md"
             >
-              <p>{t("subTitle1")}</p>
+              <p className="pb-2">{t("subTitle1")}</p>
               {t("subTitle2")}
             </motion.p>
           </div>
@@ -138,7 +140,7 @@ const Vision = () => {
                     {value.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors duration-300">
+                    <h3 className="md:text-xl text-md font-bold text-primary mb-4 group-hover:text-secondary transition-colors duration-300">
                       {value.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
