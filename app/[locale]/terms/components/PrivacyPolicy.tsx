@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { type PrivacyPolicyProps } from "../types";
 import ArticleSection from "./ArticleSection";
 import ContactSection from "./ContactSection";
@@ -8,15 +9,14 @@ const PrivacyPolicy = ({
   contactInfo,
   versionInfo,
 }: PrivacyPolicyProps) => {
+  const t = useTranslations("PrivacyPolicy");
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <div className="bg-gray-900 py-16">
         <div className="w-full flex justify-center flex-col items-center">
-          <h1 className="text-3xl font-bold text-white">개인정보처리방침</h1>
-          <p className="text-gray-400 mt-4">
-            메디브는 개인정보 보호를 최우선으로 생각합니다
-          </p>
+          <h1 className="text-3xl font-bold text-white">{t("title")}</h1>
+          <p className="text-gray-400 mt-4">{t("subTitle")}</p>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const PrivacyPolicy = ({
 
           {/* Policy Sections */}
           <div className="space-y-12">
-            {sections.slice(1, 9).map((section, index) => (
+            {sections.slice(1, 10).map((section, index) => (
               <ArticleSection
                 key={index}
                 title={section.title}
@@ -38,12 +38,12 @@ const PrivacyPolicy = ({
 
             {/* Contact Info Section (제 10 조) */}
             <ArticleSection
-              title="제 10 조 (개인정보 보호책임자)"
-              content={<ContactSection contactInfo={contactInfo} />}
+              title={t("section10.title")}
+              content={<ContactSection {...contactInfo} />}
             />
 
             {/* Continue with the rest of the sections */}
-            {sections.slice(9).map((section, index) => (
+            {sections.slice(10).map((section, index) => (
               <ArticleSection
                 key={index}
                 title={section.title}

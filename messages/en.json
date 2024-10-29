@@ -465,7 +465,7 @@
     "holidays": "Closed on weekends and public holidays"
   },
   "Footer": {
-    "companyName": "Mediv Co., Ltd.",
+    "companyName": "Mediv Corp.",
     "ceo": "CEO",
     "ceoName": "Seung Park",
     "businessRegistrationNumber": "Business Registration Number",
@@ -480,5 +480,105 @@
     "policy": "Policy",
     "privacyPolicy": "Privacy Policy"
   },
-  "privacyPolicy": {}
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "subTitle": "Mediv considers privacy protection as our top priority",
+    "companyName": "Mediv Co., Ltd. (hereinafter \"Mediv\") ",
+    "introParagraph": "considers the protection of users' personal information to be of utmost importance and complies with South Korea's personal information-related laws, including the Personal Information Protection Act, and personal information protection guidelines that personal information processors must follow.",
+    "introDetails": "Accordingly, Mediv establishes and discloses the following privacy policy pursuant to Article 30 of the Personal Information Protection Act to protect users' personal information and to handle related grievances promptly and smoothly.",
+    "section1": {
+      "title": "Article 1 (Types of Personal Information Processed)",
+      "description": "Mediv processes the following types of personal information:",
+      "emailInquiry": "Email Inquiries",
+      "emailDetails": "Email address, inquiry details",
+      "phoneInquiry": "Phone Inquiries",
+      "phoneDetails": "Phone number, inquiry details",
+      "internetService": "Information automatically generated during internet service use",
+      "internetDetails": "IP address, cookies, MAC address, service usage records, device information, visit history, location information"
+    },
+    "section2": {
+      "title": "Article 2 (Purpose of Personal Information Processing)",
+      "description": "Mediv processes personal information for the following purposes. If personal information is used for other purposes or if the purpose changes, separate consent will be obtained in accordance with Article 18 of the Personal Information Protection Act.",
+      "emailInquiry": "Email Inquiries",
+      "emailDetails": "Response to inquiries",
+      "phoneInquiry": "Phone Inquiries",
+      "phoneDetails": "Response to inquiries",
+      "visitorInquiry": "Visitor Management",
+      "visitorDetails": "Access control and record maintenance"
+    },
+    "section3": {
+      "title": "Article 3 (Processing and Retention Period of Personal Information)",
+      "description1": "① Mediv processes and retains personal information within the period of retention and use of personal information in accordance with laws or the period agreed upon by the information subject.",
+      "description2": "② The processing and retention periods for each type of personal information are as follows:",
+      "emailInquiry": "Email Inquiries",
+      "emailDetails": "Maximum 1 year after completion",
+      "phoneInquiry": "Phone Inquiries",
+      "phoneDetails": "Maximum 1 month after completion",
+      "visitorInquiry": "Visitor Management",
+      "visitorDetails": "1 year"
+    },
+    "section4": {
+      "title": "Article 4 (Provision of Personal Information to Third Parties)",
+      "description": "Mediv does not provide personal information to third parties without the consent of the information subject and only provides it when required by law."
+    },
+    "section5": {
+      "title": "Article 5 (Possibility of Sensitive Information Disclosure and Non-disclosure Methods)",
+      "description": "Mediv manages sensitive information to prevent disclosure during service provision and can take non-disclosure measures upon request from the information subject."
+    },
+    "section6": {
+      "title": "Article 6 (Destruction of Personal Information)",
+      "description1": "① Mediv does not collect personal information for purposes other than inquiry response, and promptly destroys personal information when the retention period expires or the processing purpose is achieved.",
+      "description2": "② Electronic files are deleted using non-recoverable methods, and documents are shredded or incinerated."
+    },
+    "section7": {
+      "title": "Article 7 (Rights of Information Subjects and Exercise Methods)",
+      "description1": "① Information subjects may request access to, correction of, deletion of, or suspension of processing of personal information from Mediv at any time.",
+      "description2": "② Rights can be exercised through written documents or email, and Mediv will process requests without delay."
+    },
+    "section8": {
+      "title": "Article 8 (Personal Information Security Measures)",
+      "description": "Mediv implements technical and physical measures such as establishing internal management plans, access authority control, and encryption to ensure the security of personal information."
+    },
+    "section9": {
+      "title": "Article 9 (Cookie Usage and Rejection)",
+      "description": "Mediv uses cookies to provide customized services, and users can reject cookie storage through browser settings."
+    },
+    "section10": {
+      "title": "Article 10 (Personal Information Protection Officer)"
+    },
+    "section11": {
+      "title": "Article 11 (Request for Personal Information Access)",
+      "description": "Requests for access to personal information can be made to Mediv's personal information department."
+    },
+    "section12": {
+      "title": "Article 12 (Standards for Additional Use/Provision Without Consent)",
+      "description": "When using personal information additionally without consent, Mediv processes it exceptionally according to legal standards."
+    },
+    "section13": {
+      "title": "Article 13 (Remedies for Rights Infringement)",
+      "description": "Users can report personal information infringement issues to external organizations such as the Korea Internet & Security Agency (KISA)."
+    },
+    "section14": {
+      "title": "Article 14 (Changes to Privacy Policy)",
+      "description1": "① This policy may be revised periodically due to changes in laws and internal policies.",
+      "description2": "② Changes will be announced through the website."
+    },
+    "contactInfo": {
+      "emailTitle": "Email",
+      "responsiblePerson": {
+        "role": "Data Protection Officer",
+        "name": "Seung Park (CEO)",
+        "email": "spark.cbnuh@gmail.com"
+      },
+      "representative": {
+        "role": "Manager",
+        "name": "Kyung-mo Kim (Head of Research and Development Division)",
+        "email": "mohunk@mediv.kr"
+      }
+    },
+    "versionInfo": {
+      "versionNumber": "Version Number",
+      "established": "Established"
+    }
+  }
 }

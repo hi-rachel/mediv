@@ -10,7 +10,8 @@ export interface ContactInfo {
 }
 
 export interface ContactSectionProps {
-  contactInfo: ContactInfo[];
+  emailTitle: string;
+  contacts: ContactInfo[];
 }
 
 export interface VersionInfo {
@@ -21,6 +22,6 @@ export interface VersionInfo {
 
 export interface PrivacyPolicyProps {
   sections: Section[];
-  contactInfo: ContactInfo[];
+  contactInfo: ContactSectionProps;
   versionInfo: VersionInfo;
 }

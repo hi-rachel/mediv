@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { VersionInfo } from "../types";
 
 const VersionInfoSection = ({
@@ -5,14 +6,16 @@ const VersionInfoSection = ({
   established,
 }: // lastUpdated,
 VersionInfo) => {
+  const t = useTranslations("PrivacyPolicy");
+
   return (
     <div className="border-t pt-8 mt-16">
       <div className="text-sm text-gray-500 space-y-1">
         <p>
-          <b>버전번호</b>: {version}
+          <b>{t("versionInfo.versionNumber")}</b>: {version}
         </p>
         <p>
-          <b>제정</b>: {established}
+          <b>{t("versionInfo.established")}</b>: {established}
         </p>
         {/* <p>
           <strong>변경일자</strong>: {lastUpdated}
