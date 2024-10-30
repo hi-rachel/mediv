@@ -1,14 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import InViewTypingAnimation from "./InViewTypingAnimation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 
 const InViewAnimationIntroSection: React.FC = () => {
   const t = useTranslations("Home");
+  const locale = useLocale();
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.3, once: true });
+
+  // 언어별 타이핑, 지연 속도 설정
+  const typingSpeed = locale === "ko" ? 70 : 70;
+  const delay = locale === "ko" ? 800 : 1100;
 
   useEffect(() => {
     if (isInView) {
@@ -27,18 +32,18 @@ const InViewAnimationIntroSection: React.FC = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center" ref={ref}>
-          <div className="md:text-5xl text-4xl font-semibold text-primary mb-8">
+          <div className="md:text-5xl text-3xl font-semibold text-primary mb-8">
             <InViewTypingAnimation
               text={t("title1")}
-              speed={70}
+              speed={typingSpeed}
               isInView={isInView}
             />
             <br />
             <p className="md:mt-4 mt-2">
               <InViewTypingAnimation
                 text={t("title2")}
-                delay={800}
-                speed={70}
+                delay={delay}
+                speed={typingSpeed}
                 isInView={isInView}
               />
             </p>
