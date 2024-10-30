@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import TabSection from "../common/TabSection";
-import TabCardSkeleton from "../common/loading/TabCardSkeleton";
+import BusinessSkeleton from "../common/loading/BusinessSkeleton";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
@@ -19,7 +19,7 @@ export async function generateMetadata({
 
 const BusinessPage = () => {
   return (
-    <Suspense fallback={<TabCardSkeleton />}>
+    <Suspense fallback={<BusinessSkeleton />}>
       <TabSection menuId="business" />
     </Suspense>
   );
