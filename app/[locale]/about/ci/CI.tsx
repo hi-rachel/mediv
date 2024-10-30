@@ -19,7 +19,7 @@ const CIShowcase: React.FC = () => {
         className="text-4xl md:text-5xl font-bold text-primary mb-12 text-center"
         variants={fadeInUp}
       >
-        MEDIV Corporate Identity
+        MEDIV CI
       </motion.h1>
 
       <motion.section className="mb-20" variants={fadeInUp}>
