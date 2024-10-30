@@ -28,6 +28,13 @@ const NaverMap = () => {
         ),
         map: map,
       });
+
+      // 지도 크기 변경 시 자동으로 중심점과 줌 레벨 조정
+      window.naver.maps.Event.addListener(map, "resize", () => {
+        map.setCenter(
+          new window.naver.maps.LatLng(36.60803023458623, 127.46526322990302)
+        );
+      });
     };
 
     const script = document.createElement("script");
