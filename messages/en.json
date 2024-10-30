@@ -2,12 +2,12 @@
   "Home": {
     "slides": [
       {
-        "description": "Innovate in medical technology through advanced AI."
+        "description": "Innovate in medical technology through advanced AI"
       },
       {
-        "description": "Delivering custom software for superior performance and user experience."
+        "description": "Delivering custom software for superior performance and user experience"
       },
-      { "description": "Leveraging big data for better health outcomes." }
+      { "description": "Leveraging big data for better health outcomes" }
     ],
     "title1": "The World Created by AI,",
     "title2": "Envisioning the Future in Healthcare.",
@@ -204,7 +204,7 @@
         "year": "2023",
         "tag": ["SW", "AI"],
         "description": "Development of an AI model that analyzes data collected from patch-type ECGs and provides a dedicated platform for expert analysis",
-        "department": "SCL Foundation",
+        "department": "Seoul Clinical Laboratories",
         "img": "/서울의과학연구소.webp"
       },
       {
@@ -573,7 +573,7 @@
       },
       "representative": {
         "role": "Manager",
-        "name": "Kyung-mo Kim (Head of Research and Development Division)",
+        "name": "Kyung-mo Kim (Head of System Development Department)",
         "email": "mohunk@mediv.kr"
       }
     },
