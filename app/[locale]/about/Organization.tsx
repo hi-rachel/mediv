@@ -10,7 +10,7 @@ const Organization = () => {
         transition={{ duration: 0.6 }}
         className="text-center relative py-12"
       >
-        <h2 className="text-4xl md:text-5xl font-extrabold text-primary">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary">
           ORGANIZATION
         </h2>
       </motion.div>

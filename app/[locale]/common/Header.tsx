@@ -7,52 +7,17 @@ import { useRouter, usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+export type MenuItem = {
+  id: string;
+  label: string;
+  href: string;
+  subItems?: { id: string; label: string; href: string }[];
+};
+
 const Header = () => {
-  const t = useTranslations("Menu");
-  const menuItems = [
-    {
-      id: "about",
-      label: t("about"),
-      href: "/about",
-      subItems: [
-        { id: "vision", label: t("vision"), href: "/about/?tab=vision" },
-        { id: "history", label: t("history"), href: "/about/?tab=history" },
-        {
-          id: "organization",
-          label: t("organization"),
-          href: "/about/?tab=organization",
-        },
-        { id: "ci", label: t("ci"), href: "/about/?tab=ci" },
-      ],
-    },
-    {
-      id: "business",
-      label: t("business"),
-      href: "/business",
-      subItems: [
-        {
-          id: "projects",
-          label: t("projects"),
-          href: "/business/?tab=projects",
-        },
-        { id: "awards", label: t("awards"), href: "/business/?tab=awards" },
-      ],
-    },
-    {
-      id: "research",
-      label: t("research"),
-      href: "/research",
-      subItems: [
-        {
-          id: "publications",
-          label: t("publications"),
-          href: "/research/?tab=publications",
-        },
-        { id: "patents", label: t("patents"), href: "/research/?tab=patents" },
-      ],
-    },
-    { id: "contact", label: t("contact"), href: "/contact" },
-  ];
+  const t = useTranslations("MenuItems");
+  const menuItems = t.raw("list") as MenuItem[];
+
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -60,15 +25,6 @@ const Header = () => {
   const [language, setLanguage] = useState(
     pathname.startsWith("/ko") ? "ko" : "en"
   );
-
-  const localizedMenuItems = menuItems.map((item) => ({
-    ...item,
-    label: t(item.id),
-    subItems: item.subItems?.map((subItem) => ({
-      ...subItem,
-      label: t(subItem.id),
-    })),
-  }));
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleLangMenu = () => setIsLangMenuOpen(!isLangMenuOpen);
@@ -134,7 +90,7 @@ const Header = () => {
           </Link>
 
           <div className="ml-5 hidden md:flex items-center space-x-6 lg:space-x-12">
-            {localizedMenuItems.map((item) => (
+            {menuItems.map((item: MenuItem) => (
               <div key={item.id} className="relative group">
                 <Link
                   href={
@@ -236,7 +192,7 @@ const Header = () => {
         </div>
 
         <div className={`${isOpen ? "block" : "hidden"} md:hidden mt-4`}>
-          {localizedMenuItems.map((item) => (
+          {menuItems.map((item) => (
             <div key={item.id} className="py-2">
               <button
                 onClick={() => handleNavigation(item.href, item.subItems || [])}

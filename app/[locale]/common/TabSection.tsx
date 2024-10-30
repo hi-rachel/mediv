@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import menuItems from "../data/menuItems";
+// import menuItems from "../data/menuItems";
 import useTabState from "@/app/hooks/useTabState";
 import ProjectHistory from "../business/ProjectHistory";
 import AwardsAndCertifications from "../business/AwardsAndCertifications";
@@ -11,22 +11,29 @@ import CI from "../about/ci/CI";
 import Publications from "../research/Publications";
 import Patents from "../research/Patents";
 import Vision from "../about/vision/Vision";
+import BusinessModelSection from "../business/BusinessModelSection";
+import { MenuItem } from "./Header";
+import { useTranslations } from "next-intl";
 
 const TabSection = ({ menuId }: { menuId: string }) => {
-  const menuItem = menuItems.find((item) => item.id === menuId);
-  const tabs = menuItem?.subItems || [];
+  const t = useTranslations("MenuItems");
+  const menuItems = t.raw("list") as MenuItem[];
+
+  const currentMenuItem = menuItems.find((item) => item.id === menuId);
+  const tabs = currentMenuItem?.subItems || [];
   const { activeTab, handleTabClick } = useTabState(
     tabs[0]?.id,
     tabs.map((tab) => tab.id)
   );
 
   const tabComponents = {
-    projects: <ProjectHistory />,
-    awards: <AwardsAndCertifications />,
     vision: <Vision />,
     history: <History />,
     organization: <Organization />,
     ci: <CI />,
+    businessModel: <BusinessModelSection />,
+    projects: <ProjectHistory />,
+    awards: <AwardsAndCertifications />,
     publications: <Publications />,
     patents: <Patents />,
   };

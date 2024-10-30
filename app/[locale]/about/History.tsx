@@ -2,7 +2,6 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-// import history from "../data/history";
 import { useTranslations } from "next-intl";
 
 interface HistoryEvent {
@@ -17,7 +16,7 @@ interface HistoryYear {
 
 const HistoryTimeline: React.FC = () => {
   const t = useTranslations("History");
-  const history: HistoryYear[] = t.raw("history");
+  const history: HistoryYear[] = t.raw("list");
 
   const containerRef = useRef<HTMLDivElement>(null);
 

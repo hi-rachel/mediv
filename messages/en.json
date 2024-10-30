@@ -18,19 +18,68 @@
     "latestResearch": {},
     "ourPartners": {}
   },
-  "Menu": {
-    "about": "ABOUT",
-    "business": "BUSINESS",
-    "research": "RESEARCH",
-    "contact": "CONTACT",
-    "vision": "Vision",
-    "history": "History",
-    "organization": "Organization",
-    "ci": "CI",
-    "projects": "Projects",
-    "awards": "Awards/Certifications",
-    "publications": "Publications",
-    "patents": "Patents"
+  "MenuItems": {
+    "list": [
+      {
+        "id": "about",
+        "label": "ABOUT",
+        "href": "/about",
+        "subItems": [
+          { "id": "vision", "label": "Vision", "href": "/about/?tab=vision" },
+          {
+            "id": "history",
+            "label": "History",
+            "href": "/about/?tab=history"
+          },
+          {
+            "id": "organization",
+            "label": "Organization",
+            "href": "/about/?tab=organization"
+          },
+          { "id": "ci", "label": "CI", "href": "/about/?tab=ci" }
+        ]
+      },
+      {
+        "id": "business",
+        "label": "BUSINESS",
+        "href": "/business",
+        "subItems": [
+          {
+            "id": "businessModel",
+            "label": "Business Model",
+            "href": "/business/?tab=businessModel"
+          },
+          {
+            "id": "projects",
+            "label": "Projects",
+            "href": "/business/?tab=projects"
+          },
+          { "id": "awards", "label": "Awards", "href": "/business/?tab=awards" }
+        ]
+      },
+      {
+        "id": "research",
+        "label": "RESEARCH",
+        "href": "/research",
+        "subItems": [
+          {
+            "id": "publications",
+            "label": "Publications",
+            "href": "/research/?tab=publications"
+          },
+          {
+            "id": "patents",
+            "label": "Patents",
+            "href": "/research/?tab=patents"
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "label": "CONTACT",
+        "href": "/contact"
+      }
+    ]
   },
   "Metadata": {
     "home": {
@@ -53,6 +102,25 @@
       "title": "Contact | Mediv",
       "description": "Connect with Mediv to learn more about our services and opportunities to collaborate on healthcare innovation."
     }
+  },
+  "BusinessModel": {
+    "list": [
+      {
+        "title": "Medical Data Integration",
+        "image": "/model-data.png",
+        "description": "Accelerating AI innovation with high-quality medical datasets"
+      },
+      {
+        "title": "Medical AI Software Development",
+        "image": "/model-sw.png",
+        "description": "Implementing efficient and reliable systems"
+      },
+      {
+        "title": "Alternative Testing Validation Platform",
+        "image": "/model-experiment.png",
+        "description": "Providing ethical and scientific alternatives"
+      }
+    ]
   },
   "Vision": {
     "metaTitle": "Vision",
@@ -81,7 +149,7 @@
     }
   },
   "History": {
-    "history": [
+    "list": [
       {
         "year": 2024,
         "events": [

@@ -7,13 +7,14 @@ import PartnersSection from "./common/home/partners/PartnersSection";
 import InViewAnimationIntroSection from "./common/home/animation/InViewAnimationIntroSection";
 import InViewAnimationSection from "./common/home/animation/InViewAnimationSection";
 import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimation";
-import businessModels from "./data/businessModels";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import BusinessModelSection from "./business/BusinessModelSection";
 
 const HomePage: React.FC = () => {
   const t = useTranslations("Home");
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -145,44 +146,7 @@ const HomePage: React.FC = () => {
       <InViewAnimationIntroSection />
 
       {/* Business Models */}
-      <InViewAnimationSection>
-        <div className="py-20 bg-neutral">
-          <div className="container mx-auto px-6">
-            <motion.h2
-              variants={fadeInUp}
-              className="text-3xl font-semibold text-center text-primary mb-12"
-            >
-              BUSINESS MODEL
-            </motion.h2>
-            <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {businessModels.map((model, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-                  }}
-                  className="bg-white rounded-lg shadow-lg p-6 transition duration-300"
-                >
-                  <div className="text-4xl mb-4 flex justify-center items-center">
-                    <Image
-                      src={model.image}
-                      alt={model.title}
-                      width={200}
-                      height={200}
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-primary mb-2">
-                    {model.title}
-                  </h3>
-                  <p className="text-gray-600">{model.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </InViewAnimationSection>
+      <BusinessModelSection className="py-20" />
 
       {/* Stats Section */}
       <InViewAnimationSection>

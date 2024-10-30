@@ -7,6 +7,7 @@ export const labels = {
   history: "연혁",
   organization: "조직도",
   ci: "CI",
+  businessModel: "비즈니스 모델",
   projects: "수행 사업",
   awards: "수상/인증",
   publications: "논문",
@@ -34,6 +35,11 @@ const menuItems = [
     label: labels.business,
     href: "/business",
     subItems: [
+      {
+        id: "businessModel",
+        label: labels.businessModel,
+        href: "/business/?tab=business-model",
+      },
       {
         id: "projects",
         label: labels.projects,

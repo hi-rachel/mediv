@@ -62,7 +62,7 @@ const Vision = () => {
           transition={{ duration: 0.6 }}
           className="text-center relative py-12"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-primary">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             VISION
           </h2>
         </motion.div>
@@ -122,7 +122,7 @@ const Vision = () => {
           className="py-20"
         >
           <div className="text-center relative mb-16">
-            <h2 className="text-4xl font-extrabold text-primary">
+            <h2 className="text-4xl font-bold text-primary">
               {t("coreValues.title")}
             </h2>
           </div>
