@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import TabSection from "../common/TabSection";
-import TabTextImageSkeleton from "../common/loading/TabTextImageSkeleton";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import AboutSkeleton from "../common/loading/AboutSkeleton";
 
 export async function generateMetadata({
   params: { locale },
@@ -19,7 +19,7 @@ export async function generateMetadata({
 
 const AboutPage = () => {
   return (
-    <Suspense fallback={<TabTextImageSkeleton />}>
+    <Suspense fallback={<AboutSkeleton />}>
       <TabSection menuId="about" />
     </Suspense>
   );
