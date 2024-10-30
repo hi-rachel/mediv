@@ -70,8 +70,9 @@ const Header = () => {
   };
 
   const isActive = (href: string) => {
-    return pathname.startsWith(href)
-      ? "border-b-4 border-primary text-primary"
+    const currentPath = pathname.replace(/^\/(en|ko)/, "");
+    return currentPath.startsWith(href)
+      ? "border-b-4 border-black text-primary"
       : "text-gray-600 hover:text-primary";
   };
 
