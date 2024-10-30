@@ -8,9 +8,9 @@ import InViewAnimationIntroSection from "./common/home/animation/InViewAnimation
 import InViewAnimationSection from "./common/home/animation/InViewAnimationSection";
 import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import BusinessModelSection from "./common/business/BusinessModelSection";
+import BusinessModelSection from "./common/home/BusinessModelSection";
+import LatestResearchSection from "./common/home/LatestResearchSection";
 
 const HomePage: React.FC = () => {
   const t = useTranslations("Home");
@@ -178,40 +178,7 @@ const HomePage: React.FC = () => {
 
       {/* Research Section Preview */}
       <InViewAnimationSection>
-        <div className="py-20 bg-white">
-          <div className="container mx-auto px-6">
-            <motion.h2
-              variants={fadeInUp}
-              className="text-4xl font-semibold text-center text-primary mb-16"
-            >
-              Latest Research
-            </motion.h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {[
-                "ECG Analysis Research",
-                "Animal Replacement Studies",
-                "Personalized Treatment Solutions",
-              ].map((title, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  className="bg-neutral-light rounded-lg shadow-md p-8 transition duration-300 hover:shadow-lg"
-                >
-                  <h3 className="text-2xl font-semibold text-primary mb-4">
-                    {title}
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Exploring the potential of AI in improving healthcare
-                    outcomes.
-                  </p>
-                  <Link href="/research" className="text-info hover:underline">
-                    Read More →
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <LatestResearchSection />
       </InViewAnimationSection>
 
       {/* Partners Section */}

@@ -1,17 +1,7 @@
 import { Link } from "@/i18n/routing";
 import { getMonthName } from "@/app/utils/helpers";
 import { useTranslations } from "next-intl";
-
-interface Publication {
-  tag: string[];
-  title: string;
-  author: string[];
-  publication?: string;
-  patentNumber?: string;
-  href: string;
-  year: number;
-  month: number;
-}
+import { Publication } from "../types/publication";
 
 const PublicationsHistory: React.FC = () => {
   const t = useTranslations("Publications");
