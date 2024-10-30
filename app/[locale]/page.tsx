@@ -10,7 +10,7 @@ import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimati
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import BusinessModelSection from "./business/BusinessModelSection";
+import BusinessModelSection from "./common/business/BusinessModelSection";
 
 const HomePage: React.FC = () => {
   const t = useTranslations("Home");

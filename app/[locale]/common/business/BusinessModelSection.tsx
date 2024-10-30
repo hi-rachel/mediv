@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import InViewAnimationSection from "../common/home/animation/InViewAnimationSection";
+import InViewAnimationSection from "../home/animation/InViewAnimationSection";
 import { useTranslations } from "next-intl";
 
 export interface BusinessModelItem {
