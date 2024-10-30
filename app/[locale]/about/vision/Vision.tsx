@@ -96,10 +96,17 @@ const Vision = () => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="text-gray-700 md:text-xl text-md mb-2"
+            >
+              {t("subTitle1")}
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
               className="text-gray-700 md:text-xl text-md"
             >
-              <p className="pb-2">{t("subTitle1")}</p>
               {t("subTitle2")}
             </motion.p>
           </div>
