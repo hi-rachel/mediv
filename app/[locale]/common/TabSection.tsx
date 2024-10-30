@@ -31,9 +31,9 @@ const TabSection = ({ menuId }: { menuId: string }) => {
     history: <History />,
     organization: <Organization />,
     ci: <CI />,
-    businessModel: <BusinessModelSection />,
+    "business-model": <BusinessModelSection />,
     projects: <ProjectHistory />,
-    awards: <AwardsAndCertifications />,
+    "awards-certifications": <AwardsAndCertifications />,
     publications: <Publications />,
     patents: <Patents />,
   };

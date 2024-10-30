@@ -44,7 +44,7 @@
         "href": "/business",
         "subItems": [
           {
-            "id": "businessModel",
+            "id": "business-model",
             "label": "비즈니스 모델",
             "href": "/business/?tab=business-model"
           },
@@ -54,9 +54,9 @@
             "href": "/business/?tab=projects"
           },
           {
-            "id": "awards&certifications",
+            "id": "awards-certifications",
             "label": "수상/인증",
-            "href": "/business/?tab=awards&certifications"
+            "href": "/business/?tab=awards-certifications"
           }
         ]
       },

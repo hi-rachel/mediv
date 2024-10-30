@@ -45,16 +45,20 @@
         "href": "/business",
         "subItems": [
           {
-            "id": "businessModel",
+            "id": "business-model",
             "label": "Business Model",
-            "href": "/business/?tab=businessModel"
+            "href": "/business/?tab=business-model"
           },
           {
             "id": "projects",
             "label": "Projects",
             "href": "/business/?tab=projects"
           },
-          { "id": "awards", "label": "Awards", "href": "/business/?tab=awards" }
+          {
+            "id": "awards-certifications",
+            "label": "Awards/Certifications",
+            "href": "/business/?tab=awards-certifications"
+          }
         ]
       },
       {
