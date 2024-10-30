@@ -3,7 +3,7 @@ const ContactSkeleton = () => {
     <div className="h-screen max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
         <div className="w-40 h-10 bg-gray-200 rounded animate-pulse mx-auto mb-4" />
-        <div className="w-64 h-6 bg-gray-200 rounded animate-pulse mx-auto" />
+        <div className="w-80 h-6 bg-gray-200 rounded animate-pulse mx-auto" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
