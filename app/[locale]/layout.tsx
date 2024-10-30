@@ -4,19 +4,27 @@ import Header from "./common/Header";
 import Footer from "./common/Footer";
 import ScrollToTopButton from "./common/ScrollToButton";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Mediv",
-  description:
-    "Empowering healthcare professionals with cutting-edge AI technology",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("home.title"),
+    description: t("home.description"),
+  };
+}
 
 // 모든 가능한 locale을 정적 경로로 지정
 export const generateStaticParams = () => {

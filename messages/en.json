@@ -32,7 +32,31 @@
     "publications": "Publications",
     "patents": "Patents"
   },
+  "Metadata": {
+    "home": {
+      "title": "Mediv",
+      "description": "Mediv leads the future of the medical industry through AI innovation, focusing on medical data integration, medical AI software development, and an MPS-based alternative testing validation platform. We add new value to healthcare by combining medical data with advanced AI technologies."
+    },
+    "about": {
+      "title": "About",
+      "description": "Explore Mediv's mission, vision, and journey to revolutionize the medical industry through innovative AI-driven solutions."
+    },
+    "business": {
+      "title": "Business",
+      "description": "Discover Mediv's business areas, advancing healthcare technology with AI, from medical data analysis to animal replacement validation."
+    },
+    "research": {
+      "title": "Research",
+      "description": "Learn about Mediv's cutting-edge research and development in AI and healthcare, driving new possibilities in medical technology."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Connect with Mediv to learn more about our services and opportunities to collaborate on healthcare innovation."
+    }
+  },
   "Vision": {
+    "metaTitle": "Vision",
+    "metaDescription": "",
     "title": "Medical + Innovative Vision",
     "subTitle1": "Mediv is advancing towards becoming a global medical software company.",
     "subTitle2": "We aim to achieve innovative medical technology through AI and big data.",

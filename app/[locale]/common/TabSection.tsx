@@ -5,12 +5,12 @@ import menuItems from "../data/menuItems";
 import useTabState from "@/app/hooks/useTabState";
 import ProjectHistory from "../business/ProjectHistory";
 import AwardsAndCertifications from "../business/AwardsAndCertifications";
-import Vision from "../about/Vision";
 import History from "../about/History";
 import Organization from "../about/Organization";
 import CI from "../about/ci/CI";
 import Publications from "../research/Publications";
 import Patents from "../research/Patents";
+import Vision from "../about/vision/Vision";
 
 const TabSection = ({ menuId }: { menuId: string }) => {
   const menuItem = menuItems.find((item) => item.id === menuId);
