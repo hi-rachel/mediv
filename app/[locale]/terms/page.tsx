@@ -1,14 +1,15 @@
 import { Metadata } from "next";
 import { PrivacyPolicyProps } from "./types";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import { createTranslator, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
-  locale,
+  params: { locale },
 }: {
-  locale: string;
+  params: { locale: string };
 }): Promise<Metadata> {
-  const t = await createTranslator({ locale, namespace: "PrivacyPolicy" });
+  const t = await getTranslations({ locale, namespace: "PrivacyPolicy" });
 
   return {
     title: `${t("title")} | Mediv`,
@@ -26,7 +27,7 @@ const PrivacyPolicyPage = () => {
         content: (
           <div className="prose prose-lg text-gray-600">
             <p className="leading-relaxed">
-              <strong>{t("companyName")}</strong>
+              ㅎ<strong>{t("companyName")}</strong>
               {t("introParagraph")}
             </p>
             <p className="mt-4">{t("introDetails")}</p>
