@@ -38,19 +38,19 @@
       "description": "메디브는 의료 데이터 통합, 의료 AI 소프트웨어 개발, 그리고 MPS 기반 동물대체시험 검증 플랫폼을 통해 의료 산업의 미래를 선도하는 AI 혁신 기업입니다. 의료 데이터를 AI와 결합하여 헬스케어에 새로운 가치를 더합니다."
     },
     "about": {
-      "title": "About",
-      "description": "AI 기반의 혁신적 솔루션을 통해 의료 산업을 혁신하는 Mediv의 사명과 비전, 여정을 살펴보세요."
+      "title": "About | 메디브",
+      "description": "AI 기반의 혁신적 솔루션을 통해 의료 산업을 혁신하는 메디브의 사명과 비전, 여정을 살펴보세요."
     },
     "business": {
-      "title": "Business",
-      "description": "의료 데이터 분석부터 동물 대체 검증까지, 헬스케어 기술 발전을 선도하는 Mediv의 주요 사업 영역을 확인하세요."
+      "title": "Business | 메디브",
+      "description": "의료 데이터 분석부터 동물 대체 검증까지, 헬스케어 기술 발전을 선도하는 메디브의 주요 사업 영역을 확인하세요."
     },
     "research": {
-      "title": "Reserach",
-      "description": "AI와 헬스케어 융합을 통해 의료 기술의 새로운 가능성을 제시하는 Mediv의 최첨단 연구와 개발을 알아보세요."
+      "title": "Reserach | 메디브",
+      "description": "AI와 헬스케어 융합을 통해 의료 기술의 새로운 가능성을 제시하는 메디브의 최첨단 연구와 개발을 알아보세요."
     },
     "contact": {
-      "title": "Contact",
+      "title": "Contact | 메디브",
       "description": "메디브와 협력하거나 서비스에 대한 정보를 얻기 위한 연락 방법을 확인하세요."
     }
   },
