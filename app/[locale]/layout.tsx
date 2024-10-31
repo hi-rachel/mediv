@@ -10,6 +10,7 @@ import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { Metadata } from "next";
+import GlobalLoading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,7 +53,7 @@ const RootLayout = async ({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<GlobalLoading />}>
           <NextIntlClientProvider messages={messages}>
             <Header />
             <main className="overflow-hidden">{children}</main>
