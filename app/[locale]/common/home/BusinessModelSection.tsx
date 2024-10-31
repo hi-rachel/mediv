@@ -38,7 +38,7 @@ const BusinessModelSection: React.FC<BusinessModelProps> = ({
         <div className="container mx-auto px-6">
           <motion.h2
             variants={fadeInUp}
-            className="text-4xl font-bold text-center text-primary mb-12"
+            className="md:text-4xl text-3xl font-bold text-center text-primary mb-12"
           >
             {title}
           </motion.h2>
