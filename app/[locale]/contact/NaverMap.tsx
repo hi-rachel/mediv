@@ -1,8 +1,11 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect } from "react";
 
 const NaverMap = () => {
   const t = useTranslations("Contact");
+  const locale = useLocale();
+  // 사용자 언어 확인 (예: 'ko' - 한국어, 'en' - 영어) -> 언어에 따른 길이 변경을 css 스타일에 반영
+  const isKorean = locale === "ko";
 
   useEffect(() => {
     const initMap = () => {
@@ -29,9 +32,6 @@ const NaverMap = () => {
         position: mapOptions.center,
         map: map,
       });
-
-      // 사용자 언어 확인 (예: 'ko' - 한국어, 'en' - 영어) -> 언어에 따른 길이 변경을 css 스타일에 반영
-      const isKorean = navigator.language.startsWith("ko");
 
       const contentString = `
         <div class="relative p-4 bg-white rounded-lg shadow-lg max-w-xs text-center">
