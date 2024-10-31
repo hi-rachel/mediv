@@ -51,15 +51,6 @@ const Header = () => {
     };
   }, []);
 
-  const handleNavigation = (href: string, subItems: { id: string }[]) => {
-    if (subItems && subItems.length > 0) {
-      router.push(`${href}?tab=${subItems[0].id}`);
-    } else {
-      router.push(href);
-    }
-    setIsOpen(false);
-  };
-
   const switchLanguage = (lang: string) => {
     const params = new URLSearchParams(window.location.search);
     const newPathname = pathname.replace(/^\/(en|ko)/, "");
@@ -209,14 +200,24 @@ const Header = () => {
         <div className={`${isOpen ? "block" : "hidden"} md:hidden mt-4`}>
           {menuItems.map((item) => (
             <div key={item.id} className="py-2">
-              <button
-                onClick={() => handleNavigation(item.href, item.subItems || [])}
+              {/* Changed from button to div to prevent double click events */}
+              <div
                 className={`block px-4 py-2 rounded-none text-base font-medium hover:text-primary focus:outline-none w-full text-left ${isActive(
                   item.href
                 )}`}
               >
-                {item.label}
-              </button>
+                <Link
+                  href={
+                    item.subItems && item.subItems.length > 0
+                      ? `${item.href}?tab=${item.subItems[0].id}`
+                      : item.href
+                  }
+                  onClick={() => setIsOpen(false)}
+                  className="block w-full h-full"
+                >
+                  {item.label}
+                </Link>
+              </div>
               {item.subItems && item.subItems.length > 0 && (
                 <div className="pl-4 mt-2 space-y-1">
                   {item.subItems.map((subItem) => (
