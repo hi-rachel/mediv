@@ -314,7 +314,7 @@
   "Publications": {
     "list": [
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "Prognostic prediction of sepsis patient using transformer with skip connected token for tabular data",
         "author": [
           "Jee-Woo Choi",
@@ -330,7 +330,7 @@
         "month": 1
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "A Novel Generator with Auxiliary Branch for Improving GAN performance",
         "author": ["Seung Park", "Yong-Goo Shin"],
         "publication": "IEEE Transactions on Neural Networks and Learning Systems (IF 14.26)",
@@ -339,7 +339,7 @@
         "month": 1
       },
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "FT-GAT: Graph neural network for predicting spontaneous breathing trial success in patients with mechanical ventilation",
         "author": [
           "Geun-Hyeong Kim",
@@ -356,7 +356,7 @@
         "month": 6
       },
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "Real-Time Prediction for Neonatal Endotracheal Intubation Using Multimodal Transformer Network",
         "author": [
           "Jueng-Eun Im",
@@ -370,7 +370,7 @@
         "month": 4
       },
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "Predicting the Need for Intubation Within 3 Hours in the Neonatal Intensive Care Unit Using a Multimodal Deep Neural Network",
         "author": [
           "Jueng-Eun Im",
@@ -385,7 +385,7 @@
         "month": 4
       },
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "Multimodal Neural Network for Recurrence Prediction of Papillary Thyroid Carcinoma",
         "author": [
           "Geun-Hyeong Kim",
@@ -400,7 +400,7 @@
         "month": 1
       },
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "Deep Learning Model for Predicting Rhythm Outcomes after Radiofrequency Catheter Ablation In Patients with Atrial fibrillation",
         "author": ["Dae-In Lee", "Mi-Jung Park", "Jee-Woo Choi", "Seung Park"],
         "publication": "Journal of Healthcare Engineering (IF 4.22)",
@@ -409,7 +409,7 @@
         "month": 9
       },
       {
-        "tag": ["Biosignal"],
+        "keywords": ["Biosignal"],
         "title": "Automated Diagnosis of Atrial Fibrillation Using ECG Component-Aware Transformer",
         "author": ["Min-Uk Yang", "Dae-In Lee", "Seung Park"],
         "publication": "Computers in Biology and Medicine (IF 6.69)",
@@ -418,7 +418,7 @@
         "month": 9
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "Image generation with self pixel-wise normalization",
         "author": [
           "Yoon-Jae Yeo",
@@ -433,7 +433,7 @@
         "month": 9
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "Generative Convolution Layer for Image Generation",
         "author": ["Seung Park", "Yong-Goo Shin"],
         "publication": "Neural Networks (IF 9.66)",
@@ -442,7 +442,7 @@
         "month": 8
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "Effective Shortcut Technique for Generative Adversarial Networks",
         "author": ["Seung Park", "Cheol-Hwan Yoo", "Yong-Goo Shin"],
         "publication": "Applied Intelligence (IF 5.09)",
@@ -451,7 +451,7 @@
         "month": 5
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "PConv: Simple yet Effective Convolutional Layer for Generative Adversarial Network",
         "author": ["Seung Park", "Yoon-Jae Yeo", "Yong-Goo Shin"],
         "publication": "Neural Computing and Applications (IF 5.61)",
@@ -460,7 +460,7 @@
         "month": 1
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "Generative Residual Block for Image Generation",
         "author": ["Seung Park", "Yong-Goo Shin"],
         "publication": "Applied Intelligence (IF 5.09)",
@@ -469,7 +469,7 @@
         "month": 1
       },
       {
-        "tag": ["GAN"],
+        "keywords": ["GAN"],
         "title": "Simple yet Effective Way for Improving the Performance of GAN",
         "author": [
           "Yoon-Jae Yeo",
@@ -483,7 +483,7 @@
         "month": 1
       },
       {
-        "tag": ["AI"],
+        "keywords": ["AI"],
         "title": "Detail Restoration and Tone Mapping Networks for X-ray Security Inspection",
         "author": [
           "Hyo-Young Kim",
@@ -497,7 +497,20 @@
         "year": 2020,
         "month": 11
       }
-    ]
+    ],
+    "layout": {
+      "searchPlaceholder": "저자명 또는 논문명으로 검색하세요",
+      "smallSearchPlaceholder": "저자명 또는 논문명...",
+      "clearAll": "모두 지우기",
+      "noPublications": "필터링과 일치하는 게시물을 찾을 수 없습니다.",
+      "activeFilters": "적용된 필터링",
+      "filterByYears": "연도별 필터링",
+      "year": "연도",
+      "selected": "선택됨"
+    },
+    "home": {
+      "researchCTA": "연구 더보기"
+    }
   },
   "Patents": {
     "category": "특허",

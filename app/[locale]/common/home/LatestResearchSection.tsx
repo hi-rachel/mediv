@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { getMonthName } from "@/app/utils/helpers";
-import { Publication } from "../../types/publication";
+import { Publication } from "@/types/publication";
 
 const LatestResearchSection = () => {
   const t = useTranslations("Publications");
@@ -41,7 +41,7 @@ const LatestResearchSection = () => {
           {latestResearch.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-[400px] min-w-80"
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-[380px] min-w-80"
             >
               <div className="p-6 flex flex-col h-full">
                 {/* Date */}
@@ -76,17 +76,25 @@ const LatestResearchSection = () => {
                   }
 
                   {/* Read More for both publication and patent */}
-                  <Link
+                  {/* <Link
                     href={item.href || "#"} // '#' as fallback for patents until you add the real path
                     className="text-blue-600 hover:text-blue-700 text-sm font-medium hover:underline inline-flex items-center"
                     target="_blank"
                   >
                     Read More →
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-10 w-full flex justify-center">
+          <Link
+            href="/research"
+            className="bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition duration-300 text-lg text-center inline-block"
+          >
+            {t("home.researchCTA")}
+          </Link>
         </div>
       </div>
     </div>

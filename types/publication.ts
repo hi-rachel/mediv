@@ -1,5 +1,5 @@
 export interface Publication {
-  tag: string[];
+  keywords: string[];
   title: string;
   author: string[];
   publication?: string;
