@@ -550,15 +550,18 @@
     ]
   },
   "Contact": {
+    "companyName": "Mediv Corp",
     "title": "Mediv will sincerely respond to your inquiries.",
     "addressTitle": "Address",
-    "address": "58, Dukkobi-ro 27beon-gil, Seowon-gu, Cheongju-si, Chungbuk, South Korea",
-    "subAddress": "Room 202, Daewoo Building, Sannam-dong",
+    "address": "194-5, Osongsaengmyeong 1-ro, Osong-eup, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do",
+    "subAddress": "3rd floor.",
     "telephoneNumber": "Telephone number",
     "emailTitle": "Email",
     "operatingHoursTitle": "Operating Hours",
     "operatingHours": "Weekdays 09:00 - 18:00",
-    "holidays": "Closed on weekends and public holidays"
+    "holidays": "Closed on weekends and public holidays",
+    "findDirections": "Directions",
+    "searchMap": "Search Map"
   },
   "Footer": {
     "companyName": "Mediv Corp.",
@@ -567,7 +570,7 @@
     "businessRegistrationNumber": "Business Registration Number",
     "registrationNumber": "281-81-02722",
     "addressTitle": "Address",
-    "address": "58, Dukkobi-ro 27beon-gil, Room 202, Seowon-gu, Cheongju-si, Chungbuk, South Korea (Daewoo Building, Sannam-dong)",
+    "address": "3rd floor, 194-5 Osongsaengmyeong 1-ro, Osong-eup, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do",
     "contactTitle": "Contact",
     "tel": "Tel",
     "email": "Email",
