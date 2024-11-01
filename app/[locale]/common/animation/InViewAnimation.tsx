@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const InViewAnimationSection: React.FC<{ children: React.ReactNode }> = ({
+const InViewAnimation: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const ref = useRef(null);
@@ -30,4 +30,4 @@ const InViewAnimationSection: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
-export default InViewAnimationSection;
+export default InViewAnimation;

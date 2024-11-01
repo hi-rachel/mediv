@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import InViewTypingAnimation from "./InViewTypingAnimation";
+import InViewTypingAnimation from "../../../common/animation/InViewTypingAnimation";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 
-const InViewAnimationIntroSection: React.FC = () => {
+const InViewIntroAnimationSection: React.FC = () => {
   const t = useTranslations("Home");
   const locale = useLocale();
   const controls = useAnimation();
@@ -59,7 +59,7 @@ const InViewAnimationIntroSection: React.FC = () => {
             <div className="mt-10">
               <Link
                 href="/about"
-                className="bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition duration-300 text-lg inline-block"
+                className="transform shadow-lg bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition-all duration-300 text-lg inline-flex hover:-translate-y-1"
               >
                 {t("aboutCTA")}
               </Link>
@@ -71,4 +71,4 @@ const InViewAnimationIntroSection: React.FC = () => {
   );
 };
 
-export default InViewAnimationIntroSection;
+export default InViewIntroAnimationSection;

@@ -10,7 +10,7 @@ import CI from "../about/ci/CI";
 import Publications from "../research/Publications";
 import Patents from "../research/Patents";
 import Vision from "../about/vision/Vision";
-import BusinessModelSection from "./home/BusinessModelSection";
+import BusinessModelSection from "../(home)/components/business/BusinessModelSection";
 import { MenuItem } from "./Header";
 import { useTranslations } from "next-intl";
 

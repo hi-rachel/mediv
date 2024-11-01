@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import InViewAnimationSection from "../home/animation/InViewAnimationSection";
+import InViewAnimation from "@/app/[locale]/common/animation/InViewAnimation";
 import { useTranslations } from "next-intl";
 
 export interface BusinessModelItem {
@@ -33,7 +33,7 @@ const BusinessModelSection: React.FC<BusinessModelProps> = ({
   const businessModel = t.raw("list");
 
   return (
-    <InViewAnimationSection>
+    <InViewAnimation>
       <div className={`py-12 ${className}`}>
         <div className="container mx-auto px-6">
           <motion.h2
@@ -70,7 +70,7 @@ const BusinessModelSection: React.FC<BusinessModelProps> = ({
           </div>
         </div>
       </div>
-    </InViewAnimationSection>
+    </InViewAnimation>
   );
 };
 

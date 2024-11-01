@@ -3,14 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import PartnersSection from "./common/home/partners/PartnersSection";
-import InViewAnimationIntroSection from "./common/home/animation/InViewAnimationIntroSection";
-import InViewAnimationSection from "./common/home/animation/InViewAnimationSection";
-import InViewCountUpAnimation from "./common/home/animation/InViewCountUpAnimation";
+import PartnersSection from "./components/partners/PartnersSection";
+
+import InViewCountUpAnimation from "../common/animation/InViewCountUpAnimation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import BusinessModelSection from "./common/home/BusinessModelSection";
-import LatestResearchSection from "./common/home/LatestResearchSection";
+import BusinessModelSection from "./components/business/BusinessModelSection";
+import InViewLatestResearchSection from "./components/research/InViewLatestResearchSection";
+import InViewAnimation from "../common/animation/InViewAnimation";
+import InViewIntroAnimationSection from "./components/hero/InViewIntroAnimationSection";
 
 const HomePage: React.FC = () => {
   const t = useTranslations("Home");
@@ -143,13 +144,13 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Introduction Section */}
-      <InViewAnimationIntroSection />
+      <InViewIntroAnimationSection />
 
       {/* Business Models */}
       <BusinessModelSection className="py-20" />
 
       {/* Stats Section */}
-      <InViewAnimationSection>
+      <InViewAnimation>
         <div className="py-20 bg-primary text-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -174,17 +175,14 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
-      </InViewAnimationSection>
+      </InViewAnimation>
 
-      {/* Research Section Preview */}
-      <InViewAnimationSection>
-        <LatestResearchSection />
-      </InViewAnimationSection>
+      <InViewLatestResearchSection />
 
       {/* Partners Section */}
-      <InViewAnimationSection>
+      <InViewAnimation>
         <PartnersSection />
-      </InViewAnimationSection>
+      </InViewAnimation>
     </div>
   );
 };
