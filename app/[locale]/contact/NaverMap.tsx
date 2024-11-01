@@ -13,8 +13,8 @@ const NaverMap = () => {
 
       const mapOptions = {
         center: new window.naver.maps.LatLng(
-          36.63575791058899,
-          127.32710273725652
+          36.63677911426229,
+          127.32339145208388
         ),
         zoom: 15,
         zoomControl: true,

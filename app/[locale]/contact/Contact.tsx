@@ -1,11 +1,11 @@
 "use client";
 
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { Building2, Mail, Phone, Clock } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { Suspense } from "react";
 import ContactSkeleton from "../common/loading/ContactSkeleton";
 
 const NaverMap = dynamic(() => import("./NaverMap"), {
@@ -22,8 +22,13 @@ const Contact = () => {
     {
       icon: <Building2 className="w-6 h-6" />,
       title: t("addressTitle"),
-      content: t("address"),
-      subContent: t("subAddress"),
+      content: (
+        <div>
+          <p className="font-medium">{t("address1")}</p>
+          <p className="font-medium">{t("address2")}</p>
+        </div>
+      ),
+      subContent: t("zipCode"),
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -85,9 +90,11 @@ const Contact = () => {
                     <h3 className="text-lg font-medium text-gray-900">
                       {info.title}
                     </h3>
-                    <p className="text-gray-600">{info.content}</p>
+                    <div className="text-gray-600">{info.content}</div>
                     {info.subContent && (
-                      <p className="text-gray-500 text-sm">{info.subContent}</p>
+                      <p className="text-gray-500 text-sm pt-1">
+                        {info.subContent}
+                      </p>
                     )}
                   </div>
                 </div>
