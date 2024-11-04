@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import PartnersSection from "./components/partners/PartnersSection";
-
 import InViewCountUpAnimation from "../common/animation/InViewCountUpAnimation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";

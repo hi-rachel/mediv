@@ -20,7 +20,7 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
   const controls = useAnimation();
   const positionRef = useRef(0);
   const totalWidth = 300 * partners.length;
-  const duration = 20;
+  const duration = 15;
   const pixelsPerSecond = totalWidth / duration;
   const isMountedRef = useRef(false);
 
@@ -30,35 +30,37 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
     let lastTimestamp: number;
 
     const animate = (timestamp: number) => {
-      if (!isMountedRef.current) return;
+      if (!isMountedRef.current) return; // 마운트 상태가 아니면 애니메이션 중지
 
-      if (!lastTimestamp) lastTimestamp = timestamp;
-      const elapsed = timestamp - lastTimestamp;
-      lastTimestamp = timestamp;
+      if (!lastTimestamp) lastTimestamp = timestamp; // 초기 타임스탬프 설정
+      const elapsed = timestamp - lastTimestamp; // 경과 시간 계산
+      lastTimestamp = timestamp; // 타임스탬프 업데이트
 
       if (!isHovered) {
-        positionRef.current += (pixelsPerSecond * elapsed) / 1000;
-        if (positionRef.current >= totalWidth) {
-          positionRef.current -= totalWidth;
+        // 마우스 호버가 아닐 때만 애니메이션 진행
+        positionRef.current += (pixelsPerSecond * elapsed) / 1000; // 위치 업데이트
+        if (positionRef.current >= totalWidth * 4) {
+          // 위치가 총 길이의 4배를 넘으면 초기화하여 무한 스크롤처럼 보이게 함
+          positionRef.current -= totalWidth * 4;
         }
 
         const x =
           direction === "left"
-            ? -positionRef.current
-            : positionRef.current - totalWidth;
+            ? -positionRef.current // 왼쪽 방향일 경우 음수로 이동
+            : positionRef.current - totalWidth * 4; // 오른쪽 방향일 경우 양수로 이동
 
-        controls.set({ x }); // Use set instead of start
+        controls.start({ x }); // 애니메이션 위치를 설정 (start 사용)
       }
 
-      animationFrameId = requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate); // 다음 애니메이션 프레임 요청
     };
 
-    animationFrameId = requestAnimationFrame(animate);
+    animationFrameId = requestAnimationFrame(animate); // 애니메이션 프레임 요청
 
     return () => {
-      isMountedRef.current = false;
+      isMountedRef.current = false; // 컴포넌트 언마운트 시 애니메이션 중지
       if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
+        cancelAnimationFrame(animationFrameId); // 애니메이션 프레임 취소
       }
     };
   }, [
@@ -71,6 +73,7 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
   ]);
 
   return (
+    // 마우스가 올라가면 애니메이션 정지를 위해 상태 업데이트
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -80,11 +83,15 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
         animate={controls}
         initial={{ x: direction === "left" ? 0 : -totalWidth }}
       >
-        {partners.concat(partners).map((partner, index) => (
-          <motion.div key={index} whileHover={{ scale: 1.1 }}>
-            <PartnerCard {...partner} />
-          </motion.div>
-        ))}
+        {Array(5)
+          .fill(partners)
+          .flat()
+          .map((partner, index) => (
+            // 호버 시 확대 효과 적용
+            <motion.div key={index} whileHover={{ scale: 1.1 }}>
+              <PartnerCard {...partner} />
+            </motion.div>
+          ))}
       </motion.div>
     </div>
   );

@@ -6,17 +6,17 @@ interface PartnerCardProps {
 }
 
 const PartnerCard: React.FC<PartnerCardProps> = ({ name, logo }) => (
-  <div className="flex flex-col items-center justify-center w-72 h-40 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
-    <div className="p-4 w-full h-32 relative mb-4">
+  <div className="flex flex-col items-center justify-between w-72 h-48 bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+    <div className="relative w-full h-28 flex items-center justify-center">
       <Image
-        className="object-contain px-4"
         src={logo}
         alt={name}
         layout="fill"
+        className="object-contain p-2"
       />
     </div>
-    <p className="text-gray-800 font-bold text-center text-lg mt-2 break-keep w-full">
-      {name}
+    <p className="text-gray-800 font-bold text-center w-full min-h-[2.5rem] flex items-center justify-center">
+      <span className="text-md leading-tight">{name}</span>
     </p>
   </div>
 );

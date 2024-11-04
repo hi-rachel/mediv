@@ -126,6 +126,26 @@
       }
     ]
   },
+  "Partners": {
+    "list": [
+      {
+        "name": "Chungbuk National University Hospital",
+        "logo": "/충북대학교병원.webp"
+      },
+      {
+        "name": "Chungbuk National University College of Medicine",
+        "logo": "/충북대학교의과대학.webp"
+      },
+      { "name": "Korea University Medicine", "logo": "/고려대학교병원.webp" },
+      { "name": "Korea University", "logo": "/고려대학교.webp" },
+      {
+        "name": "KBIOHealth",
+        "logo": "/오송첨단의료산업진흥재단.webp"
+      },
+      { "name": "DEVELO", "logo": "/디벨로.webp" },
+      { "name": "MIKSCAN", "logo": "/엠아이케이스캔.webp" }
+    ]
+  },
   "Vision": {
     "metaTitle": "Vision",
     "metaDescription": "",
