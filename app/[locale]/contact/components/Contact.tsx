@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Building2, Mail, Phone, Clock } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import ContactSkeleton from "../common/loading/ContactSkeleton";
+import ContactSkeleton from "../../common/loading/ContactSkeleton";
 
 const NaverMap = dynamic(() => import("./NaverMap"), {
   ssr: false,

@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 import useTabState from "@/app/hooks/useTabState";
-import ProjectHistory from "../business/ProjectHistory";
-import AwardsAndCertifications from "../business/AwardsAndCertifications";
-import History from "../about/History";
-import Organization from "../about/Organization";
-import CI from "../about/ci/CI";
-import Publications from "../research/Publications";
-import Patents from "../research/Patents";
-import Vision from "../about/vision/Vision";
+import ProjectHistory from "../business/components/ProjectHistory";
+import AwardsAndCertifications from "../business/components/AwardsAndCertifications";
+import History from "../about/components/History";
+import Organization from "../about/components/Organization";
+import CI from "../about/components/ci/CI";
+import Publications from "../research/components/Publications";
+import Patents from "../research/components/Patents";
+import Vision from "../about/components/vision/Vision";
 import BusinessModelSection from "../(home)/components/business/BusinessModelSection";
 import { MenuItem } from "./Header";
 import { useTranslations } from "next-intl";

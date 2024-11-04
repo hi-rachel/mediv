@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import dynamic from "next/dynamic";
 import ContactSkeleton from "../common/loading/ContactSkeleton";
 
-const Contact = dynamic(() => import("./Contact"), {
+const Contact = dynamic(() => import("./components/Contact"), {
   ssr: false,
   loading: () => <ContactSkeleton />,
 });

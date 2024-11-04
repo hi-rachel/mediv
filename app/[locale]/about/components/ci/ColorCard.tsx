@@ -1,4 +1,4 @@
-import { ColorPalette } from "../../data/ci";
+import { ColorPalette } from "../../../data/ci";
 import { fadeInUp } from "@/app/utils/animations";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
