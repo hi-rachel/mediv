@@ -6,13 +6,7 @@ import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
-
-export type MenuItem = {
-  id: string;
-  label: string;
-  href: string;
-  subItems?: { id: string; label: string; href: string }[];
-};
+import { MenuItem } from "@/types/menu";
 
 const Header = () => {
   const t = useTranslations("MenuItems");
@@ -87,7 +81,7 @@ const Header = () => {
                 <Link
                   href={
                     item.subItems && item.subItems.length > 0
-                      ? `${item.href}?tab=${item.subItems[0].id}`
+                      ? `${item.href}/${item.subItems[0].id}`
                       : item.href
                   }
                   className={`px-4 py-2 rounded-none text-sm font-bold focus:outline-none transition duration-150 ease-in-out ${isActive(
@@ -102,7 +96,7 @@ const Header = () => {
                     {item.subItems.map((subItem) => (
                       <Link
                         key={subItem.id}
-                        href={`${item.href}?tab=${subItem.id}`}
+                        href={`${item.href}/${subItem.id}`}
                         className="font-semibold block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary transition duration-150 ease-in-out"
                       >
                         {subItem.label}
@@ -209,7 +203,7 @@ const Header = () => {
                 <Link
                   href={
                     item.subItems && item.subItems.length > 0
-                      ? `${item.href}?tab=${item.subItems[0].id}`
+                      ? `${item.href}/${item.subItems[0].id}`
                       : item.href
                   }
                   onClick={() => setIsOpen(false)}

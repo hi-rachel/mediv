@@ -1,28 +1,11 @@
-import { Suspense } from "react";
-import TabSection from "../common/TabSection";
-import TabCardSkeleton from "../common/loading/TabCardSkeleton";
-import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { redirect } from "next/navigation";
 
-export async function generateMetadata({
+const ResearchPage = ({
   params: { locale },
 }: {
   params: { locale: string };
-}): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "Metadata" });
-
-  return {
-    title: t("research.title"),
-    description: t("research.description"),
-  };
-}
-
-const ResearchPage: React.FC = () => {
-  return (
-    <Suspense fallback={<TabCardSkeleton />}>
-      <TabSection menuId="research" />
-    </Suspense>
-  );
+}) => {
+  redirect(`/${locale}/research/publications`);
 };
 
 export default ResearchPage;

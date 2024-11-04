@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useMemo } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { getMonthName } from "@/app/utils/helpers";
@@ -5,7 +7,7 @@ import { Publication } from "@/types/publication";
 import { Filter, ChevronDown, Search, Calendar, X } from "lucide-react";
 // import Link from "next/link";
 
-const PublicationsLayout = () => {
+const Publications = () => {
   const t = useTranslations("Publications");
   const publications = t.raw("list") as Publication[];
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -335,4 +337,4 @@ const PublicationsLayout = () => {
   );
 };
 
-export default PublicationsLayout;
+export default Publications;

@@ -1,28 +1,11 @@
-import { Suspense } from "react";
-import TabSection from "../common/TabSection";
-import BusinessSkeleton from "../common/loading/BusinessSkeleton";
-import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { redirect } from "next/navigation";
 
-export async function generateMetadata({
+const BusinessPage = ({
   params: { locale },
 }: {
   params: { locale: string };
-}): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "Metadata" });
-
-  return {
-    title: t("business.title"),
-    description: t("business.description"),
-  };
-}
-
-const BusinessPage = () => {
-  return (
-    <Suspense fallback={<BusinessSkeleton />}>
-      <TabSection menuId="business" />
-    </Suspense>
-  );
+}) => {
+  redirect(`/${locale}/business/business-model`);
 };
 
 export default BusinessPage;

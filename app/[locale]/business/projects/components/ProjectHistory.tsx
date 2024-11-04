@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
 import { motion } from "framer-motion";
