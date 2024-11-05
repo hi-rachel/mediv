@@ -555,11 +555,11 @@
       "selected": "selected"
     },
     "details": {
-      "notFound": "",
+      "notFound": "We are currently preparing publications data.",
       "backToList": "Back To List",
       "link": "Link",
-      "author": "저자명",
-      "keywords": "keywords"
+      "author": "Author",
+      "keyword": "keyword"
     },
     "home": {
       "researchCTA": "View Research"

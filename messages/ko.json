@@ -523,9 +523,9 @@
       "selected": "선택됨"
     },
     "details": {
-      "notFound": "",
+      "notFound": "현재 논문 데이터 준비 중입니다.",
       "backToList": "뒤로가기",
-      "link": "Link",
+      "link": "논문 바로가기",
       "author": "저자명",
       "keywords": "keywords"
     },

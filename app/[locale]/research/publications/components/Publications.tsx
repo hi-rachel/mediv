@@ -16,8 +16,8 @@ import { getYearFilterText } from "@/app/utils/translation";
 import { PublicationCard } from "./PublicationCard";
 
 const Publications = () => {
-  const t = useTranslations("Publications");
   const locale = useLocale();
+  const t = useTranslations("Publications");
   const publications = t.raw("list") as Publication[];
 
   // Mobile filter state

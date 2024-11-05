@@ -27,7 +27,7 @@ const PrivacyPolicyPage = () => {
         content: (
           <div className="prose prose-lg text-gray-600">
             <p className="leading-relaxed">
-              ㅎ<strong>{t("companyName")}</strong>
+              <strong>{t("companyName")}</strong>
               {t("introParagraph")}
             </p>
             <p className="mt-4">{t("introDetails")}</p>

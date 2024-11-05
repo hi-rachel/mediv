@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import TabLayout from "../common/tabs/TabLayout";
+import TabLayout from "../../common/tabs/TabLayout";
 import { LayoutProps } from "@/types/layout";
-import TabCardSkeleton from "../common/loading/TabCardSkeleton";
+import PublicationSkeleton from "../../common/skeleton/PublicationSkeleton";
 
 export const generateMetadata = async ({
   params: { locale },
@@ -23,7 +23,7 @@ export const generateMetadata = async ({
 const ResearchLayout = ({ children, params: { locale } }: LayoutProps) => {
   return (
     <TabLayout params={{ locale, basePath: "research" }}>
-      <Suspense fallback={<TabCardSkeleton />}>{children}</Suspense>
+      <Suspense fallback={<PublicationSkeleton />}>{children}</Suspense>
     </TabLayout>
   );
 };
