@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import TabLayout from "../../common/tabs/TabLayout";
 import { LayoutProps } from "@/types/layout";
-import PublicationSkeleton from "../../common/skeleton/PublicationSkeleton";
+import PatentsSkeleton from "../../common/skeleton/PatentsSkeleton";
 
 export const generateMetadata = async ({
   params: { locale },
@@ -23,7 +23,7 @@ export const generateMetadata = async ({
 const ResearchLayout = ({ children, params: { locale } }: LayoutProps) => {
   return (
     <TabLayout params={{ locale, basePath: "research" }}>
-      <Suspense fallback={<PublicationSkeleton />}>{children}</Suspense>
+      <Suspense fallback={<PatentsSkeleton />}>{children}</Suspense>
     </TabLayout>
   );
 };

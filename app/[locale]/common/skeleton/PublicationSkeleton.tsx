@@ -5,7 +5,7 @@ const PublicationSkeleton = () => {
       <div>
         {/* Add top padding to account for header */}
         <div className="max-w-5xl mx-auto overflow-hidden">
-          <div className="">
+          <div>
             <div className="flex flex-col lg:flex-row lg:gap-8 gap-4">
               {/* Mobile Search and Filter Skeleton */}
               <div className="lg:hidden">
