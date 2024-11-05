@@ -1,5 +1,3 @@
-import { Suspense } from "react";
-import AboutSkeleton from "../common/loading/AboutSkeleton";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import TabLayout from "../common/tabs/TabLayout";
@@ -20,9 +18,7 @@ export const generateMetadata = async ({
 
 const AboutLayout = ({ children, params: { locale } }: LayoutProps) => {
   return (
-    <TabLayout params={{ locale, basePath: "about" }}>
-      <Suspense fallback={<AboutSkeleton />}>{children}</Suspense>
-    </TabLayout>
+    <TabLayout params={{ locale, basePath: "about" }}>{children}</TabLayout>
   );
 };
 

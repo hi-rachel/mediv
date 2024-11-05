@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 
 const Organization = () => {
+  const locale = useLocale();
+
   return (
     <div>
       <motion.div
@@ -22,12 +25,21 @@ const Organization = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="w-full sm:h-[500px] h-[300px] flex justify-center text-center py-5">
-          <Image
-            src="/organization.png"
-            alt="Mediv 조직도"
-            fill
-            className="md:pl-28 pl-4 object-contain"
-          />
+          {locale === "ko" ? (
+            <Image
+              src="/organization.webp"
+              alt="Mediv 조직도"
+              fill
+              className="md:pl-28 pl-4 object-contain"
+            />
+          ) : (
+            <Image
+              src="/organization-en.webp"
+              alt="Mediv Organization"
+              fill
+              className="md:pl-28 pl-4 object-contain"
+            />
+          )}
         </div>
       </motion.div>
     </div>
