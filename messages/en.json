@@ -88,11 +88,11 @@
   "Metadata": {
     "home": {
       "title": "Mediv",
-      "description": "Mediv leads the future of the medical industry through AI innovation, focusing on medical data integration, medical AI software development, and an MPS-based alternative testing validation platform. We add new value to healthcare by combining medical data with advanced AI technologies."
+      "description": "Mediv is an ICT convergence innovation company that leads the future of the biomedical industry through the development of big data solutions, AI software, and web platforms. It adds new value to the digital healthcare field through the combination of biomedical and AI."
     },
     "about": {
       "title": "About | Mediv",
-      "description": "E | Medivxplore Mediv's mission, vision, and journey to revolutionize the medical industry through innovative AI-driven solutions."
+      "description": "Explore Mediv’s mission, vision, and journey to lead the biomedical industry with innovative AI-based solutions."
     },
     "business": {
       "title": "Business | Mediv",
@@ -100,7 +100,7 @@
     },
     "research": {
       "title": "Research | Mediv",
-      "description": "Learn about Mediv's cutting-edge research and development in AI and healthcare, driving new possibilities in medical technology."
+      "description": "From medical and bio big data solutions to AI-based platforms, check out Mediv’s main business areas that are leading the development of digital healthcare technology."
     },
     "contact": {
       "title": "Contact | Mediv",
@@ -553,6 +553,13 @@
       "filterByYears": "Filter By Years",
       "year": "year",
       "selected": "selected"
+    },
+    "details": {
+      "notFound": "",
+      "backToList": "Back To List",
+      "link": "Link",
+      "author": "저자명",
+      "keywords": "keywords"
     },
     "home": {
       "researchCTA": "View Research"
