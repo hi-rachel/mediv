@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import PublicationDetail from "../publications/components/PublicationDetail";
 import { Publication } from "@/types/publication";
+import { createSlug } from "@/app/utils/string";
 
 interface Props {
   params: {
@@ -15,8 +16,9 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "Publications" });
   const publications = t.raw("list") as Publication[];
+
   const publication = publications.find(
-    (pub) => encodeURIComponent(pub.title) === slug
+    (pub) => createSlug(pub.title) === slug
   );
 
   if (!publication) {
@@ -27,9 +29,9 @@ export async function generateMetadata({
 
   return {
     title: publication.title,
-    description: `${publication.author.join(", ")} - ${
-      publication.publication
-    }`,
+    description: `${publication.publication} - ${publication.author.join(
+      ", "
+    )}`,
   };
 }
 
