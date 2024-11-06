@@ -146,7 +146,7 @@ const Vision = () => {
                     {value.icon}
                   </div>
                   <div>
-                    <h3 className="md:text-xl text-md font-bold text-primary mb-4 group-hover:text-secondary transition-colors duration-300">
+                    <h3 className="md:text-xl text-md font-bold text-primary mb-4 group-hover:text-[#2d8185] transition-colors duration-300">
                       {value.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
