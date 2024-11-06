@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        baseText: "#37352F",
         primary: {
           DEFAULT: "#0A2540", // 짙은 네이비 블루 (전문성, 신뢰)
           light: "#4A6FA5", // 차분한 블루 (보조 색상)
