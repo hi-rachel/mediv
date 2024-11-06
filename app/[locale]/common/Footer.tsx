@@ -46,10 +46,10 @@ const Footer = () => {
                   {t("tel")}
                 </span>
                 <Link
-                  href={`tel:${t("phoneNumber")}`}
+                  href={`tel:${t("telephoneNumber")}`}
                   className="text-sm hover:text-white transition-colors"
                 >
-                  {t("phoneNumber")}
+                  {t("telephoneNumber")}
                 </Link>
               </div>
               <div className="flex items-center">

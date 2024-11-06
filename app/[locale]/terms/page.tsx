@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
       {
         title: t("title"),
         content: (
-          <div className="prose prose-lg text-gray-600">
+          <div className="prose prose-lg">
             <p className="leading-relaxed">
               <strong>{t("companyName")}</strong>
               {t("introParagraph")}
@@ -42,21 +42,12 @@ const PrivacyPolicyPage = () => {
             <ol className="list-decimal list-inside space-y-2 pl-4">
               <li>
                 <strong>{t("section1.emailInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section1.emailDetails")}</li>
-                </ul>
               </li>
               <li>
-                <strong>{t("section1.phoneInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section1.phoneDetails")}</li>
-                </ul>
+                <strong>{t("section1.telephoneInquiry")}</strong>
               </li>
               <li>
                 <strong>{t("section1.internetService")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section1.internetDetails")}</li>
-                </ul>
               </li>
             </ol>
           </div>
@@ -70,21 +61,12 @@ const PrivacyPolicyPage = () => {
             <ol className="list-decimal list-inside space-y-2 pl-4">
               <li>
                 <strong>{t("section2.emailInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section2.emailDetails")}</li>
-                </ul>
               </li>
               <li>
-                <strong>{t("section2.phoneInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section2.phoneDetails")}</li>
-                </ul>
+                <strong>{t("section2.telephoneInquiry")}</strong>
               </li>
               <li>
                 <strong>{t("section2.visitorInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section2.visitorDetails")}</li>
-                </ul>
               </li>
             </ol>
           </div>
@@ -99,21 +81,12 @@ const PrivacyPolicyPage = () => {
             <ol className="list-decimal list-inside space-y-2 pl-4">
               <li>
                 <strong>{t("section3.emailInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section3.emailDetails")}</li>
-                </ul>
               </li>
               <li>
-                <strong>{t("section3.phoneInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section3.phoneDetails")}</li>
-                </ul>
+                <strong>{t("section3.telephoneInquiry")}</strong>
               </li>
               <li>
                 <strong>{t("section3.visitorInquiry")}</strong>
-                <ul className="mt-2 pl-8">
-                  <li>{t("section3.visitorDetails")}</li>
-                </ul>
               </li>
             </ol>
           </div>
@@ -158,6 +131,20 @@ const PrivacyPolicyPage = () => {
         content: (
           <div className="space-y-4">
             <p>{t("section8.description")}</p>
+            <ul className="list-disc pl-4 space-y-2 list-inside">
+              <li>
+                <strong>{t("section8.ele1")}</strong>
+              </li>
+              <li>
+                <strong>{t("section8.ele2")}</strong>
+              </li>
+              <li>
+                <strong>{t("section8.ele3")}</strong>
+              </li>
+              <li>
+                <strong>{t("section8.ele4")}</strong>
+              </li>
+            </ul>
           </div>
         ),
       },
@@ -166,6 +153,22 @@ const PrivacyPolicyPage = () => {
         content: (
           <div className="space-y-4">
             <p>{t("section9.description")}</p>
+          </div>
+        ),
+      },
+      {
+        title: t("section10.title"),
+        content: (
+          <div className="space-y-4">
+            <p>{t("section10.description")}</p>
+            <ul className="list-disc list-inside space-y-2 pl-4">
+              <li>
+                <strong>{t("section10.emailInquiry")}</strong>
+              </li>
+              <li>
+                <strong>{t("section10.telephoneInquiry")}</strong>
+              </li>
+            </ul>
           </div>
         ),
       },
@@ -190,6 +193,17 @@ const PrivacyPolicyPage = () => {
         content: (
           <div className="space-y-4">
             <p>{t("section13.description")}</p>
+            <ul className="list-disc list-inside space-y-2 pl-4">
+              <li>
+                <strong>{t("section13.ele1")}</strong>
+              </li>
+              <li>
+                <strong>{t("section13.ele2")}</strong>
+              </li>
+              <li>
+                <strong>{t("section13.ele3")}</strong>
+              </li>
+            </ul>
           </div>
         ),
       },
@@ -203,21 +217,6 @@ const PrivacyPolicyPage = () => {
         ),
       },
     ],
-    contactInfo: {
-      emailTitle: t("contactInfo.emailTitle"),
-      contacts: [
-        {
-          role: t("contactInfo.responsiblePerson.role"),
-          name: t("contactInfo.responsiblePerson.name"),
-          email: t("contactInfo.responsiblePerson.email"),
-        },
-        {
-          role: t("contactInfo.representative.role"),
-          name: t("contactInfo.representative.name"),
-          email: t("contactInfo.representative.email"),
-        },
-      ],
-    },
     versionInfo: {
       version: "v.0.1",
       established: "2024. 10. 14",

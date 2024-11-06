@@ -617,7 +617,7 @@
     "tel": "Tel",
     "email": "Email",
     "emailAddress": "mediv_admin@mediv.kr",
-    "phoneNumber": "043-715-2498",
+    "telephoneNumber": "043-715-2498",
     "policy": "Policy",
     "privacyPolicy": "Privacy Policy"
   },
@@ -626,97 +626,85 @@
     "title": "Privacy Policy",
     "subTitle": "Mediv considers privacy protection as our top priority",
     "companyName": "Mediv Corp. (hereinafter \"Mediv\") ",
-    "introParagraph": "considers the protection of users' personal information to be of utmost importance and complies with South Korea's personal information-related laws, including the Personal Information Protection Act, and personal information protection guidelines that personal information processors must follow.",
+    "introParagraph": "places great importance to the protection of users' personal information and complies with personal information-related laws and protection guidelines, such as the Personal Information Protection Act of the Republic of Korea and the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.",
     "introDetails": "Accordingly, Mediv establishes and discloses the following privacy policy pursuant to Article 30 of the Personal Information Protection Act to protect users' personal information and to handle related grievances promptly and smoothly.",
     "section1": {
       "title": "Article 1 (Types of Personal Information Processed)",
-      "description": "Mediv processes the following types of personal information:",
-      "emailInquiry": "Email Inquiries",
-      "emailDetails": "Email address, inquiry details",
-      "phoneInquiry": "Phone Inquiries",
-      "phoneDetails": "Phone number, inquiry details",
-      "internetService": "Information automatically generated during internet service use",
-      "internetDetails": "IP address, cookies, MAC address, service usage records, device information, visit history, location information"
+      "description": "Mediv collects and processes the following personal information items.",
+      "emailInquiry": "Email Inquiries: Email address, inquiry details",
+      "telephoneInquiry": "Telephone inquiries: Phone number, inquiry details",
+      "internetService": "Information automatically generated during internet service use: IP address, cookies, MAC address, service usage records, device information, visit history, location information"
     },
     "section2": {
       "title": "Article 2 (Purpose of Personal Information Processing)",
-      "description": "Mediv processes personal information for the following purposes. If personal information is used for other purposes or if the purpose changes, separate consent will be obtained in accordance with Article 18 of the Personal Information Protection Act.",
-      "emailInquiry": "Email Inquiries",
-      "emailDetails": "Response to inquiries",
-      "phoneInquiry": "Phone Inquiries",
-      "phoneDetails": "Response to inquiries",
-      "visitorInquiry": "Visitor Management",
-      "visitorDetails": "Access control and record maintenance"
+      "description": "Mediv processes personal information for the following purposes and is not used for any other purpose. If the purpose changes, separate consent will be obtained in accordance with Article 18 of the Personal Information Protection Act.",
+      "emailInquiry": "Email and Telephone inquiries: Response to user inquiries",
+      "telephoneInquiry": "Visitor Management: In-house access control and records management",
+      "visitorInquiry": "Service improvement: Statistics and analysis to improve service quality and provide customized services"
     },
     "section3": {
       "title": "Article 3 (Processing and Retention Period of Personal Information)",
       "description1": "① Mediv processes and retains personal information within the period of retention and use of personal information in accordance with laws or the period agreed upon by the information subject.",
-      "description2": "② The processing and retention periods for each type of personal information are as follows:",
-      "emailInquiry": "Email Inquiries",
-      "emailDetails": "Maximum 1 year after completion",
-      "phoneInquiry": "Phone Inquiries",
-      "phoneDetails": "Maximum 1 month after completion",
-      "visitorInquiry": "Visitor Management",
-      "visitorDetails": "1 year"
+      "description2": "② The processing and retention period of personal information for each item is as follows.",
+      "emailInquiry": "Email Inquiries: Up to 1 year after collection",
+      "telephoneInquiry": "Telephone inquiries: Up to 1 month after collection",
+      "visitorInquiry": "Visitor Management: Retention for 1 year"
     },
     "section4": {
       "title": "Article 4 (Provision of Personal Information to Third Parties)",
-      "description": "Mediv does not provide personal information to third parties without the consent of the information subject and only provides it when required by law."
+      "description": "Mediv does not provide personal information to third parties without the consent of the information subject. However, it may be provided as an exception only in cases based on law."
     },
     "section5": {
-      "title": "Article 5 (Possibility of Sensitive Information Disclosure and Non-disclosure Methods)",
-      "description": "Mediv manages sensitive information to prevent disclosure during service provision and can take non-disclosure measures upon request from the information subject."
+      "title": "Article 5 (Principles of collection and non-disclosure of sensitive information)",
+      "description": "Mediv manages to prevent sensitive information from being disclosed while providing services, and takes non-disclosure measures without delay if requested by the information subject."
     },
     "section6": {
       "title": "Article 6 (Destruction of Personal Information)",
-      "description1": "① Mediv does not collect personal information for purposes other than inquiry response, and promptly destroys personal information when the retention period expires or the processing purpose is achieved.",
-      "description2": "② Electronic files are deleted using non-recoverable methods, and documents are shredded or incinerated."
+      "description1": "① Mediv destroys personal information without delay when the purpose of collection has been achieved or the retention period has expired.",
+      "description2": "② Information in electronic form is deleted in a way that makes recovery impossible, and paper documents are shredded or incinerated."
     },
     "section7": {
       "title": "Article 7 (Rights of Information Subjects and Exercise Methods)",
-      "description1": "① Information subjects may request access to, correction of, deletion of, or suspension of processing of personal information from Mediv at any time.",
-      "description2": "② Rights can be exercised through written documents or email, and Mediv will process requests without delay."
+      "description1": "① The information subject may request Medivh to view, correct, delete, or suspend processing of personal information at any time.",
+      "description2": "② Information subjects can exercise their rights in writing, via email, etc., and Medivh takes necessary measures without delay after receiving the request."
     },
     "section8": {
       "title": "Article 8 (Personal Information Security Measures)",
-      "description": "Mediv implements technical and physical measures such as establishing internal management plans, access authority control, and encryption to ensure the security of personal information."
+      "description": "Mediv is implementing the following technical, managerial, and physical measures to ensure the safety of personal information.",
+      "ele1": "Establishment and implementation of internal management plan",
+      "ele2": "Minimization and control of personal information access rights",
+      "ele3": "Encryption of personal information",
+      "ele4": "Hacking and malware prevention measures"
     },
     "section9": {
       "title": "Article 9 (Cookie Usage and Rejection)",
-      "description": "Mediv uses cookies to provide customized services, and users can reject cookie storage through browser settings."
+      "description": "Mediv uses cookies to provide customized services, and users can reject cookie storage through browser settings. However, if you refuse cookies, you may have difficulty providing some services."
     },
     "section10": {
-      "title": "Article 10 (Personal Information Protection Officer)"
+      "title": "Article 10 (Personal Information Protection Officer)",
+      "description": "For inquiries regarding personal information, please contact us by email or phone.",
+      "emailInquiry": "Email Inquiries: mediv_admin@mediv.kr",
+      "telephoneInquiry": "Telephone inquiries: 043-715-2498"
     },
     "section11": {
       "title": "Article 11 (Request for Personal Information Access)",
-      "description": "Requests for access to personal information can be made to Mediv's personal information department."
+      "description": "Requests for access to personal information can be made to Medivh's personal information department, and Medivh will guide you through the procedures for requesting access in accordance with relevant laws and regulations."
     },
     "section12": {
       "title": "Article 12 (Standards for Additional Use/Provision Without Consent)",
-      "description": "When using personal information additionally without consent, Mediv processes it exceptionally according to legal standards."
+      "description": "When Mediv additionally uses or provides personal information without the consent of the information subject, it carefully determines whether it meets the standards set by law in accordance with Article 15, Paragraph 3 of the Personal Information Protection Act."
     },
     "section13": {
       "title": "Article 13 (Remedies for Rights Infringement)",
-      "description": "Users can report personal information infringement issues to external organizations such as the Korea Internet & Security Agency (KISA)."
+      "description": "Users may contact the organizations below for consultation and relief related to personal information infringement.",
+      "ele1": "Personal Information Infringement Reporting Center: (without area code) 118",
+      "ele2": "Supreme Prosecutors' Office Cyber ​​Investigation Division: (without area code) 1301",
+      "ele3": "National Police Agency Cyber ​​Security Bureau: (without area code) 182"
     },
     "section14": {
       "title": "Article 14 (Changes to Privacy Policy)",
-      "description1": "① This policy may be revised periodically due to changes in laws and internal policies.",
-      "description2": "② Changes will be announced through the website."
-    },
-    "contactInfo": {
-      "emailTitle": "Email",
-      "responsiblePerson": {
-        "role": "Data Protection Officer",
-        "name": "Seung Park (CEO)",
-        "email": "spark.cbnuh@gmail.com"
-      },
-      "representative": {
-        "role": "Manager",
-        "name": "Kyung-mo Kim (Head of System Development Department)",
-        "email": "mohunk@mediv.kr"
-      }
+      "description1": "① This policy may be revised according to changes in laws and internal policies.",
+      "description2": "② When changes are made to the personal information processing policy, changes will be announced on the website."
     },
     "versionInfo": {
       "versionNumber": "Version Number",
