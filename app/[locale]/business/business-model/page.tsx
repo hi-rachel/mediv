@@ -1,7 +1,7 @@
-import BusinessModelSection from "@/app/[locale]/(home)/components/business/BusinessModelSection";
+import BusinessModel from "./components/BusinessModel";
 
 const BusinessModelPage = () => {
-  return <BusinessModelSection />;
+  return <BusinessModel />;
 };
 
 export default BusinessModelPage;
