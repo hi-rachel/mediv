@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { getMonthName } from "@/app/utils/helpers";
+import { getMonthName } from "@/app/utils/date";
 import { Publication } from "@/types/publication";
 import SearchBar from "./SearchBar";
 import FilterToggle from "./FilterToggle";

@@ -1,5 +1,5 @@
 import { fadeInUp } from "@/app/utils/animations";
-import { downloadImage } from "@/app/utils/helpers";
+import { downloadImage } from "@/app/utils/image";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import Image from "next/image";
@@ -42,7 +42,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <button
-          onClick={() => downloadImage(src, `${alt}.png`)}
+          onClick={() => downloadImage(src, `${alt}.webp`)}
           className="bg-white text-primary py-2 px-4 rounded-full flex items-center"
         >
           <Download size={16} className="mr-2" />

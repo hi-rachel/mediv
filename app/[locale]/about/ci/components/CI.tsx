@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 import ImageCard from "./ImageCard";
 import ColorCard from "./ColorCard";
 import { fadeInUp, staggerContainer } from "@/app/utils/animations";
-import { downloadImage } from "@/app/utils/helpers";
+import { downloadImage } from "@/app/utils/image";
 import { colorPalette, grayVersion, logoVariations } from "../../../data/ci";
 
 const CIShowcase: React.FC = () => {

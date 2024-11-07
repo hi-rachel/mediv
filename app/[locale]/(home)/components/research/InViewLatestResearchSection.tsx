@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/routing";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import { getMonthName } from "@/app/utils/helpers";
+import { getMonthName } from "@/app/utils/date";
 import { Publication } from "@/types/publication";
 import { motion, useInView, useAnimation } from "framer-motion";
 

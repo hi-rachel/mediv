@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useLocale } from "next-intl";
-import { createSlug } from "@/app/utils/string";
+import { createSlug } from "@/app/utils/url";
 import { Publication } from "@/types/publication";
 
 interface PublicationCardProps {
