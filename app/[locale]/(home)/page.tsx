@@ -146,7 +146,7 @@ const HomePage: React.FC = () => {
       <InViewIntroAnimationSection />
 
       {/* Business Models */}
-      <BusinessModelSection className="py-20" />
+      <BusinessModelSection />
 
       {/* Stats Section */}
       <InViewAnimation>
