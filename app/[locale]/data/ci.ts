@@ -6,21 +6,21 @@ export interface LogoVariation {
 }
 
 export const logoVariations: LogoVariation[] = [
-  { src: "/mediv-logo.png", alt: "MEDIV logo", title: "Standard" },
+  { src: "/images/logo/mediv-logo.webp", alt: "MEDIV logo", title: "Standard" },
   {
-    src: "/mediv-logo-co.png",
+    src: "/images/logo/mediv-logo-co.webp",
     alt: "MEDIV logo vertical",
     title: "Vertical Korean",
   },
   {
-    src: "/mediv-logo-co2.png",
+    src: "/images/logo/mediv-logo-co2.webp",
     alt: "MEDIV logo horizontal",
     title: "Horizontal Korean",
   },
 ];
 
 export const grayVersion: LogoVariation = {
-  src: "/mediv-logo-gray.png",
+  src: "/images/logo/mediv-logo-gray.webp",
   alt: "MEDIV logo gray",
   title: "Gray Version",
 };

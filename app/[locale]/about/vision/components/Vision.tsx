@@ -77,7 +77,7 @@ const Vision = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5 rounded-3xl" />
           <div className="relative w-[300px] h-[300px] mb-6">
             <Image
-              src="/mediv-logo.png"
+              src="/images/logo/mediv-logo.webp"
               alt="mediv-logo"
               width={300}
               height={300}

@@ -67,7 +67,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/mediv-logo.png"
+              src="/images/logo/mediv-logo.webp"
               alt="Mediv Logo"
               width={60}
               height={60}

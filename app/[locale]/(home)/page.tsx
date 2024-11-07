@@ -7,7 +7,7 @@ import PartnersSection from "./components/partners/PartnersSection";
 import InViewCountUpAnimation from "../common/animation/InViewCountUpAnimation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import BusinessModelSection from "./components/business/BusinessModelSection";
+// import BusinessModelSection from "./components/business/BusinessModelSection";
 import InViewLatestResearchSection from "./components/research/InViewLatestResearchSection";
 import InViewAnimation from "../common/animation/InViewAnimation";
 import InViewIntroAnimationSection from "./components/hero/InViewIntroAnimationSection";
@@ -20,17 +20,17 @@ const HomePage: React.FC = () => {
 
   const slides = [
     {
-      image: "/main.webp",
+      image: "/images/main-slide/main.webp",
       title: "AI-Powered Diagnostics",
       description: t("slides.0.description"),
     },
     {
-      image: "/main2.webp",
+      image: "/images/main-slide/main2.webp",
       title: "Custom Software Development",
       description: t("slides.1.description"),
     },
     {
-      image: "/main3.webp",
+      image: "/images/main-slide/main3.webp",
       title: "Data-Driven Healthcare",
       description: t("slides.2.description"),
     },
@@ -146,7 +146,7 @@ const HomePage: React.FC = () => {
       <InViewIntroAnimationSection />
 
       {/* Business Models */}
-      <BusinessModelSection className="py-20" />
+      {/* <BusinessModelSection className="py-20" /> */}
 
       {/* Stats Section */}
       <InViewAnimation>

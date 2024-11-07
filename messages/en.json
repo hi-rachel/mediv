@@ -111,17 +111,17 @@
     "list": [
       {
         "title": "Medical Data Integration",
-        "image": "/model-data.png",
+        "image": "/images/business-model/model-data.webp",
         "description": "Accelerating AI innovation with high-quality medical datasets"
       },
       {
-        "title": "Medical AI Software Development",
-        "image": "/model-sw.png",
+        "title": "Medical AI Software De/images/business-modelvelopment",
+        "image": "/images/business-model/model-sw.webp",
         "description": "Implementing efficient and reliable systems"
       },
       {
         "title": "Alternative Testing Validation Platform",
-        "image": "/model-experiment.png",
+        "image": "/images/business-model/model-experiment.webp",
         "description": "Providing ethical and scientific alternatives"
       }
     ]
@@ -130,20 +130,26 @@
     "list": [
       {
         "name": "Chungbuk National University Hospital",
-        "logo": "/충북대학교병원.webp"
+        "logo": "/images/partners/충북대학교병원.webp"
       },
       {
         "name": "Chungbuk National University College of Medicine",
-        "logo": "/충북대학교의과대학.webp"
+        "logo": "/images/partners/충북대학교의과대학.webp"
       },
-      { "name": "Korea University Medicine", "logo": "/고려대학교병원.webp" },
-      { "name": "Korea University", "logo": "/고려대학교.webp" },
+      {
+        "name": "Korea University Medicine",
+        "logo": "/images/partners/고려대학교병원.webp"
+      },
+      {
+        "name": "Korea University",
+        "logo": "/images/partners/고려대학교.webp"
+      },
       {
         "name": "KBIOHealth",
-        "logo": "/오송첨단의료산업진흥재단.webp"
+        "logo": "/images/partners/오송첨단의료산업진흥재단.webp"
       },
-      { "name": "DEVELO", "logo": "/디벨로.webp" },
-      { "name": "MIKSCAN", "logo": "/엠아이케이스캔.webp" }
+      { "name": "DEVELO", "logo": "/images/partners/디벨로.webp" },
+      { "name": "MIKSCAN", "logo": "/images/partners/엠아이케이스캔.webp" }
     ]
   },
   "Vision": {
@@ -256,11 +262,11 @@
     ],
     "certifications": [
       {
-        "src": "/벤처기업.webp",
+        "src": "/images/certifications/벤처기업.webp",
         "alt": "Innovation-Growth Venture Company Certification"
       },
       {
-        "src": "/기업부설연구소.webp",
+        "src": "/images/certifications/기업부설연구소.webp",
         "alt": "Corporate Research Institute Certification"
       }
     ]
@@ -273,7 +279,7 @@
         "tag": ["AI"],
         "description": "Development of an AI system for arrhythmia diagnosis and report generation platform",
         "department": "Research and Development Special Zone Promotion Foundation",
-        "img": "/연구개발특구진흥재단.webp"
+        "img": "/images/partners/연구개발특구진흥재단.webp"
       },
       {
         "title": "National Technology Trading Platform Service Project Commercialization Program",
@@ -281,7 +287,7 @@
         "tag": ["SW", "AI"],
         "description": "Commercialization of an AI-based myocardial infarction diagnosis system using ECG signals",
         "department": "Ministry of Trade, Industry and Energy",
-        "img": "/national-logo.webp"
+        "img": "/images/partners/national-logo.webp"
       },
       {
         "title": "2024 Materials and Components Industry Technology Development Program",
@@ -289,7 +295,7 @@
         "tag": ["SW", "AI"],
         "description": "A project aimed at developing AI-based software and a verification platform for drug toxicity assessment based on microphysiological systems",
         "department": "Ministry of Trade, Industry and Energy",
-        "img": "/national-logo.webp"
+        "img": "/images/partners/national-logo.webp"
       },
       {
         "title": "Project for Advancement of AI-based Myocardial Infarction Diagnosis System Using ECG Signals",
@@ -297,7 +303,7 @@
         "tag": ["SW", "AI"],
         "description": "Development and implementation of an AI-based diagnostic system in collaboration with major university hospitals",
         "department": "Chungbuk National University Industry Cooperation Foundation",
-        "img": "/충북대학교의과대학.webp"
+        "img": "/images/partners/충북대학교의과대학.webp"
       },
       {
         "title": "Medical School CPX Learning Platform Using Augmented Search Generation Technology",
@@ -305,7 +311,7 @@
         "tag": ["AI"],
         "description": "Obtained a technology patent for a language model-based CPX learning platform for medical students using augmented symptom generation technology",
         "department": "Cheongju Chamber of Commerce",
-        "img": "/청주상공회의소.webp"
+        "img": "/images/partners/청주상공회의소.webp"
       },
       {
         "title": "Blockchain-based Audit Tracking Solution for Remote Patient Monitoring AI Services",
@@ -313,7 +319,7 @@
         "tag": ["SW"],
         "description": "Provides an audit tracking solution that tracks user logs for EMR, analysis SW, etc., used in the medical field and securely extracts them",
         "department": "Ministry of Science and ICT",
-        "img": "/national-logo.webp"
+        "img": "/images/partners/national-logo.webp"
       },
       {
         "title": "AI-based ECG Analysis Technology and Analysis Platform Development",
@@ -321,7 +327,7 @@
         "tag": ["SW", "AI"],
         "description": "Development of an AI model that analyzes data collected from patch-type ECGs and provides a dedicated platform for expert analysis",
         "department": "Seoul Clinical Laboratories",
-        "img": "/서울의과학연구소.webp"
+        "img": "/images/partners/서울의과학연구소.webp"
       },
       {
         "title": "Medical Database Construction Solution for Medical AI Development",
@@ -329,7 +335,7 @@
         "tag": ["SW"],
         "description": "Provides a platform for researchers interested in AI development to access Mediv's medical data resources",
         "department": "Ministry of SMEs and Startups",
-        "img": "/national-logo.webp"
+        "img": "/images/partners/national-logo.webp"
       },
       {
         "title": "Smart City Challenge - Chungbuk Smart Emergency Medical Big Data Platform Construction Project",
@@ -337,7 +343,7 @@
         "tag": ["SW"],
         "description": "Provided consulting for the construction of the Chungbuk Smart Emergency Medical Big Data Platform in Smart Emergency Medical Service Section 3",
         "department": "Ministry of Land, Infrastructure and Transport",
-        "img": "/national-logo.webp"
+        "img": "/images/partners/national-logo.webp"
       },
       {
         "title": "Research on Text Conversion Technology for ECG Scanned Images Using AI OCR Technology",
@@ -345,7 +351,7 @@
         "tag": ["AI"],
         "description": "Provides technology to convert ECG images into digital signals, creating an ECG database that can be used for AI and big data development",
         "department": "Chungnam National University Hospital",
-        "img": "/충남대학교병원.webp"
+        "img": "/images/partners/충남대학교병원.webp"
       },
       {
         "title": "Medical Data Construction Solution for AI Development",
@@ -353,7 +359,7 @@
         "tag": ["AI"],
         "description": "Develops a solution that provides the collection and preprocessing of medical data required for AI development in the medical field",
         "department": "Ministry of Science and ICT",
-        "img": "/national-logo.webp"
+        "img": "/images/partners/national-logo.webp"
       }
     ]
   },

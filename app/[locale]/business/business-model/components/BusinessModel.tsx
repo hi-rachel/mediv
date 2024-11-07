@@ -16,7 +16,7 @@ interface BusinessModel {
 const BusinessModel: React.FC = () => {
   const models: BusinessModel[] = [
     {
-      image: "/model-stat.png",
+      image: "/images/business-model/model-stat.webp",
       title: "분석 지원 플랫폼 구축",
       description1:
         "바이오메디컬 연구개발을 위한 데이터 기반 분석 지원 플랫폼을 구축합니다.",
@@ -25,7 +25,7 @@ const BusinessModel: React.FC = () => {
       category: "Biomedical",
     },
     {
-      image: "/model-data.png",
+      image: "/images/business-model/model-data.webp",
       title: "데이터 구축 솔루션",
       description1:
         "고품질의 바이오메디컬 데이터 수집과 최적화된 정제 프로세스를 통해 연구의 신뢰도를 제고합니다.",
@@ -34,7 +34,7 @@ const BusinessModel: React.FC = () => {
       category: "Data",
     },
     {
-      image: "/model-ai.png",
+      image: "/images/business-model/model-ai.webp",
       title: "AI 기반 분석 SW 개발",
       description1:
         "AI 기술을 활용한 분석 소프트웨어를 개발하여 데이터의 정밀한 분석을 수행합니다.",
@@ -43,7 +43,7 @@ const BusinessModel: React.FC = () => {
       category: "AI",
     },
     {
-      image: "/model-ict.png",
+      image: "/images/business-model/model-ict.webp",
       title: "ICT 융합 연구지원",
       description1:
         "바이오메디컬과 ICT 기술의 접목을 통해 혁신적인 연구를 지원합니다.",

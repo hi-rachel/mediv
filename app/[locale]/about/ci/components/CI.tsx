@@ -29,7 +29,7 @@ const CIShowcase: React.FC = () => {
         <div className="flex justify-center items-center">
           <div className="relative w-full h-80 group">
             <Image
-              src="/mediv-logo-ci.png"
+              src="/images/logo/mediv-logo-ci.webp"
               alt="MEDIV CI"
               layout="fill"
               className="object-contain"
@@ -38,7 +38,10 @@ const CIShowcase: React.FC = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <button
                 onClick={() =>
-                  downloadImage("/mediv-logo-ci.png", "mediv-logo-ci.png")
+                  downloadImage(
+                    "/images/logo/mediv-logo-ci.webp",
+                    "mediv-logo-ci.webp"
+                  )
                 }
                 className="bg-white text-primary py-2 px-4 rounded-full flex items-center"
               >
@@ -76,12 +79,12 @@ const CIShowcase: React.FC = () => {
         <h2 className="text-3xl font-semibold text-primary mb-6">Logo Usage</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ImageCard
-            src="/mediv-logo.png"
+            src="/images/logo/mediv-logo.webp"
             alt="MEDIV logo light mode"
             title="Light Mode"
           />
           <ImageCard
-            src="/mediv-logo-gray.png"
+            src="/images/logo/mediv-logo-gray.webp"
             alt="MEDIV logo dark mode"
             title="Dark Mode"
             darkMode={true}

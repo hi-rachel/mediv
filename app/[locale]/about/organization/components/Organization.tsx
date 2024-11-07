@@ -27,14 +27,14 @@ const Organization = () => {
         <div className="w-full sm:h-[500px] h-[300px] flex justify-center text-center py-5">
           {locale === "ko" ? (
             <Image
-              src="/organization.webp"
+              src="/images/organization/organization.webp"
               alt="Mediv 조직도"
               fill
               className="md:pl-28 pl-4 object-contain"
             />
           ) : (
             <Image
-              src="/organization-en.webp"
+              src="/images/organization/organization-en.webp"
               alt="Mediv Organization"
               fill
               className="md:pl-28 pl-4 object-contain"
