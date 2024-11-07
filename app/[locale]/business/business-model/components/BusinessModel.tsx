@@ -93,7 +93,7 @@ const BusinessModelPage: React.FC = () => {
                     className={`absolute inset-0 bg-gradient-to-r ${category.color} blur-lg opacity-50 group-hover:opacity-100 transition-opacity duration-300 rounded-full`}
                   />
                   <div
-                    className={`relative font-semibold text-base sm:text-xl px-4 sm:px-8 py-2 sm:py-3 rounded-full bg-white/95 shadow-lg
+                    className={`relative font-semibold text-base sm:text-xl px-4 sm:px-8 py-2 sm:py-3 rounded-full bg-white/95 shadow-sm
                     hover:bg-gradient-to-r hover:${category.color} hover:text-info
                     transition-all duration-300 cursor-pointer flex items-center gap-2 backdrop-blur-sm`}
                   >

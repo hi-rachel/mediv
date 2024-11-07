@@ -138,16 +138,28 @@
   },
   "Partners": {
     "list": [
-      { "name": "충북대학교병원", "logo": "/충북대학교병원.webp" },
-      { "name": "충북대학교 의과대학", "logo": "/충북대학교의과대학.webp" },
-      { "name": "고려대학교병원", "logo": "/고려대학교병원.webp" },
-      { "name": "고려대학교", "logo": "/고려대학교.webp" },
+      {
+        "name": "충북대학교병원",
+        "logo": "/images/partners/충북대학교병원.webp"
+      },
+      {
+        "name": "충북대학교 의과대학",
+        "logo": "/images/partners/충북대학교의과대학.webp"
+      },
+      {
+        "name": "고려대학교병원",
+        "logo": "/images/partners/고려대학교병원.webp"
+      },
+      { "name": "고려대학교", "logo": "/images/partners/고려대학교.webp" },
       {
         "name": "오송첨단의료산업진흥재단",
-        "logo": "/오송첨단의료산업진흥재단.webp"
+        "logo": "/images/partners/오송첨단의료산업진흥재단.webp"
       },
-      { "name": "디벨로", "logo": "/디벨로.webp" },
-      { "name": "엠아이케이스캔", "logo": "/엠아이케이스캔.webp" }
+      { "name": "디벨로", "logo": "/images/partners디벨로.webp" },
+      {
+        "name": "엠아이케이스캔",
+        "logo": "/images/partners/엠아이케이스캔.webp"
+      }
     ]
   },
   "Vision": {
