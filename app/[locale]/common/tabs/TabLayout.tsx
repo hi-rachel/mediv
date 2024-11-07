@@ -1,34 +1,3 @@
-// import { getTranslations } from "next-intl/server";
-// import TabNavigation from "../common/TabNavigation";
-// import { MenuItem } from "@/types/menu";
-
-// interface TabLayoutProps {
-//   children: React.ReactNode;
-//   params: { locale: string };
-// }
-
-// export default async function TabLayout({
-//   children,
-//   params: { locale },
-// }: TabLayoutProps) {
-//   const t = await getTranslations("MenuItems");
-//   const menuItems = t.raw("list") as MenuItem[];
-//   const aboutSubItems = menuItems[0].subItems || [];
-
-//   return (
-//     <div className="min-h-screen bg-gray-50 py-12">
-//       <div className="max-w-5xl mx-auto overflow-hidden">
-//         <TabNavigation
-//           locale={locale}
-//           basePath="about"
-//           menuItems={aboutSubItems}
-//         />
-//         <div className="p-6">{children}</div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import { getTranslations } from "next-intl/server";
 import TabNavigation from "./TabNavigation";
 import { MenuItem } from "@/types/menu";
