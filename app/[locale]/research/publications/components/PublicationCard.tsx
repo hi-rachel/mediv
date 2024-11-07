@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { createSlug } from "@/app/utils/url";
 import { Publication } from "@/types/publication";
 
@@ -14,11 +13,10 @@ export const PublicationCard = ({
   formatAuthors,
   getMonthName,
 }: PublicationCardProps) => {
-  const locale = useLocale();
   const slug = createSlug(publication.title);
 
   return (
-    <Link href={`/${locale}/research/${slug}`}>
+    <Link href={`/research/${slug}`}>
       <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 cursor-pointer">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div className="flex-1">

@@ -1,16 +1,15 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import type { MenuItem } from "@/types/menu";
 
 interface TabNavigationProps {
-  locale: string;
   basePath: string;
   menuItems: MenuItem[];
 }
 
-const TabNavigation = ({ locale, basePath, menuItems }: TabNavigationProps) => {
+const TabNavigation = ({ basePath, menuItems }: TabNavigationProps) => {
   const pathname = usePathname();
 
   return (
@@ -21,7 +20,7 @@ const TabNavigation = ({ locale, basePath, menuItems }: TabNavigationProps) => {
         return (
           <Link
             key={tab.id}
-            href={`/${locale}/${basePath}/${tab.id}`}
+            href={`/${basePath}/${tab.id}`}
             className={`cursor-pointer py-4 md:text-lg text-sm px-4 md:px-6 font-semibold text-center border-b-4 transition-colors duration-300 ${
               isActive
                 ? "border-info text-info bg-gray-50"
