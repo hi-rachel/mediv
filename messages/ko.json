@@ -24,18 +24,18 @@
         "label": "ABOUT",
         "href": "/about",
         "subItems": [
-          { "id": "vision", "label": "비전", "href": "/about/?tab=vision" },
+          { "id": "vision", "label": "비전", "href": "/about/vision" },
           {
             "id": "history",
             "label": "연혁",
-            "href": "/about/?tab=history"
+            "href": "/about/history"
           },
           {
             "id": "organization",
             "label": "조직도",
-            "href": "/about/?tab=organization"
+            "href": "/about/organization"
           },
-          { "id": "ci", "label": "CI", "href": "/about/?tab=ci" }
+          { "id": "ci", "label": "CI", "href": "/about/ci" }
         ]
       },
       {
@@ -46,17 +46,17 @@
           {
             "id": "business-model",
             "label": "비즈니스 모델",
-            "href": "/business/?tab=business-model"
+            "href": "/business/business-model"
           },
           {
             "id": "projects",
             "label": "사업 수행 내역",
-            "href": "/business/?tab=projects"
+            "href": "/business/projects"
           },
           {
             "id": "awards-certifications",
             "label": "수상/인증",
-            "href": "/business/?tab=awards-certifications"
+            "href": "/business/awards-certifications"
           }
         ]
       },
@@ -68,12 +68,12 @@
           {
             "id": "publications",
             "label": "논문",
-            "href": "/research/?tab=publications"
+            "href": "/research/publications"
           },
           {
             "id": "patents",
             "label": "특허",
-            "href": "/research/?tab=patents"
+            "href": "/research/patents"
           }
         ]
       },

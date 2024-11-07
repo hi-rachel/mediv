@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "../globals.css";
-import Header from "./common/Header";
-import Footer from "./common/Footer";
+import Header from "./common/header/Header";
+import Footer from "./common/footer/Footer";
 import ScrollToTopButton from "./common/ScrollToTopButton";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";

@@ -217,7 +217,7 @@ const Header = () => {
                   {item.subItems.map((subItem) => (
                     <Link
                       key={subItem.id}
-                      href={`${item.href}?tab=${subItem.id}`}
+                      href={`${item.href}/${subItem.id}`}
                       className="block px-4 py-2 rounded-none text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-100 focus:outline-none focus:text-primary focus:bg-gray-100"
                       onClick={() => setIsOpen(false)}
                     >

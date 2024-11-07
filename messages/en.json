@@ -25,18 +25,18 @@
         "label": "ABOUT",
         "href": "/about",
         "subItems": [
-          { "id": "vision", "label": "Vision", "href": "/about/?tab=vision" },
+          { "id": "vision", "label": "Vision", "href": "/about/vision" },
           {
             "id": "history",
             "label": "History",
-            "href": "/about/?tab=history"
+            "href": "/about/history"
           },
           {
             "id": "organization",
             "label": "Organization",
-            "href": "/about/?tab=organization"
+            "href": "/about/organization"
           },
-          { "id": "ci", "label": "CI", "href": "/about/?tab=ci" }
+          { "id": "ci", "label": "CI", "href": "/about/ci" }
         ]
       },
       {
@@ -47,17 +47,17 @@
           {
             "id": "business-model",
             "label": "Business Model",
-            "href": "/business/?tab=business-model"
+            "href": "/business/business-model"
           },
           {
             "id": "projects",
             "label": "Projects",
-            "href": "/business/?tab=projects"
+            "href": "/business/projects"
           },
           {
             "id": "awards-certifications",
             "label": "Awards/Certifications",
-            "href": "/business/?tab=awards-certifications"
+            "href": "/business/awards-certifications"
           }
         ]
       },
@@ -69,12 +69,12 @@
           {
             "id": "publications",
             "label": "Publications",
-            "href": "/research/?tab=publications"
+            "href": "/research/publications"
           },
           {
             "id": "patents",
             "label": "Patents",
-            "href": "/research/?tab=patents"
+            "href": "/research/patents"
           }
         ]
       },
