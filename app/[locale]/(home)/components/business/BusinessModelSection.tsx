@@ -44,7 +44,7 @@ const BusinessModelSection: React.FC<BusinessModelProps> = ({
           >
             {title}
           </motion.h2>
-          <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {businessModel.map((model: BusinessModelItem, index: string) => (
               <motion.div
                 key={index}

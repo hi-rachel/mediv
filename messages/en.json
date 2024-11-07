@@ -110,19 +110,32 @@
   "BusinessModel": {
     "list": [
       {
-        "title": "Medical Data Integration",
+        "image": "/images/business-model/model-stat.webp",
+        "title": "Building an analysis support platform",
+        "description1": "We build a data-based analysis support platform for biomedical research and development.",
+        "description2": "We provide efficient work processes through a researcher-friendly analysis support platform.",
+        "category": "Biomedical"
+      },
+      {
         "image": "/images/business-model/model-data.webp",
-        "description": "Accelerating AI innovation with high-quality medical datasets"
+        "title": "Data construction solution",
+        "description1": "We improve research reliability through high-quality biomedical data collection and optimized purification processes.",
+        "description2": "Maintains the quality of various biomedical data and supports systematic analysis.",
+        "category": "Data"
       },
       {
-        "title": "Medical AI Software De/images/business-modelvelopment",
-        "image": "/images/business-model/model-sw.webp",
-        "description": "Implementing efficient and reliable systems"
+        "image": "/images/business-model/model-ai.webp",
+        "title": "AI-based analysis SW development",
+        "description1": "We develop analysis software using AI technology to perform precise analysis of data.",
+        "description2": "It supports data analysis in various fields, including medical, bio, statistical, signal processing, and imaging fields.",
+        "category": "AI"
       },
       {
-        "title": "Alternative Testing Validation Platform",
-        "image": "/images/business-model/model-experiment.webp",
-        "description": "Providing ethical and scientific alternatives"
+        "image": "/images/business-model/model-ict.webp",
+        "title": "ICT convergence research support",
+        "description1": "We support innovative research through the combination of biomedical and ICT technologies.",
+        "description2": "We increase the efficiency of big data, AI, and advanced bio research through the latest IT infrastructure and partner organizations.",
+        "category": "ICT"
       }
     ]
   },

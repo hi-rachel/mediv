@@ -7,7 +7,7 @@ import PartnersSection from "./components/partners/PartnersSection";
 import InViewCountUpAnimation from "../common/animation/InViewCountUpAnimation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-// import BusinessModelSection from "./components/business/BusinessModelSection";
+import BusinessModelSection from "./components/business/BusinessModelSection";
 import InViewLatestResearchSection from "./components/research/InViewLatestResearchSection";
 import InViewAnimation from "../common/animation/InViewAnimation";
 import InViewIntroAnimationSection from "./components/hero/InViewIntroAnimationSection";
@@ -146,7 +146,7 @@ const HomePage: React.FC = () => {
       <InViewIntroAnimationSection />
 
       {/* Business Models */}
-      {/* <BusinessModelSection className="py-20" /> */}
+      <BusinessModelSection className="py-20" />
 
       {/* Stats Section */}
       <InViewAnimation>
