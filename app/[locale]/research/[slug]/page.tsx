@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import PublicationDetail from "../publications/components/PublicationDetail";
 import { Publication } from "@/types/publication";
-import { createSlug } from "@/app/utils/string";
+import { createSlug } from "@/app/utils/url";
 
 interface Props {
   params: {

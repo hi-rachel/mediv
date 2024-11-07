@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { Publication } from "@/types/publication";
-import { getMonthName } from "@/app/utils/helpers";
-import { createSlug } from "@/app/utils/string";
+import { getMonthName } from "@/app/utils/date";
+import { createSlug } from "@/app/utils/url";
 
 interface PublicationDetailProps {
   slug: string;
