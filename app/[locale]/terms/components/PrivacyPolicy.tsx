@@ -9,7 +9,7 @@ const PrivacyPolicy = ({ sections, versionInfo }: PrivacyPolicyProps) => {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <div className="bg-gray-900 py-16">
-        <div className="w-full flex justify-center flex-col items-center">
+        <div className="w-full flex justify-center flex-col items-center px-4">
           <h1 className="text-3xl font-bold text-white">{t("title")}</h1>
           <p className="text-gray-300 mt-4">{t("subTitle")}</p>
         </div>
