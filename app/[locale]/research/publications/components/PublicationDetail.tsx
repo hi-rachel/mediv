@@ -53,11 +53,11 @@ const PublicationDetail = ({ slug }: PublicationDetailProps) => {
           {/* Header Section */}
           <header className="mb-12 border-b border-gray-200 pb-10">
             <div className="flex flex-wrap items-center gap-3 mb-4">
-              <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
+              <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full font-semibold md:text-sm text-xs break-all">
                 {publication.publication}
               </span>
             </div>
-            <h1 className="text-3xl font-extrabold text-gray-800 mb-4 leading-snug">
+            <h1 className="md:text-3xl text-2xl font-extrabold text-gray-800 mb-4 leading-snug">
               {publication.title}
             </h1>
             <span className="text-sm text-gray-500 bg-slate-50 px-3 py-1 rounded">
@@ -103,17 +103,6 @@ const PublicationDetail = ({ slug }: PublicationDetailProps) => {
               ))}
             </div>
           </section>
-
-          {/* Back Button */}
-          {/* <div className="mt-8">
-            <button
-              onClick={() => router.replace(`/research/publications`)}
-              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              {t("details.backToList")}
-            </button>
-          </div> */}
         </div>
       </article>
     </div>

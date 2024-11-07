@@ -28,9 +28,8 @@ export const PublicationCard = ({
 
             {publication.publication && (
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
+                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full md:text-sm text-xs font-semibold break-all">
                   {publication.publication}
-                  {/* IF {publication.publication.match(/\(IF ([\d.]+)\)/)?.[1]} */}
                 </span>
               </div>
             )}
@@ -39,7 +38,7 @@ export const PublicationCard = ({
               {publication.title}
             </h3>
 
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 md:text-base text-sm">
               {formatAuthors(publication.author)}
             </p>
           </div>
