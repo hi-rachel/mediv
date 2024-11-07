@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { getMonthName } from "@/app/utils/helpers";
+import { getMonthName } from "@/app/utils/date";
 
 interface Patent {
   category: string;
@@ -24,11 +24,11 @@ const PatentsHistory: React.FC = () => {
             {getMonthName(patent.month)}. {patent.year}
           </div>
 
-          <span className="inline-block px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block px-2 py-1 bg-green-100 text-green-800 rounded-full font-semibold mb-4 md:text-sm text-xs">
             {t("category")}
           </span>
-          <h3 className="text-xl font-semibold mb-8">{patent.title}</h3>
-          <p className="text-gray-600">
+          <h1 className="text-xl font-bold mb-8">{patent.title}</h1>
+          <p className="text-gray-600 md:text-base text-sm">
             {t("applicationNumber")} {patent.patentNumber}
           </p>
         </div>
