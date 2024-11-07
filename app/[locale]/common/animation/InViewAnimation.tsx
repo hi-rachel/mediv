@@ -7,7 +7,7 @@ const InViewAnimation: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 0.3 });
+  const isInView = useInView(ref, { amount: 0.3, once: true });
 
   return (
     <motion.section

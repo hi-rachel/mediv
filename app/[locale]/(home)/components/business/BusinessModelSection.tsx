@@ -28,39 +28,41 @@ const BusinessModelSection: React.FC = () => {
   const businessModel = t.raw("list");
 
   return (
-    <div className="p-20">
+    <div className="py-16 px-4 md:px-8 lg:px-20">
       <InViewAnimation>
         <div>
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto">
             <motion.h2
               variants={fadeInUp}
-              className="md:text-4xl text-3xl font-bold text-center text-primary mb-12"
+              className="text-3xl md:text-4xl font-bold text-center text-primary mb-12"
             >
               BUSINESS MODEL
             </motion.h2>
-            <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8">
               {businessModel.map((model: BusinessModelItem, index: string) => (
                 <motion.div
                   key={index}
                   variants={fadeInUp}
                   whileHover={{
                     scale: 1.05,
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                   }}
-                  className="bg-white rounded-lg shadow-lg p-6 transition duration-300"
+                  className="w-full md:w-[calc(50%-1rem)] xl:w-[calc(25%-1.5rem)] bg-white shadow-md rounded-lg hover:shadow-lg p-6 transition duration-300"
                 >
-                  <div className="text-4xl mb-4 flex justify-center items-center">
+                  <div className="aspect-square relative mb-4 w-full max-w-[200px] mx-auto">
                     <Image
                       src={model.image}
                       alt={model.title}
-                      width={200}
-                      height={200}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
                     />
                   </div>
-                  <h3 className="text-xl font-semibold text-primary mb-2">
+                  <h3 className="text-xl font-semibold text-primary mb-2 text-center">
                     {model.title}
                   </h3>
-                  <p className="text-gray-600">{model.description}</p>
+                  <p className="text-gray-600 text-center">
+                    {model.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -70,7 +72,7 @@ const BusinessModelSection: React.FC = () => {
       <div className="w-full flex justify-center">
         <Link
           href="/business/business-model"
-          className="transform shadow-lg bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition-all  duration-300 text-lg inline-flex hover:-translate-y-1 mt-12"
+          className="transform shadow-lg bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition-all duration-300 text-lg inline-flex hover:-translate-y-1 mt-12"
         >
           자세히 보기
         </Link>

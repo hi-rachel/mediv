@@ -17,22 +17,22 @@ const InViewLatestResearchSection = () => {
 
   // InView states for different sections
   const isSectionInView = useInView(sectionRef, {
-    once: false,
+    once: true,
     amount: 0.2,
   });
 
   const isTitleInView = useInView(titleRef, {
-    once: false,
+    once: true,
     amount: 0.5,
   });
 
   const isGridInView = useInView(gridRef, {
-    once: false,
+    once: true,
     amount: 0.2,
   });
 
   const isCtaInView = useInView(ctaRef, {
-    once: false,
+    once: true,
     amount: 0.3,
     margin: "0px 0px -100px 0px",
   });
@@ -160,6 +160,9 @@ const InViewLatestResearchSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
+              whileHover={{
+                scale: 1.05,
+              }}
               className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-[380px] min-w-80"
             >
               <div className="p-6 flex flex-col h-full">
