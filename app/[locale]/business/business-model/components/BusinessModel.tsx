@@ -43,7 +43,7 @@ const BusinessModel: React.FC = () => {
       category: "AI",
     },
     {
-      image: "/model-sw.png",
+      image: "/model-ict.png",
       title: "ICT 융합 연구지원",
       description1:
         "바이오메디컬과 ICT 기술의 접목을 통해 혁신적인 연구를 지원합니다.",
