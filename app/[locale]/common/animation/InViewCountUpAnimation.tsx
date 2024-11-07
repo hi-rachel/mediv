@@ -7,7 +7,7 @@ const InViewCountUpAnimation: React.FC<{
   duration: number;
 }> = ({ end, duration }) => {
   const countUpRef = useRef(null);
-  const isInView = useInView(countUpRef, { amount: 0.3 });
+  const isInView = useInView(countUpRef, { amount: 0.3, once: true });
 
   return (
     <span ref={countUpRef}>

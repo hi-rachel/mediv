@@ -3,14 +3,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import PartnersSection from "./components/partners/PartnersSection";
-import InViewCountUpAnimation from "../common/animation/InViewCountUpAnimation";
+import InViewPartnersAnimationSection from "./components/partners/InViewPartnersAnimationSection";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import BusinessModelSection from "./components/business/BusinessModelSection";
+import InViewBusinessModelAnimationSection from "./components/business/InViewBusinessModelAnimationSection";
 import InViewLatestResearchSection from "./components/research/InViewLatestResearchSection";
-import InViewAnimation from "../common/animation/InViewAnimation";
 import InViewIntroAnimationSection from "./components/hero/InViewIntroAnimationSection";
+import UseInViewStatsAnimationSection from "./components/stats/UseInViewStatsAnimationSection";
 
 const HomePage: React.FC = () => {
   const t = useTranslations("Home");
@@ -71,11 +70,6 @@ const HomePage: React.FC = () => {
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
     startTimer(); // 타이머 리셋
-  };
-
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -145,43 +139,17 @@ const HomePage: React.FC = () => {
       {/* Introduction Section */}
       <InViewIntroAnimationSection />
 
-      {/* Business Models */}
-      <BusinessModelSection />
+      {/* Business Models Section */}
+      <InViewBusinessModelAnimationSection />
 
       {/* Stats Section */}
-      <InViewAnimation>
-        <div className="py-20 bg-primary text-white">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={2} duration={2} />+
-                </h3>
-                <p className="text-xl">Years of Innovation</p>
-              </motion.div>
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={7} duration={2} />+
-                </h3>
-                <p className="text-xl">Our Partners</p>
-              </motion.div>
-              <motion.div variants={fadeInUp}>
-                <h3 className="text-6xl font-bold mb-4">
-                  <InViewCountUpAnimation end={100000} duration={3} />+
-                </h3>
-                <p className="text-xl">Analyzed Medical Data</p>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </InViewAnimation>
+      <UseInViewStatsAnimationSection />
 
+      {/* Latest Research Section */}
       <InViewLatestResearchSection />
 
       {/* Partners Section */}
-      <InViewAnimation>
-        <PartnersSection />
-      </InViewAnimation>
+      <InViewPartnersAnimationSection />
     </div>
   );
 };
