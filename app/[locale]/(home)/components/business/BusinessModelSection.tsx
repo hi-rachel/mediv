@@ -74,7 +74,7 @@ const BusinessModelSection: React.FC = () => {
           href="/business/business-model"
           className="transform shadow-lg bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition-all duration-300 text-lg inline-flex hover:-translate-y-1 mt-12"
         >
-          자세히 보기
+          {t("businessModelCTA")}
         </Link>
       </div>
     </div>
