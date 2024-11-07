@@ -10,8 +10,6 @@ export const generateMetadata = async ({
 }: {
   params: { locale: string };
 }): Promise<Metadata> => {
-  console.log(locale);
-
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -20,9 +18,9 @@ export const generateMetadata = async ({
   };
 };
 
-const ResearchLayout = ({ children, params: { locale } }: LayoutProps) => {
+const ResearchLayout = ({ children }: LayoutProps) => {
   return (
-    <TabLayout params={{ locale, basePath: "research" }}>
+    <TabLayout params={{ basePath: "research" }}>
       <Suspense fallback={<PublicationSkeleton />}>{children}</Suspense>
     </TabLayout>
   );

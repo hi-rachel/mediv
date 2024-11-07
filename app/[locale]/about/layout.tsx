@@ -16,10 +16,8 @@ export const generateMetadata = async ({
   };
 };
 
-const AboutLayout = ({ children, params: { locale } }: LayoutProps) => {
-  return (
-    <TabLayout params={{ locale, basePath: "about" }}>{children}</TabLayout>
-  );
+const AboutLayout = ({ children }: LayoutProps) => {
+  return <TabLayout params={{ basePath: "about" }}>{children}</TabLayout>;
 };
 
 export default AboutLayout;
