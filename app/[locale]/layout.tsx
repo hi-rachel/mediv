@@ -24,6 +24,41 @@ export async function generateMetadata({
   return {
     title: t("home.title"),
     description: t("home.description"),
+    keywords: [
+      "의료",
+      "Biomedical",
+      "첨단바이오",
+      "Data",
+      "데이터",
+      "AI",
+      "ICT",
+      "메디브",
+      "Mediv",
+      "SW 개발",
+      "분석 지원 플랫폼",
+    ],
+    openGraph: {
+      title: t("home.title"),
+      description: t("home.description"),
+      url: "https://mediv.kr",
+      type: "website",
+      images: [
+        {
+          url: "/images/meta/open-graph.png",
+          width: 1200,
+          height: 630,
+          alt: t("home.title"),
+        },
+      ],
+      locale: locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("home.title"),
+      description: t("home.description"),
+      site: "https://mediv.kr",
+      images: "/images/meta/open-graph.png",
+    },
   };
 }
 
