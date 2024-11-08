@@ -2,9 +2,11 @@ import { useTranslations } from "next-intl";
 import { getMonthName } from "@/app/utils/date";
 
 interface Patent {
+  id: string;
   category: string;
   title: string;
-  patentNumber: string;
+  applicationNumber: string;
+  patentNumber?: string;
   year: number;
   month: number;
 }
@@ -29,7 +31,9 @@ const PatentsHistory: React.FC = () => {
           </span>
           <h1 className="text-xl font-bold mb-8">{patent.title}</h1>
           <p className="text-gray-600 md:text-base text-sm">
-            {t("applicationNumber")} {patent.patentNumber}
+            {patent.id === "ecg_signal_ai_diagnosis" && patent.patentNumber
+              ? `${t("registrationNumber")} ${patent.patentNumber}`
+              : `${t("applicationNumber")} ${patent.applicationNumber}`}
           </p>
         </div>
       ))}

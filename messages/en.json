@@ -584,22 +584,27 @@
   "Patents": {
     "category": "Patent",
     "applicationNumber": "Application Number: ",
+    "registrationNumber": "Registration Number: ",
     "list": [
       {
+        "id": "ecg_signal_ai_diagnosis",
         "title": "Myocardial Infarction Diagnosis System Based on Neural Network Using ECG Signals",
-        "patentNumber": "10-2024-0056511",
+        "applicationNumber": "10-2024-0056511",
+        "patentNumber": "10-2725740",
         "year": 2024,
         "month": 4
       },
       {
+        "id": "medical_data_blockchain",
         "title": "Operating Method of Medical Information Tracking System Based on Blockchain Network",
-        "patentNumber": "10-2023-0171590",
+        "applicationNumber": "10-2023-0171590",
         "year": 2023,
         "month": 11
       },
       {
+        "id": "ecg_record_segment_storage",
         "title": "Control Method of Electronic Device for Storing Divided Sections of ECG Records",
-        "patentNumber": "10-2022-0191118",
+        "applicationNumber": "10-2022-0191118",
         "year": 2022,
         "month": 12
       }
