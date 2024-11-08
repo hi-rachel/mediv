@@ -31,6 +31,17 @@ const config: Config = {
         },
         white: "#FFFFFF",
       },
+      animation: {
+        wave: "wave 0.6s ease-in-out infinite",
+        wave200: "wave 0.6s ease-in-out infinite 200ms",
+        wave400: "wave 0.6s ease-in-out infinite 400ms",
+      },
+      keyframes: {
+        wave: {
+          "0%, 100%": { transform: "translateY(-5px)" }, // 더 크게 위로 이동
+          "50%": { transform: "translateY(5px)" }, // 더 크게 아래로 이동
+        },
+      },
     },
   },
   plugins: [],

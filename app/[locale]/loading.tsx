@@ -1,9 +1,13 @@
 const GlobalLoading = () => {
+  const circleCommonClasses =
+    "h-4 w-4 bg-current rounded-full bg-secondary-light";
+
   return (
-    <div className="min-h-[800px] flex items-center justify-center">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-16 h-16 border-4 border-secondary border-t-transparent rounded-full animate-spin" />
-        <div className="text-xl font-semibold text-primary">Loading...</div>
+    <div className="flex items-center justify-center min-h-screen w-full bg-transparent pb-20">
+      <div className="flex">
+        <div className={`${circleCommonClasses} mr-2 animate-wave`}></div>
+        <div className={`${circleCommonClasses} mr-2 animate-wave200`}></div>
+        <div className={`${circleCommonClasses} animate-wave400`}></div>
       </div>
     </div>
   );
