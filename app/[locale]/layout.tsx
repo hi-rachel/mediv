@@ -40,7 +40,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("home.title"),
       description: t("home.description"),
-      url: "https://mediv.kr",
+      url: "https://mediv.kr/",
       type: "website",
       images: [
         {
@@ -56,7 +56,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("home.title"),
       description: t("home.description"),
-      site: "https://mediv.kr",
+      site: "https://mediv.kr/",
       images: "/images/meta/open-graph.png",
     },
   };
