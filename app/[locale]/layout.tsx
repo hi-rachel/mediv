@@ -1,18 +1,15 @@
-import { Inter } from "next/font/google";
 import "../globals.css";
 import Header from "./common/header/Header";
 import Footer from "./common/footer/Footer";
 import ScrollToTopButton from "./common/ScrollToTopButton";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { Metadata } from "next";
 import GlobalLoading from "./loading";
-
-const inter = Inter({ subsets: ["latin"] });
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({
   params: { locale },
@@ -67,14 +64,14 @@ export const generateStaticParams = () => {
   return routing.locales.map((locale) => ({ locale }));
 };
 
-const RootLayout = async ({
+const Layout = async ({
   children,
   params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) => {
-  // 유효하지 않은 locale 처리
+  // 지원하지 않는 locale인 경우 404
   if (!routing.locales.includes(locale as "en" | "ko")) {
     notFound();
   }
@@ -86,19 +83,15 @@ const RootLayout = async ({
   const messages = await getMessages({ locale: locale as "en" | "ko" });
 
   return (
-    <html lang={locale}>
-      <body className={inter.className}>
-        <Suspense fallback={<GlobalLoading />}>
-          <NextIntlClientProvider messages={messages}>
-            <Header />
-            <main className="overflow-hidden">{children}</main>
-            <Footer />
-            <ScrollToTopButton />
-          </NextIntlClientProvider>
-        </Suspense>
-      </body>
-    </html>
+    <Suspense fallback={<GlobalLoading />}>
+      <NextIntlClientProvider messages={messages}>
+        <Header />
+        <main className="overflow-hidden">{children}</main>
+        <Footer />
+        <ScrollToTopButton />
+      </NextIntlClientProvider>
+    </Suspense>
   );
 };
 
-export default RootLayout;
+export default Layout;
