@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import PartnerCard from "./PartnerCard";
 
@@ -19,8 +19,8 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const controls = useAnimation();
   const positionRef = useRef(0);
-  const totalWidth = 300 * partners.length;
-  const duration = 15;
+  const totalWidth = 208 * partners.length;
+  const duration = 10;
   const pixelsPerSecond = totalWidth / duration;
   const isMountedRef = useRef(false);
 
@@ -39,15 +39,15 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
       if (!isHovered) {
         // 마우스 호버가 아닐 때만 애니메이션 진행
         positionRef.current += (pixelsPerSecond * elapsed) / 1000; // 위치 업데이트
-        if (positionRef.current >= totalWidth * 4) {
-          // 위치가 총 길이의 4배를 넘으면 초기화하여 무한 스크롤처럼 보이게 함
-          positionRef.current -= totalWidth * 4;
+        if (positionRef.current >= totalWidth * 10) {
+          // 위치가 총 길이의 10배를 넘으면 초기화하여 무한 스크롤처럼 보이게 함
+          positionRef.current -= totalWidth * 10;
         }
 
         const x =
           direction === "left"
             ? -positionRef.current // 왼쪽 방향일 경우 음수로 이동
-            : positionRef.current - totalWidth * 4; // 오른쪽 방향일 경우 양수로 이동
+            : positionRef.current - totalWidth * 10; // 오른쪽 방향일 경우 양수로 이동
 
         controls.start({ x }); // 애니메이션 위치를 설정 (start 사용)
       }
@@ -83,7 +83,7 @@ const PartnersRowAnimation: React.FC<PartnersRowProps> = ({
         animate={controls}
         initial={{ x: direction === "left" ? 0 : -totalWidth }}
       >
-        {Array(5)
+        {Array(10)
           .fill(partners)
           .flat()
           .map((partner, index) => (

@@ -6,7 +6,7 @@ interface PartnerCardProps {
 }
 
 const PartnerCard: React.FC<PartnerCardProps> = ({ name, logo }) => (
-  <div className="flex flex-col items-center justify-between w-72 h-48 bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+  <div className="flex flex-col items-center justify-between md:w-72 md:h-48 w-52 h-36 bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
     <div className="relative w-full h-28 flex items-center justify-center">
       <Image
         src={logo}
