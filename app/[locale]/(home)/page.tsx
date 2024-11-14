@@ -87,9 +87,9 @@ const HomePage: React.FC = () => {
             <Image
               src={slide.image}
               alt={slide.title}
-              layout="fill"
-              objectFit="cover"
+              fill
               priority
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50" />
             <div className="absolute inset-0 flex items-center justify-center">

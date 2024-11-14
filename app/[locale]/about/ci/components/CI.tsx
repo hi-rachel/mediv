@@ -31,7 +31,7 @@ const CIShowcase: React.FC = () => {
             <Image
               src="/images/logo/mediv-logo-ci.webp"
               alt="MEDIV CI"
-              layout="fill"
+              fill
               className="object-contain"
               priority
             />
