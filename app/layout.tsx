@@ -1,12 +1,15 @@
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { useLocale } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
+  const local = useLocale();
+
   return (
-    <html>
+    <html lang={local}>
       <Head>
         <meta
           name="naver-site-verification"
