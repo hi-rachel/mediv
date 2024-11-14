@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mediv.kr/
+
+# Sitemaps
+Sitemap: https://mediv.kr/sitemap.xml
