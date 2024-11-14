@@ -26,10 +26,7 @@ const InViewIntroAnimationSection: React.FC = () => {
   }, [controls, isInView]);
 
   return (
-    <section
-      className="py-20 bg-white overflow-hidden"
-      style={{ minHeight: "600px" }}
-    >
+    <section className="py-20 bg-white overflow-hidden min-h-[600px]">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center" ref={ref}>
           <div className="leading-relaxed min-h-32 sm:min-h-20 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 md:mb-8">
