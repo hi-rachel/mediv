@@ -32,7 +32,7 @@ const InViewIntroAnimationSection: React.FC = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center" ref={ref}>
-          <div className="leading-relaxed min-h-32 md:text-4xl text-2xl font-semibold text-primary">
+          <div className="leading-relaxed min-h-32 sm:min-h-20 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 md:mb-8">
             <InViewTypingAnimation
               text={t("title1")}
               speed={typingSpeed}
@@ -51,12 +51,12 @@ const InViewIntroAnimationSection: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={controls}
-            className="flex-col space-y-6 flex justify-center items-center"
+            className="flex-col flex justify-center items-center"
           >
             <p className="min-w-80 sm:px-6 break text-center w-full text-xl text-gray-700 md:leading-relaxed leading-normal">
               {t("description")}
             </p>
-            <div className="mt-10">
+            <div className="mt-12">
               <Link
                 href="/about"
                 className="transform shadow-lg bg-info text-white font-bold py-3 px-8 rounded-full hover:bg-primary transition-all duration-300 text-lg inline-flex hover:-translate-y-1"

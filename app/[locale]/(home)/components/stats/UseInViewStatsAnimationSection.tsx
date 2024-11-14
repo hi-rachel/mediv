@@ -40,19 +40,19 @@ const UseInViewStatsAnimationSection = () => {
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-8 lg:gap-12 sm:gap-4 text-center justify-center">
           <motion.div variants={itemVariants} className="mb-8">
-            <h3 className="sm:text-5xl text-4xl font-bold mb-4">
+            <h3 className="sm:text-5xl text-4xl lg:text-6xl font-bold mb-4">
               <InViewCountUpAnimation end={2} duration={2} />+
             </h3>
             <p className="text-lg sm:text-xl">Years of Innovation</p>
           </motion.div>
           <motion.div variants={itemVariants} className="mb-8">
-            <h3 className="sm:text-5xl text-4xl font-bold mb-4">
+            <h3 className="sm:text-5xl text-4xl lg:text-6xl font-bold mb-4">
               <InViewCountUpAnimation end={7} duration={2} />+
             </h3>
             <p className="text-lg sm:text-xl">Our Partners</p>
           </motion.div>
           <motion.div variants={itemVariants} className="mb-8">
-            <h3 className="sm:text-5xl text-4xl font-bold mb-4">
+            <h3 className="sm:text-5xl text-4xl lg:text-6xl font-bold mb-4">
               <InViewCountUpAnimation end={100000} duration={3} />+
             </h3>
             <p className="text-lg sm:text-xl">Analyzed Medical Data</p>
