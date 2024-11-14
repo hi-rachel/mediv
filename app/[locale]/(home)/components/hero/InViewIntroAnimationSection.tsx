@@ -32,14 +32,14 @@ const InViewIntroAnimationSection: React.FC = () => {
     >
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center" ref={ref}>
-          <div className="md:text-5xl text-3xl font-semibold text-primary mb-8">
+          <div className="leading-relaxed min-h-32 md:text-4xl text-2xl font-semibold text-primary">
             <InViewTypingAnimation
               text={t("title1")}
               speed={typingSpeed}
               isInView={isInView}
             />
             <br />
-            <p className="md:mt-4 mt-2">
+            <p className="md:mt-2">
               <InViewTypingAnimation
                 text={t("title2")}
                 delay={delay}
@@ -53,7 +53,7 @@ const InViewIntroAnimationSection: React.FC = () => {
             animate={controls}
             className="flex-col space-y-6 flex justify-center items-center"
           >
-            <p className="min-w-80 sm:px-6 break text-center w-full text-xl text-gray-700 leading-relaxed">
+            <p className="min-w-80 sm:px-6 break text-center w-full text-xl text-gray-700 md:leading-relaxed leading-normal">
               {t("description")}
             </p>
             <div className="mt-10">

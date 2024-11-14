@@ -62,7 +62,7 @@ const LatestResearchSection = () => {
   return (
     <div className="py-20 bg-white">
       <div className="container mx-auto px-6" ref={ref}>
-        <h2 className="text-4xl font-semibold text-center text-gray-900 mb-16">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-16">
           Latest Research
         </h2>
 

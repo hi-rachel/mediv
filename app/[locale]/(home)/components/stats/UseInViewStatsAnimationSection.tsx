@@ -1,8 +1,8 @@
 "use client";
 
+import InViewCountUpAnimation from "@/app/[locale]/common/animation/InViewCountUpAnimation";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import InViewCountUpAnimation from "@/app/[locale]/common/animation/InViewCountUpAnimation";
 
 const UseInViewStatsAnimationSection = () => {
   const ref = useRef(null);
@@ -30,32 +30,32 @@ const UseInViewStatsAnimationSection = () => {
   };
 
   return (
-    <div className="py-20 bg-primary text-white">
+    <div className="py-20 px-4 bg-primary text-white">
       <motion.div
         ref={ref}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
-        className="container mx-auto px-6"
+        className="container mx-auto"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <motion.div variants={itemVariants}>
-            <h3 className="text-6xl font-bold mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-8 lg:gap-12 sm:gap-4 text-center justify-center">
+          <motion.div variants={itemVariants} className="mb-8">
+            <h3 className="sm:text-5xl text-4xl font-bold mb-4">
               <InViewCountUpAnimation end={2} duration={2} />+
             </h3>
-            <p className="text-xl">Years of Innovation</p>
+            <p className="text-lg sm:text-xl">Years of Innovation</p>
           </motion.div>
-          <motion.div variants={itemVariants}>
-            <h3 className="text-6xl font-bold mb-4">
+          <motion.div variants={itemVariants} className="mb-8">
+            <h3 className="sm:text-5xl text-4xl font-bold mb-4">
               <InViewCountUpAnimation end={7} duration={2} />+
             </h3>
-            <p className="text-xl">Our Partners</p>
+            <p className="text-lg sm:text-xl">Our Partners</p>
           </motion.div>
-          <motion.div variants={itemVariants}>
-            <h3 className="text-6xl font-bold mb-4">
+          <motion.div variants={itemVariants} className="mb-8">
+            <h3 className="sm:text-5xl text-4xl font-bold mb-4">
               <InViewCountUpAnimation end={100000} duration={3} />+
             </h3>
-            <p className="text-xl">Analyzed Medical Data</p>
+            <p className="text-lg sm:text-xl">Analyzed Medical Data</p>
           </motion.div>
         </div>
       </motion.div>
