@@ -25,7 +25,7 @@ const NotFoundPage = () => {
 
   return (
     <div className="text-center flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
-      <Image src="/images/error/404.png" alt="404" width={500} height={500} />
+      <Image src="/images/error/404.webp" alt="404" width={500} height={500} />
       <h1 className="text-6xl font-bold">{title}</h1>
       <h2 className="mt-4 text-2xl">{subtitle}</h2>
       <p className="mt-2 text-gray-600">{description}</p>

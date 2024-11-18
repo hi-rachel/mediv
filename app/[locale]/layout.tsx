@@ -41,7 +41,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "/images/meta/open-graph.png",
+          url: "/images/meta/open-graph.webp",
           width: 1200,
           height: 630,
           alt: t("home.title"),
@@ -54,7 +54,7 @@ export async function generateMetadata({
       title: t("home.title"),
       description: t("home.description"),
       site: "https://mediv.kr/",
-      images: "/images/meta/open-graph.png",
+      images: "/images/meta/open-graph.webp",
     },
   };
 }
