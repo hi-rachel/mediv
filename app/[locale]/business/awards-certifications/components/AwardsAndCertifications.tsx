@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Trophy } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 interface Award {
   title: string;
@@ -65,7 +66,7 @@ const AwardsAndCertifications: React.FC = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <img
+                <Image
                   src={cert.src}
                   alt={cert.alt}
                   className="w-64 h-64 mx-auto mb-4 object-contain"
