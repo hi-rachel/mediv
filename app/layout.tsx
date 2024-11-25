@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { useLocale } from "next-intl";
 import Script from "next/script";
@@ -11,12 +10,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <html lang={local}>
-      <Head>
-        <meta
-          name="naver-site-verification"
-          content={process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION}
-        />
-      </Head>
       <body className={inter.className}>
         {children}
         <Script id="clarity-script" strategy="afterInteractive">
