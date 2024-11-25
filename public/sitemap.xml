@@ -1,4 +1,293 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://mediv.kr/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://mediv.kr/en</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/en/about/vision</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/about/history</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/about/organization</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/about/ci</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/ko/about/vision</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/about/history</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/about/organization</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/about/ci</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/en/business/business-model</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/business/projects</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/business/awards-certifications</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/ko/business/business-model</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/business/projects</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/business/awards-certifications</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/en/research/publications</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/patents</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/ko/research/publications</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/patents</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/en/contact</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/ko/contact</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/en/terms</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/ko/terms</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+
+<url>
+  <loc>https://mediv.kr/en/research/prognostic-prediction-of-sepsis-patient-using-transformer-with-skip-connected-token-for-tabular-data</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/a-novel-generator-with-auxiliary-branch-for-improving-gan-performance</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/ft-gat-graph-neural-network-for-predicting-spontaneous-breathing-trial-success-in-patients-with-mechanical-ventilation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/real-time-prediction-for-neonatal-endotracheal-intubation-using-multimodal-transformer-network</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/predicting-the-need-for-intubation-within-3-hours-in-the-neonatal-intensive-care-unit-using-a-multimodal-deep-neural-network</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/multimodal-neural-network-for-recurrence-prediction-of-papillary-thyroid-carcinoma</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/deep-learning-model-for-predicting-rhythm-outcomes-after-radiofrequency-catheter-ablation-in-patients-with-atrial-fibrillation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/automated-diagnosis-of-atrial-fibrillation-using-ecg-component-aware-transformer</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/image-generation-with-self-pixel-wise-normalization</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/generative-convolution-layer-for-image-generation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/effective-shortcut-technique-for-generative-adversarial-networks</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/pconv-simple-yet-effective-convolutional-layer-for-generative-adversarial-network</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/generative-residual-block-for-image-generation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/simple-yet-effective-way-for-improving-the-performance-of-gan</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/en/research/detail-restoration-and-tone-mapping-networks-for-x-ray-security-inspection</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+
+<url>
+  <loc>https://mediv.kr/ko/research/prognostic-prediction-of-sepsis-patient-using-transformer-with-skip-connected-token-for-tabular-data</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/a-novel-generator-with-auxiliary-branch-for-improving-gan-performance</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/ft-gat-graph-neural-network-for-predicting-spontaneous-breathing-trial-success-in-patients-with-mechanical-ventilation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/real-time-prediction-for-neonatal-endotracheal-intubation-using-multimodal-transformer-network</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/predicting-the-need-for-intubation-within-3-hours-in-the-neonatal-intensive-care-unit-using-a-multimodal-deep-neural-network</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/multimodal-neural-network-for-recurrence-prediction-of-papillary-thyroid-carcinoma</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/deep-learning-model-for-predicting-rhythm-outcomes-after-radiofrequency-catheter-ablation-in-patients-with-atrial-fibrillation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/automated-diagnosis-of-atrial-fibrillation-using-ecg-component-aware-transformer</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/image-generation-with-self-pixel-wise-normalization</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/generative-convolution-layer-for-image-generation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/effective-shortcut-technique-for-generative-adversarial-networks</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/pconv-simple-yet-effective-convolutional-layer-for-generative-adversarial-network</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/generative-residual-block-for-image-generation</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/simple-yet-effective-way-for-improving-the-performance-of-gan</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mediv.kr/ko/research/detail-restoration-and-tone-mapping-networks-for-x-ray-security-inspection</loc>
+  <lastmod>2024-11-13T04:39:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+</urlset>

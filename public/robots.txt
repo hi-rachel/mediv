@@ -1,9 +1,9 @@
-# *
+# Allow all user agents to access the site
 User-agent: *
 Allow: /
 
 # Host
 Host: https://mediv.kr/
 
-# Sitemaps
+# Sitemap
 Sitemap: https://mediv.kr/sitemap.xml
