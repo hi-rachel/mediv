@@ -69,6 +69,8 @@ const AwardsAndCertifications: React.FC = () => {
                 <Image
                   src={cert.src}
                   alt={cert.alt}
+                  width={250}
+                  height={250}
                   className="w-64 h-64 mx-auto mb-4 object-contain"
                 />
                 <p className="text-center font-semibold text-gray-800">
