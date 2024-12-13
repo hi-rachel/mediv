@@ -30,7 +30,7 @@ const HistoryTimeline: React.FC = () => {
     damping: 30,
     restDelta: 0.001,
   });
-  // px-4 sm:px-6 lg:px-8
+
   return (
     <div className="bg-gray-50 min-h-screen py-8 pt-6" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-4">
