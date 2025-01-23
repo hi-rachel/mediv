@@ -10,6 +10,7 @@ import InViewBusinessModelAnimationSection from "./components/business/InViewBus
 import InViewLatestResearchSection from "./components/research/InViewLatestResearchSection";
 import InViewIntroAnimationSection from "./components/hero/InViewIntroAnimationSection";
 import UseInViewStatsAnimationSection from "./components/stats/UseInViewStatsAnimationSection";
+import StockNoticeAlert from "./components/StockNoticeAlert";
 
 const HomePage: React.FC = () => {
   const t = useTranslations("Home");
@@ -74,6 +75,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-neutral">
+      <StockNoticeAlert />
       {/* Hero Section */}
       <section className="relative h-[calc(100vh-4rem)]">
         {slides.map((slide, index) => (
