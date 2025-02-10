@@ -81,7 +81,6 @@ const Vision = () => {
               alt="mediv-logo"
               width={300}
               height={300}
-              className="drop-shadow-2xl"
             />
           </div>
           <div className="text-center z-10 mb-16">
