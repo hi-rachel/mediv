@@ -4,13 +4,13 @@ import { Publication } from "@/types/publication";
 
 interface PublicationCardProps {
   publication: Publication;
-  formatAuthors: (authors: string[]) => string;
+  // formatAuthors: (authors: string[]) => string;
   getMonthName: (month: number) => string;
 }
 
 export const PublicationCard = ({
   publication,
-  formatAuthors,
+  // formatAuthors,
   getMonthName,
 }: PublicationCardProps) => {
   const slug = createSlug(publication.title);
