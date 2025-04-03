@@ -588,24 +588,56 @@
     "registrationNumber": "등록번호: ",
     "list": [
       {
-        "id": "ecg_signal_ai_diagnosis",
+        "title": "심전도 기록지의 단위 눈금을 식별하는 데이터 분석 솔루션",
+        "applicationNumber": "10-2025-0029044",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "심전도 데이터를 구성하는 픽셀을 바탕으로 파형을 식별하는 장치",
+        "applicationNumber": "10-2025-0029045",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "심전도에 대한 시계열 데이터를 추출하는 심전도 분석 시스템",
+        "applicationNumber": "10-2025-0029046",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "심전도의 채널별 파형 이미지를 수치화하는 전자 장치의 동작 방법",
+        "applicationNumber": "10-2025-0029047",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "이미지 내 텍스트를 인식하여 심전도 채널의 단위 시간을 식별하는 방법",
+        "applicationNumber": "10-2025-0029048",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "검색증강 언어모델 기반 의대생 CPX 학습 방법 및 장치",
+        "applicationNumber": "10-2024-0167344",
+        "year": 2024,
+        "month": 11
+      },
+      {
         "title": "심전도 신호를 이용한 신경망 기반의 심근경색 진단 시스템",
-        "applicationNumber": "10-2024-0056511",
-        "patentNumber": "10-2725740",
+        "registrationNumber": "10-2725740",
         "year": 2024,
         "month": 4
       },
       {
-        "id": "medical_data_blockchain",
         "title": "블록체인 네트워크 기반의 의료정보 추적 시스템의 동작 방법",
         "applicationNumber": "10-2023-0171590",
         "year": 2023,
         "month": 11
       },
       {
-        "id": "ecg_record_segment_storage",
         "title": "심전도 기록지의 각 구역을 분할하여 저장하는 전자 장치의 제어 방법",
-        "applicationNumber": "10-2022-0191118",
+        "registrationNumber": "10-2780138",
         "year": 2022,
         "month": 12
       }

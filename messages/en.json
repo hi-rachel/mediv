@@ -607,24 +607,56 @@
     "registrationNumber": "Registration Number: ",
     "list": [
       {
-        "id": "ecg_signal_ai_diagnosis",
+        "title": "Data analysis solution to identify unit scales on electrocardiogram records",
+        "applicationNumber": "10-2025-0029044",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "A device that identifies waveforms based on the pixels that make up electrocardiogram data.",
+        "applicationNumber": "10-2025-0029045",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "An electrocardiogram analysis system that extracts time series data for electrocardiograms",
+        "applicationNumber": "10-2025-0029046",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "Method of operation of an electronic device for digitizing the waveform images of each channel of an electrocardiogram",
+        "applicationNumber": "10-2025-0029047",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "How to identify unit time of ECG channel by recognizing text in image",
+        "applicationNumber": "10-2025-0029048",
+        "year": 2025,
+        "month": 3
+      },
+      {
+        "title": "Medical students CPX learning method and device based on search augmentation language model",
+        "applicationNumber": "10-2024-0167344",
+        "year": 2024,
+        "month": 11
+      },
+      {
         "title": "Myocardial Infarction Diagnosis System Based on Neural Network Using ECG Signals",
-        "applicationNumber": "10-2024-0056511",
-        "patentNumber": "10-2725740",
+        "registrationNumber": "10-2024-0056511",
         "year": 2024,
         "month": 4
       },
       {
-        "id": "medical_data_blockchain",
         "title": "Operating Method of Medical Information Tracking System Based on Blockchain Network",
         "applicationNumber": "10-2023-0171590",
         "year": 2023,
         "month": 11
       },
       {
-        "id": "ecg_record_segment_storage",
         "title": "Control Method of Electronic Device for Storing Divided Sections of ECG Records",
-        "applicationNumber": "10-2022-0191118",
+        "registrationNumber": "10-2022-0191118",
         "year": 2022,
         "month": 12
       }

@@ -5,13 +5,13 @@ interface Patent {
   id: string;
   category: string;
   title: string;
-  applicationNumber: string;
-  patentNumber?: string;
+  applicationNumber?: string;
+  registrationNumber?: string;
   year: number;
   month: number;
 }
 
-const PatentsHistory: React.FC = () => {
+const PatentsHistory = () => {
   const t = useTranslations("Patents");
   const patents = t.raw("list") as Patent[];
 
@@ -31,8 +31,8 @@ const PatentsHistory: React.FC = () => {
           </span>
           <h1 className="text-xl font-bold mb-8">{patent.title}</h1>
           <p className="text-gray-600 md:text-base text-sm">
-            {patent.id === "ecg_signal_ai_diagnosis" && patent.patentNumber
-              ? `${t("registrationNumber")} ${patent.patentNumber}`
+            {patent.registrationNumber
+              ? `${t("registrationNumber")} ${patent.registrationNumber}`
               : `${t("applicationNumber")} ${patent.applicationNumber}`}
           </p>
         </div>
