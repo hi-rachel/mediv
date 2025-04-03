@@ -36,9 +36,9 @@ export const PublicationCard = ({
               {publication.title}
             </h3>
 
-            <p className="text-gray-600 mb-4 md:text-base text-sm">
+            {/* <p className="text-gray-600 mb-4 md:text-base text-sm">
               {formatAuthors(publication.author)}
-            </p>
+            </p> */}
           </div>
         </div>
 

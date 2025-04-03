@@ -83,12 +83,12 @@ const PublicationDetail = ({ slug }: PublicationDetailProps) => {
           )}
 
           {/* Authors Section */}
-          <section className="mb-12">
+          {/* <section className="mb-12">
             <h2 className="text-lg font-semibold text-gray-800 mb-3">
               {t("details.author")}
             </h2>
             <p className="text-gray-700">{publication.author.join(", ")}</p>
-          </section>
+          </section> */}
 
           {/* Keywords Section */}
           <section className="pt-10 border-t border-gray-200">
