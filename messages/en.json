@@ -637,6 +637,12 @@
         "month": 3
       },
       {
+        "title": "Control Method of Electronic Device for Storing Divided Sections of ECG Records",
+        "registrationNumber": "10-2022-0191118",
+        "year": 2025,
+        "month": 3
+      },
+      {
         "title": "Medical students CPX learning method and device based on search augmentation language model",
         "applicationNumber": "10-2024-0167344",
         "year": 2024,
@@ -646,19 +652,13 @@
         "title": "Myocardial Infarction Diagnosis System Based on Neural Network Using ECG Signals",
         "registrationNumber": "10-2024-0056511",
         "year": 2024,
-        "month": 4
+        "month": 10
       },
       {
         "title": "Operating Method of Medical Information Tracking System Based on Blockchain Network",
         "applicationNumber": "10-2023-0171590",
         "year": 2023,
         "month": 11
-      },
-      {
-        "title": "Control Method of Electronic Device for Storing Divided Sections of ECG Records",
-        "registrationNumber": "10-2022-0191118",
-        "year": 2022,
-        "month": 12
       }
     ]
   },
