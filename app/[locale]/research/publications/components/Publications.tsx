@@ -11,7 +11,7 @@ import YearFilter from "./YearFilter";
 import ActiveFilters from "./ActiveFilter";
 import usePublicationFilters from "@/app/hooks/usePublicationFilters";
 import useUrlParams from "@/app/hooks/useUrlParams";
-import { formatAuthors } from "@/app/utils/publication";
+// import { formatAuthors } from "@/app/utils/publication";
 import { getYearFilterText } from "@/app/utils/translation";
 import { PublicationCard } from "./PublicationCard";
 
@@ -117,7 +117,7 @@ const Publications = () => {
               <PublicationCard
                 key={publication.title + index}
                 publication={publication}
-                formatAuthors={formatAuthors}
+                // formatAuthors={formatAuthors}
                 getMonthName={getMonthName}
               />
             ))
