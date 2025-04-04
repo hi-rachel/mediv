@@ -562,8 +562,8 @@
       }
     ],
     "layout": {
-      "searchPlaceholder": "저자명 또는 논문명으로 검색하세요",
-      "smallSearchPlaceholder": "저자명 또는 논문명...",
+      "searchPlaceholder": "논문명으로 검색하세요",
+      "smallSearchPlaceholder": "논문명",
       "clearAll": "모두 지우기",
       "noPublications": "필터링과 일치하는 게시물을 찾을 수 없습니다.",
       "activeFilters": "적용된 필터링",

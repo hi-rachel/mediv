@@ -581,8 +581,8 @@
       }
     ],
     "layout": {
-      "searchPlaceholder": "Search by author or title",
-      "smallSearchPlaceholder": "author or title...",
+      "searchPlaceholder": "Search by title",
+      "smallSearchPlaceholder": "title",
       "clearAll": "Clear all",
       "noPublications": "No publications found matching your criteria.",
       "activeFilters": "Active Filters",
