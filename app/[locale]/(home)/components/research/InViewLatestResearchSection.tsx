@@ -20,12 +20,6 @@ const LatestResearchSection = () => {
       .map((pub) => ({ ...pub, type: "publication" as const })),
   ];
 
-  const formatAuthors = (authors: string[]) => {
-    if (!authors || authors.length === 0) return "";
-    if (authors.length === 1) return authors[0];
-    return `${authors[0]} et al.`;
-  };
-
   const formatPublicationBadge = (publication: string) => {
     const parts = publication.split("(");
     if (parts.length === 2) {
@@ -77,7 +71,7 @@ const LatestResearchSection = () => {
               key={index}
               variants={itemVariants}
               whileHover={prefersReducedMotion ? {} : { scale: 1.02 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-[380px] min-w-80"
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-[350px] min-w-80"
             >
               <div className="p-6 flex flex-col h-full">
                 <div className="text-sm text-gray-500 mb-4">
@@ -96,13 +90,13 @@ const LatestResearchSection = () => {
                   {item.title}
                 </h3>
 
-                <div className="mt-auto">
+                {/* <div className="mt-auto">
                   <div className="flex items-center justify-between mb-4">
                     <p className="text-gray-600 text-sm">
                       {formatAuthors(item.author || [])}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
