@@ -19,6 +19,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
+    metadataBase: new URL("https://mediv.kr"),
     title: t("home.title"),
     description: t("home.description"),
     keywords: [
